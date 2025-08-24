@@ -50,7 +50,6 @@ export default function Header({ onNavigate }: HeaderProps) {
                           className="w-full text-left px-2.5 py-1.5 rounded-md hover:bg-muted transition-colors text-sm story-link"
                           onClick={() => { setOpen(false); navigateTo(s.id); }}
                         >
-                          <span className="text-xs text-muted-foreground mr-2">{s.number.toString().padStart(2, '0')}.</span>
                           <span>{s.title}</span>
                         </button>
                       </li>
@@ -92,7 +91,6 @@ export default function Header({ onNavigate }: HeaderProps) {
                           onMouseDown={(e) => e.preventDefault()}
                           onClick={() => navigateTo(s.id)}
                         >
-                          <span className="text-sm text-muted-foreground mr-2">{s.number.toString().padStart(2, '0')}.</span>
                           {s.title}
                         </button>
                       </li>

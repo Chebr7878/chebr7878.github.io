@@ -18,7 +18,7 @@ const Index = () => {
       "Обзор 18 разделов стандарта ГОСТ 6482-2011: классификация, размеры, испытания, транспортирование и др.",
     hasPart: sections.map((s) => ({
       "@type": "Article",
-      headline: `${s.number}. ${s.title}`,
+      headline: s.title,
       url: `#${s.id}`,
     })),
   };
