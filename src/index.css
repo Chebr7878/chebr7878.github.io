@@ -9,32 +9,32 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 220 9% 46%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 13% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 13% 18%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 220 13% 18%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary-foreground: 220 13% 18%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
     --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent-foreground: 220 13% 18%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 220 13% 18%;
 
     --radius: 0.5rem;
 
@@ -57,32 +57,32 @@ All colors MUST be HSL.
 
   .dark {
     --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --foreground: 220 9% 75%;
 
     --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card-foreground: 220 9% 85%;
 
     --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover-foreground: 220 9% 85%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 220 9% 85%;
+    --primary-foreground: 220 13% 18%;
 
     --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary-foreground: 220 9% 85%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
     --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent-foreground: 220 9% 85%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --ring: 220 9% 85%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -127,5 +127,203 @@ All colors MUST be HSL.
   .story-link:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+  }
+  
+  /* Стилизованные заголовки с темно-серым цветом */
+  .heading-primary {
+    color: hsl(220 13% 18%);
+  }
+  
+  .heading-secondary {
+    color: hsl(220 9% 46%);
+  }
+  
+  /* Темная тема для заголовков */
+  .dark .heading-primary {
+    color: hsl(220 9% 85%);
+  }
+  
+  .dark .heading-secondary {
+    color: hsl(220 9% 75%);
+  }
+  
+  /* Стили для интерактивных элементов маркировки */
+  [data-mark-key] {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 2px;
+    padding: 1px 2px;
+  }
+  
+  [data-mark-key]:hover {
+    background-color: hsl(210 40% 96%);
+  }
+  
+  [data-mark-key].hover-highlight {
+    background-color: hsl(210 40% 96%);
+    color: hsl(220 13% 18%);
+  }
+  
+  [data-mark-key].is-active {
+    background-color: hsl(210 100% 50%);
+    color: white;
+    font-weight: 500;
+  }
+  
+  /* Специальные стили для групповых элементов */
+  [data-mark-key^="group-"] {
+    font-weight: 500;
+  }
+  
+  [data-mark-key^="group-"].hover-highlight {
+    background-color: hsl(210 60% 90%);
+    color: hsl(220 13% 18%);
+  }
+  
+  [data-mark-key^="group-"].is-active {
+    background-color: hsl(210 100% 60%);
+    color: white;
+    font-weight: 600;
+  }
+  
+  /* Темная тема для интерактивных элементов */
+  .dark [data-mark-key]:hover {
+    background-color: hsl(220 9% 25%);
+  }
+  
+  .dark [data-mark-key].hover-highlight {
+    background-color: hsl(220 9% 25%);
+    color: hsl(220 9% 85%);
+  }
+  
+  .dark [data-mark-key].is-active {
+    background-color: hsl(210 100% 60%);
+    color: hsl(220 13% 18%);
+  }
+  
+  /* Темная тема для групповых элементов */
+  .dark [data-mark-key^="group-"].hover-highlight {
+    background-color: hsl(210 40% 30%);
+    color: hsl(220 9% 85%);
+  }
+  
+  .dark [data-mark-key^="group-"].is-active {
+    background-color: hsl(210 100% 70%);
+    color: hsl(220 13% 18%);
+  }
+  
+  /* Стили для кнопки "СВОИМИ СЛОВАМИ" */
+  .explanation-btn {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .explanation-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  }
+  
+  .explanation-btn:active {
+    transform: translateY(0);
+  }
+  
+  .explanation-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+  }
+  
+  .explanation-btn:hover::before {
+    left: 100%;
+  }
+  
+  .explanation-content {
+    animation: slideDown 0.3s ease-out;
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Темная тема для кнопки */
+  .dark .explanation-btn {
+    background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+  }
+  
+  .dark .explanation-btn:hover {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  }
+  
+  /* Стили для серой кнопки "СВОИМИ СЛОВАМИ" */
+  .explanation-btn-gray {
+    background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .explanation-btn-gray:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(135deg, #4b5563 0%, #374151 100%);
+  }
+  
+  .explanation-btn-gray:active {
+    transform: translateY(0);
+  }
+  
+  .explanation-btn-gray::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+  }
+  
+  .explanation-btn-gray:hover::before {
+    left: 100%;
+  }
+  
+  /* Темная тема для серой кнопки */
+  .dark .explanation-btn-gray {
+    background: linear-gradient(135deg, #9ca3af 0%, #6b7280 100%);
+  }
+  
+  .dark .explanation-btn-gray:hover {
+    background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
   }
 }

@@ -29,7 +29,7 @@ const Index = () => {
       <main className="pt-16 pb-10">
         <section className="mx-auto max-w-6xl px-3 sm:px-4">
           <div className="py-6 sm:py-8">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight mb-2">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight mb-2 heading-primary">
               ГОСТ 6482-2011 — Трубы железобетонные безнапорные
             </h1>
             <p className="text-muted-foreground text-sm sm:text-base max-w-3xl">

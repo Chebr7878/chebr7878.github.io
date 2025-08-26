@@ -52,7 +52,34 @@ export const sections: Section[] = [
 
 <strong>трубы фальцевые</strong> — трубы, имеющие по торцам взаимно сопрягаемые поверхности в пределах толщины стенки трубы.<br/><br/>
 
-<strong>шелыга</strong> — верхняя часть трубы в рабочем положении, расположенная симметрично относительно вертикального диаметра.`,
+<strong>шелыга</strong> — верхняя часть трубы в рабочем положении, расположенная симметрично относительно вертикального диаметра.<br/><br/>
+
+<div style="text-align: center; margin: 30px 0;">
+  <button id="simple-explanation-btn" class="explanation-btn-gray" onclick="toggleExplanation()">
+    <span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>
+  </button>
+</div>
+
+<div id="simple-explanation" class="explanation-content" style="display: none;">
+  <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
+    <h4 style="color: #1e40af; margin-top: 0;">Область применения:</h4>
+    <p>Стандарт ГОСТ 6482-2011 регулирует требования к железобетонным безнапорным трубам, которые используют для подземных самотёчных трубопроводов (бытовые, промышленные стоки, дождевая и грунтовая вода, в том числе в агрессивных средах).</p>
+    <p>Он не распространяется на водопропускные трубы под дорогами и трубы для микротоннелирования.</p>
+    
+    <h4 style="color: #1e40af;">Основные термины:</h4>
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li><strong>Вибропрессование / радиальное прессование</strong> — современные технологии производства прочных труб из жёстких бетонных смесей.</li>
+      <li><strong>Диаметр условного прохода</strong> — расчётный внутренний диаметр трубы.</li>
+      <li><strong>Полезная длина</strong> — рабочая длина, учитываемая при монтаже.</li>
+      <li><strong>Лоток и шелыга</strong> — нижняя и верхняя части трубы.</li>
+      <li><strong>Стыковые поверхности</strong> — торцевые элементы для соединения труб.</li>
+      <li><strong>Раструбные трубы</strong> — с расширением на конце для стыковки.</li>
+      <li><strong>Фальцевые трубы</strong> — со специальной замковой формой торца.</li>
+      <li><strong>Трубы с подошвой</strong> — с плоским основанием для устойчивости.</li>
+      <li><strong>Безнапорные трубы</strong> — для самотёчного движения жидкости.</li>
+    </ul>
+  </div>
+</div>`,
   },
   {
     id: 'klassifikaciya',
@@ -74,7 +101,20 @@ export const sections: Section[] = [
 
 <strong>ТФП</strong> — цилиндрические фальцевые со стыковыми соединениями, уплотняемыми герметиками или другими материалами, с подошвой (с плоским основанием).<br/><br/>
 
-Допускаются и другие типы труб, например, с овалоидальным или эллиптическим отверстием, нормируемые техническими условиями или стандартами организаций и изготавливаемые по соответствующим чертежам, утверждённым в установленном порядке.`,
+Допускаются и другие типы труб, например, с овалоидальным или эллиптическим отверстием, нормируемые техническими условиями или стандартами организаций и изготавливаемые по соответствующим чертежам, утверждённым в установленном порядке.<br/><br/>
+
+<div style="text-align: center; margin: 30px 0;">
+  <button id="classification-explanation-btn" class="explanation-btn-gray" onclick="toggleClassificationExplanation()">
+    <span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>
+  </button>
+</div>
+
+<div id="classification-explanation" class="explanation-content" style="display: none;">
+  <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
+    <h4 style="color: #1e40af; margin-top: 0;">Классификация труб:</h4>
+    <p>ГОСТ выделяет несколько видов железобетонных труб. Одни соединяются с помощью герметика, другие — с резиновыми кольцами. Некоторые трубы делают с плоским основанием, чтобы они лучше стояли и не перекатывались. Есть также фальцевые трубы с замковым соединением. А в особых случаях допускаются трубы не только круглые, но и овальные или эллиптические — по отдельным чертежам.</p>
+  </div>
+</div>`,
   },
   {
     id: 'gruppy-nesushchey',
@@ -92,7 +132,20 @@ export const sections: Section[] = [
 
 <strong>4 группа</strong> — применяются при расчётной высоте засыпки грунтом до верха основной цилиндрической части трубы не более 8 м;<br/><br/>
 
-<strong>5 группа</strong> — применяются при расчётной высоте засыпки грунтом до верха основной цилиндрической части трубы не более 10 м.`,
+<strong>5 группа</strong> — применяются при расчётной высоте засыпки грунтом до верха основной цилиндрической части трубы не более 10 м.<br/><br/>
+
+<div style="text-align: center; margin: 30px 0;">
+  <button id="strength-explanation-btn" class="explanation-btn-gray" onclick="toggleStrengthExplanation()">
+    <span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>
+  </button>
+</div>
+
+<div id="strength-explanation" class="explanation-content" style="display: none;">
+  <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
+    <h4 style="color: #1e40af; margin-top: 0;">Группы по несущей способности:</h4>
+    <p>Железобетонные трубы бывают разных «классов прочности». Одни можно укладывать неглубоко — под 2 метра грунта, другие выдерживают до 10 метров засыпки сверху. Поэтому при проектировании важно правильно выбрать группу: чем глубже закладывается труба, тем более прочной она должна быть.</p>
+  </div>
+</div>`,
   },
   {
     id: 'razmery-geometriya',
@@ -114,7 +167,20 @@ export const sections: Section[] = [
 
 длина труб должна быть не менее 2,5 м — для труб диаметром 600–2400 мм;<br/><br/>
 
-длина труб диаметром более 2400 мм определяется по согласованию с предприятием-изготовителем и потребителем.`,
+длина труб диаметром более 2400 мм определяется по согласованию с предприятием-изготовителем и потребителем.<br/><br/>
+
+<div style="text-align: center; margin: 30px 0;">
+  <button id="dimensions-explanation-btn" class="explanation-btn-gray" onclick="toggleDimensionsExplanation()">
+    <span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>
+  </button>
+</div>
+
+<div id="dimensions-explanation" class="explanation-content" style="display: none;">
+  <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
+    <h4 style="color: #1e40af; margin-top: 0;">Размеры и геометрия:</h4>
+    <p>ГОСТ задаёт стандартный ряд диаметров железобетонных труб — от 300 мм до 3 метров. Длина подбирается в зависимости от диаметра: чем больше диаметр, тем длиннее должна быть труба. При особых условиях допускаются нестандартные размеры, но они требуют согласования с производителем.</p>
+  </div>
+</div>`,
   },
   {
     id: 'markirovka',
@@ -122,47 +188,106 @@ export const sections: Section[] = [
     title: 'Обозначение труб (маркировка)',
     keywords: ['обозначение','маркировка','марка','индекс','клеймо','обозначения'],
     summary: 'Структура условного обозначения трубы и правила нанесения клейма изготовителя.',
-    content: `Марки труб обозначают в соответствии с требованиями ГОСТ 23009.<br/><br/>
+    content: `<strong>Структура условного обозначения труб</strong><br/><br/>
 
-<strong>Пример:</strong><br/>
-ТС 80.25-3-П ГОСТ 6482-2011<br/><br/>
+Марки труб обозначают в соответствии с требованиями <span data-mark-key="gost-23009" tabindex="0" role="button" aria-label="ГОСТ 23009">ГОСТ 23009</span>.<br/><br/>
 
-Марка трубы состоит из буквенно-цифровых групп (далее — группы), которые разделяются дефисом:<br/><br/>
+<strong>Пример марки:</strong><br/><br/>
 
-<strong>Первая группа (ТС 80.25)</strong> — указывают:<br/>
-• тип трубы — ТС;<br/>
-• диаметр условного прохода в сантиметрах — 80;<br/>
-• полезную длину в дециметрах — 25.<br/><br/>
+<div style="background: #f0f8ff; border: 2px solid #1e40af; border-radius: 8px; padding: 15px; margin: 15px 0; text-align: center; font-size: 1.2em; font-weight: bold;">
+<span data-mark-key="mark-example" tabindex="0" role="button" aria-label="ТС 80.25-3-П ГОСТ 6482-2011">ТС 80.25-3-П ГОСТ 6482-2011</span>
+</div>
 
-<strong>Вторая группа (3)</strong> — обозначает группу по несущей способности (арабские цифры).<br/><br/>
+<strong>Структура марки (группы, разделённые дефисом):</strong><br/><br/>
 
-<strong>Третья группа (П)</strong> — дополнительные характеристики труб:<br/>
-• стойкость к воздействию агрессивной среды, характеризуемую проницаемостью бетона:<br/>
-– Н — нормальная (W4),<br/>
-– П — пониженная (W6),<br/>
-– О — особо низкая (не ниже W10);<br/>
-• вид агрессии:<br/>
-– Щ — щелочная,<br/>
-– К — кислотная,<br/>
-– Х — хлориды,<br/>
-– С — сульфаты;<br/>
-• стойкость внутреннего защитного покрытия:<br/>
-– к — кислотостойкое,<br/>
-– щ — щелочестойкое,<br/>
-– х — химически стойкое.<br/><br/>
+<strong>Первая группа <span data-mark-key="first-group" tabindex="0" role="button" aria-label="ТС 80.25">(ТС 80.25)</span></strong> — указывают:<br/><br/>
 
-<strong>Пример расшифровки марки:</strong><br/>
-ТС 80.25-3-П ГОСТ 6482-2011 — труба железобетонная цилиндрическая раструбная со ступенчатой поверхностью втулочного конца и стыковым соединением, уплотняемым резиновым кольцом или другим эластомерным материалом, диаметром 800 мм, полезной длиной 2,5 м, третьей группы по несущей способности, изготовленная из бетона пониженной проницаемости (W6).<br/><br/>
+• <span data-mark-key="pipe-type" tabindex="0" role="button" aria-label="тип трубы">тип трубы</span> — <span data-mark-key="type-ts" tabindex="0" role="button" aria-label="ТС">ТС</span>;<br/><br/>
 
-<strong>Маркировка труб осуществляется в соответствии с требованиями ГОСТ 13015.</strong><br/><br/>
+• <span data-mark-key="diameter-cm" tabindex="0" role="button" aria-label="диаметр в сантиметрах">диаметр условного прохода в сантиметрах</span> — <span data-mark-key="diameter-80" tabindex="0" role="button" aria-label="80">80</span>;<br/><br/>
+
+• <span data-mark-key="length-dm" tabindex="0" role="button" aria-label="длина в дециметрах">полезную длину в дециметрах</span> — <span data-mark-key="length-25" tabindex="0" role="button" aria-label="25">25</span>.<br/><br/>
+
+<strong>Вторая группа <span data-mark-key="second-group" tabindex="0" role="button" aria-label="3">(3)</span></strong> — обозначает группу по несущей способности:<br/><br/>
+
+• <span data-mark-key="group-1" tabindex="0" role="button" aria-label="1 группа">1</span> — первая группа<br/><br/>
+
+• <span data-mark-key="group-2" tabindex="0" role="button" aria-label="2 группа">2</span> — вторая группа<br/><br/>
+
+• <span data-mark-key="group-3" tabindex="0" role="button" aria-label="3 группа">3</span> — третья группа<br/><br/>
+
+• <span data-mark-key="group-4" tabindex="0" role="button" aria-label="4 группа">4</span> — четвёртая группа<br/><br/>
+
+<strong>Третья группа <span data-mark-key="third-group" tabindex="0" role="button" aria-label="П">(П)</span></strong> — дополнительные характеристики:<br/><br/>
+
+<strong>Стойкость к агрессивной среде (проницаемость бетона):</strong><br/><br/>
+
+• <span data-mark-key="permeability-n" tabindex="0" role="button" aria-label="Н - нормальная W4">Н</span> — нормальная (<span data-mark-key="w4" tabindex="0" role="button" aria-label="W4">W4</span>)<br/><br/>
+
+• <span data-mark-key="permeability-p" tabindex="0" role="button" aria-label="П - пониженная W6">П</span> — пониженная (<span data-mark-key="w6" tabindex="0" role="button" aria-label="W6">W6</span>)<br/><br/>
+
+• <span data-mark-key="permeability-o" tabindex="0" role="button" aria-label="О - особо низкая W10">О</span> — особо низкая (не ниже <span data-mark-key="w10" tabindex="0" role="button" aria-label="W10">W10</span>)<br/><br/>
+
+<strong>Вид агрессии:</strong><br/><br/>
+
+• <span data-mark-key="aggression-sh" tabindex="0" role="button" aria-label="Щ - щелочная">Щ</span> — щелочная<br/><br/>
+
+• <span data-mark-key="aggression-k" tabindex="0" role="button" aria-label="К - кислотная">К</span> — кислотная<br/><br/>
+
+• <span data-mark-key="aggression-h" tabindex="0" role="button" aria-label="Х - хлориды">Х</span> — хлориды<br/><br/>
+
+• <span data-mark-key="aggression-s" tabindex="0" role="button" aria-label="С - сульфаты">С</span> — сульфаты<br/><br/>
+
+<strong>Стойкость внутреннего защитного покрытия:</strong><br/><br/>
+
+• <span data-mark-key="coating-k" tabindex="0" role="button" aria-label="к - кислотостойкое">к</span> — кислотостойкое<br/><br/>
+
+• <span data-mark-key="coating-sh" tabindex="0" role="button" aria-label="щ - щелочестойкое">щ</span> — щелочестойкое<br/><br/>
+
+• <span data-mark-key="coating-h" tabindex="0" role="button" aria-label="х - химически стойкое">х</span> — химически стойкое<br/><br/>
+
+<strong>Пример расшифровки марки:</strong><br/><br/>
+
+<div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 15px; margin: 15px 0;">
+<strong>ТС 80.25-3-П ГОСТ 6482-2011</strong> — труба железобетонная цилиндрическая раструбная со ступенчатой поверхностью втулочного конца и стыковым соединением, уплотняемым резиновым кольцом или другим эластомерным материалом, диаметром <span data-mark-key="diameter-800mm" tabindex="0" role="button" aria-label="800 мм">800 мм</span>, полезной длиной <span data-mark-key="length-2-5m" tabindex="0" role="button" aria-label="2,5 м">2,5 м</span>, <span data-mark-key="group-3rd" tabindex="0" role="button" aria-label="третьей группы">третьей группы</span> по несущей способности, изготовленная из бетона <span data-mark-key="permeability-w6" tabindex="0" role="button" aria-label="пониженной проницаемости W6">пониженной проницаемости (W6)</span>.
+</div>
+
+<strong>Нанесение маркировки</strong><br/><br/>
+
+Маркировка осуществляется в соответствии с требованиями <span data-mark-key="gost-13015" tabindex="0" role="button" aria-label="ГОСТ 13015">ГОСТ 13015</span>.<br/><br/>
 
 Маркировки наносят водостойкой чёрной краской (по трафарету) на наружную поверхность раструба или у одного из торцов фальцевой трубы.<br/><br/>
 
-В случаях, предусмотренных рабочими чертежами (например, при дополнительном армировании труб сетками), на наружную поверхность втулочной части труб без подошвы следует наносить установочные риски по ГОСТ 13015, указывающие положение центров шелыги и лотка трубы.<br/><br/>
+<strong>Установочные риски</strong><br/><br/>
 
-Длина рисок должна составлять от 100 до 150 мм.<br/><br/>
+При дополнительном армировании труб сетками на наружную поверхность втулочной части труб без подошвы наносят установочные риски, указывающие положение центров шелыги и лотка трубы.<br/><br/>
 
-Трубы должны иметь отметку центров шелыги и лотка, если это предусмотрено рабочими чертежами.`,
+Длина рисок должна составлять от <span data-mark-key="risk-length-100" tabindex="0" role="button" aria-label="100 мм">100</span> до <span data-mark-key="risk-length-150" tabindex="0" role="button" aria-label="150 мм">150 мм</span>.<br/><br/>
+
+Трубы должны иметь отметку центров шелыги и лотка, если это предусмотрено рабочими чертежами.<br/><br/>
+
+<div style="text-align: center; margin: 30px 0;">
+  <button id="marking-explanation-btn" class="explanation-btn-gray" onclick="toggleMarkingExplanation()">
+    <span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>
+  </button>
+</div>
+
+<div id="marking-explanation" class="explanation-content" style="display: none;">
+  <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
+    <h4 style="color: #1e40af; margin-top: 0;">Обозначение труб (простыми словами):</h4>
+    <p><strong>Структура марки:</strong> марка трубы состоит из трёх групп, разделённых дефисами. Например, ТС 80.25-3-П ГОСТ 6482-2011.</p>
+    
+    <p><strong>Первая группа (ТС 80.25):</strong> указывает тип трубы (ТС), диаметр в сантиметрах (80 = 800 мм) и длину в дециметрах (25 = 2,5 м).</p>
+    
+    <p><strong>Вторая группа (3):</strong> обозначает группу по несущей способности — от 1 до 4, где 4-я группа самая прочная.</p>
+    
+    <p><strong>Третья группа (П):</strong> указывает дополнительные характеристики — стойкость к агрессивным средам (Н/П/О), вид агрессии (Щ/К/Х/С) и тип защитного покрытия (к/щ/х).</p>
+    
+    <p><strong>Маркировка:</strong> наносится чёрной водостойкой краской на наружную поверхность раструба или торца трубы. При необходимости добавляются установочные риски для обозначения положения шелыги и лотка.</p>
+    
+    <p><strong>👉 Главная мысль:</strong> марка трубы — это её паспорт, который содержит всю важную информацию о размерах, прочности и специальных свойствах. По марке можно точно определить, подходит ли труба для конкретных условий эксплуатации.</p>
+  </div>
+</div>`,
   },
   {
     id: 'tehnologiya-izgotovleniya',
@@ -351,7 +476,26 @@ export const sections: Section[] = [
 Комплектующие уплотнительные материалы для труб, эксплуатируемых в условиях воздействия агрессивной и биологически активной среды, должны соответствовать дополнительным требованиям, установленным проектной документацией.<br/><br/>
 
 Трубы, применяемые в канализационных коллекторах с сильно агрессивной средой, должны иметь внутреннее защитное покрытие.<br/>
-Вид и технические характеристики покрытия должны соответствовать данным, указанным в рабочих чертежах или проектной документации, и фиксироваться в заказе на изготовление труб.`,
+Вид и технические характеристики покрытия должны соответствовать данным, указанным в рабочих чертежах или проектной документации, и фиксироваться в заказе на изготовление труб.<br/><br/>
+
+<div style="text-align: center; margin: 30px 0;">
+  <button id="aggressive-explanation-btn" class="explanation-btn-gray" onclick="toggleAggressiveExplanation()">
+    <span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>
+  </button>
+</div>
+
+<div id="aggressive-explanation" class="explanation-content" style="display: none;">
+  <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
+    <h4 style="color: #1e40af; margin-top: 0;">Агрессивные среды и внутренние покрытия (простыми словами):</h4>
+    <p>Когда трубы работают в агрессивной или биологически активной среде (например, в канализационных коллекторах), к ним предъявляются дополнительные требования.</p>
+    
+    <p>Уплотнители (резиновые кольца, герметики) должны быть специально рассчитаны на такие условия и подтверждены проектной документацией.</p>
+    
+    <p>Трубы для сильно агрессивных сред обязаны иметь внутреннее защитное покрытие, которое предотвращает разрушение бетона. Вид и свойства этого покрытия (кислотостойкое, щелочестойкое и т.п.) указываются в проекте и в заказе на изготовление.</p>
+    
+    <p><strong>👉 Суть в одном предложении:</strong> для работы в агрессивных средах трубы делают с дополнительной защитой — используют специальные уплотнители и внутренние покрытия, которые задаются проектом и фиксируются в заказе.</p>
+  </div>
+</div>`,
   },
   {
     id: 'tochnost-kachestvo',
@@ -359,60 +503,277 @@ export const sections: Section[] = [
     title: 'Точность изготовления и качество поверхностей',
     keywords: ['точность','качество','поверхность','шероховатость','дефекты','допуски'],
     summary: 'Пределы отклонений размеров, требования к ровности, отсутствие раковин, наплывов и трещин.',
-    content: `Требования к точности изготовления труб
+    content: `<strong>Требования к точности изготовления труб</strong><br/><br/>
 
-Значения фактических отклонений геометрических размеров труб не должны
-превышать предельных отклонений, указанных в таблице 1.
+Значения фактических отклонений геометрических размеров труб не должны превышать предельных отклонений, указанных в таблице 1.<br/><br/>
 
-Таблица 1 - Отклонения геометрических размеров труб (в миллиметрах) (информация в виде таблице будет размещена в данном пункте) 
+<strong>Отклонения от перпендикулярности торцевых и боковой поверхностей</strong> бетонных труб всех типов и железобетонных труб типа ТФ и ТФП не должны превышать:<br/><br/>
 
-Отклонения от перпендикулярности торцевых и боковой поверхностей бетонных труб
-всех типов и железобетонных труб типа ТФ и ТФП не должны превышать:
-при диаметре условного прохода трубы 300 мм - 3 мм;
-при диаметре условного прохода трубы 400; 500 и 600 мм - 5 мм;
-при диаметре условного прохода трубы 800 и 1000 мм - 8 мм;
-при диаметре условного прохода трубы 1200; 1400; 1500; 1600 и
-при диаметре условного прохода трубы 1800 мм - 10 мм;
-при диаметре условного прохода трубы 2000; 2200; 2400 и 3000 мм -12 мм
+• при диаметре условного прохода <span data-mark-key="diameter-300" tabindex="0" role="button" aria-label="Диаметр 300 мм">300 мм</span> — <span data-mark-key="deviation-3" tabindex="0" role="button" aria-label="Отклонение 3 мм">3 мм</span>;<br/><br/>
 
-Толщину защитного слоя рабочей арматуры следует принимать по указаниям СП 28.13330.2010 Защита строительных конструкций от коррозии. (Актуализированная редакция СНиП 2.03.11-85) и СП 63.13330.2010 Бетонные и железобетонные конструкции. Основные положения. (Актуализированная редакция СНиП 52-01-2003),но не менее:
-15 мм - для арматуры, расположенной у наружной поверхности трубы;
-20 мм - для арматуры, расположенной у внутренней поверхности трубы.
-Действительные отклонения толщины защитного слоя бетона до рабочей арматуры не
-должны превышать предельных значений по ГОСТ 13015.
+• при диаметре <span data-mark-key="diameter-400-600" tabindex="0" role="button" aria-label="Диаметр 400-600 мм">400, 500 и 600 мм</span> — <span data-mark-key="deviation-5" tabindex="0" role="button" aria-label="Отклонение 5 мм">5 мм</span>;<br/><br/>
 
-При формовании труб в вертикальном положении допускается опирать
-цилиндрические арматурные каркасы на поддон формы. При этом для защиты от коррозии
-концов продольных (распределительных) арматурных стержней они должны быть по концам
-на 25-30 мм обмазаны битумной краской.
+• при диаметре <span data-mark-key="diameter-800-1000" tabindex="0" role="button" aria-label="Диаметр 800-1000 мм">800 и 1000 мм</span> — <span data-mark-key="deviation-8" tabindex="0" role="button" aria-label="Отклонение 8 мм">8 мм</span>;<br/><br/>
 
-Для обеспечения проектной толщины защитного слоя бетона до арматуры к каркасу
-трубы следует прикреплять пластмассовые или бетонные фиксаторы. Фиксаторы следует
-устанавливать по периметру каркаса на расстоянии 500-600 мм, но не менее 4 шт. под углом
-90° друг от друга, а по длине - не реже чем через 1000 мм.
+• при диаметре <span data-mark-key="diameter-1200-1800" tabindex="0" role="button" aria-label="Диаметр 1200-1800 мм">1200, 1400, 1500, 1600 и 1800 мм</span> — <span data-mark-key="deviation-10" tabindex="0" role="button" aria-label="Отклонение 10 мм">10 мм</span>;<br/><br/>
 
-Стальные фиксаторы (скобки, хомуты), предназначенные для соединения
-арматурных цилиндрических каркасов друг с другом (при армировании труб двойными
-спиральными каркасами), следует устанавливать по периметру каркасов через два шага
-продольных стержней:
-для труб полезной длиной 4,5 и 5,0 м - в 6 рядов;
-для труб полезной длиной 3,5 м - в 5 рядов;
-для труб полезной длиной 3,0 м - в 4 ряда;
-для труб полезной длиной 2,0 и 2,5 м - в 3 ряда.
+• при диаметре <span data-mark-key="diameter-2000-3000" tabindex="0" role="button" aria-label="Диаметр 2000-3000 мм">2000, 2200, 2400 и 3000 мм</span> — <span data-mark-key="deviation-12" tabindex="0" role="button" aria-label="Отклонение 12 мм">12 мм</span>.<br/><br/>
 
-Допускается применение других фиксаторов, обеспечивающих взаимную фиксацию
-каркасов без увеличения расхода стали
+<strong>Толщина защитного слоя рабочей арматуры</strong> принимается по указаниям СП 28.13330.2010 и СП 63.13330.2010, но не менее:<br/><br/>
 
-Требования к качеству поверхностей
+• <span data-mark-key="layer-15" tabindex="0" role="button" aria-label="Защитный слой 15 мм">15 мм</span> — для арматуры у наружной поверхности трубы;<br/><br/>
 
-Размеры раковин, местных наплывов и впадин на бетонных поверхностях труб и их
-торцах, а также сколов бетона ребер на торцах не должны превышать значений по таблице 2.
+• <span data-mark-key="layer-20" tabindex="0" role="button" aria-label="Защитный слой 20 мм">20 мм</span> — для арматуры у внутренней поверхности трубы.<br/><br/>
 
-Таблица 2 - Дефекты на бетонных поверхностях и торцах труб (в миллиметрах) (информация в виде таблице будет размещена в данном пункте) 
+Действительные отклонения толщины защитного слоя бетона до рабочей арматуры не должны превышать предельных значений по ГОСТ 13015.<br/><br/>
 
-Ширина раскрытия усадочных и технологических трещин не должна превышать 0,1 мм.
-Комплектность
-Предприятия-изготовители труб должны поставлять потребителю трубы типов ТБ, ТБП, ТС и ТСП в комплекте с уплотняющими кольцами из эластомерных материалов. По согласованию с потребителем допускается поставка труб без уплотняющих колец.`,
+<strong>При формовании труб в вертикальном положении</strong> допускается опирать цилиндрические арматурные каркасы на поддон формы. Для защиты концов продольных арматурных стержней от коррозии они должны быть обмазаны битумной краской на длину <span data-mark-key="coating-25-30" tabindex="0" role="button" aria-label="Покрытие 25-30 мм">25–30 мм</span>.<br/><br/>
+
+<strong>Для обеспечения проектной толщины защитного слоя бетона</strong> к каркасу трубы прикрепляют пластмассовые или бетонные фиксаторы:<br/><br/>
+
+• по периметру — через <span data-mark-key="fixator-500-600" tabindex="0" role="button" aria-label="Фиксаторы 500-600 мм">500–600 мм</span>, не менее 4 шт., под углом 90° друг к другу;<br/><br/>
+
+• по длине — не реже чем через <span data-mark-key="fixator-1000" tabindex="0" role="button" aria-label="Фиксаторы 1000 мм">1000 мм</span>.<br/><br/>
+
+<strong>Стальные фиксаторы (скобки, хомуты)</strong>, соединяющие арматурные цилиндрические каркасы (при армировании двойными спиральными каркасами), устанавливают по периметру через два шага продольных стержней:<br/><br/>
+
+• для труб длиной <span data-mark-key="length-4-5" tabindex="0" role="button" aria-label="Длина 4.5-5.0 м">4,5 и 5,0 м</span> — в <span data-mark-key="rows-6" tabindex="0" role="button" aria-label="6 рядов">6 рядов</span>;<br/><br/>
+
+• длиной <span data-mark-key="length-3-5" tabindex="0" role="button" aria-label="Длина 3.5 м">3,5 м</span> — в <span data-mark-key="rows-5" tabindex="0" role="button" aria-label="5 рядов">5 рядов</span>;<br/><br/>
+
+• длиной <span data-mark-key="length-3-0" tabindex="0" role="button" aria-label="Длина 3.0 м">3,0 м</span> — в <span data-mark-key="rows-4" tabindex="0" role="button" aria-label="4 ряда">4 ряда</span>;<br/><br/>
+
+• длиной <span data-mark-key="length-2-2-5" tabindex="0" role="button" aria-label="Длина 2.0-2.5 м">2,0 и 2,5 м</span> — в <span data-mark-key="rows-3" tabindex="0" role="button" aria-label="3 ряда">3 ряда</span>.<br/><br/>
+
+Допускается применение других фиксаторов, обеспечивающих фиксацию каркасов без увеличения расхода стали.<br/><br/>
+
+<strong>Требования к качеству поверхностей</strong><br/><br/>
+
+Размеры раковин, местных наплывов и впадин на бетонных поверхностях и торцах труб, а также сколов бетона рёбер на торцах не должны превышать значений, приведённых в таблице 2 (будет размещена в данном пункте).<br/><br/>
+
+<strong>Ширина раскрытия усадочных и технологических трещин не должна превышать <span data-mark-key="crack-0-1" tabindex="0" role="button" aria-label="Трещины 0.1 мм">0,1 мм</span>.</strong><br/><br/>
+
+<strong>Комплектность</strong><br/><br/>
+
+Предприятия-изготовители должны поставлять потребителю трубы типов <span data-mark-key="types-TB-TBP-TS-TSP" tabindex="0" role="button" aria-label="Типы ТБ, ТБП, ТС, ТСП">ТБ, ТБП, ТС и ТСП</span> в комплекте с уплотняющими кольцами из эластомерных материалов.<br/><br/>
+
+По согласованию с потребителем допускается поставка труб без уплотняющих колец.<br/><br/>
+
+<strong>Таблица 1 — Предельные отклонения от номинальных размеров труб</strong><br/><br/>
+
+<div style="overflow-x: auto; margin: 20px 0;">
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.9em; background: white; border: 2px solid #1e40af;">
+    <thead>
+      <tr style="background: #1e40af; color: white;">
+        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Диаметр условного прохода трубы, мм</th>
+        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Внутренний диаметр, мм</th>
+        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Толщина стенки, мм</th>
+        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Полезная длина, мм</th>
+        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Глубина раструба, мм</th>
+        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Диаметр конусной части фальцев, мм</th>
+        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Глубина фальцев, мм</th>
+        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Наружный диаметр втулочного конца, внутренний диаметр раструба (типов Т, ТП), мм</th>
+        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Наружный диаметр втулочного конца и буртика, внутренний диаметр раструба (типов ТБ, ТБП, ТС и ТСП), мм</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">300</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+10/-5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
+      </tr>
+      <tr style="background: #f8fafc;">
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">400</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+10/-5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">500</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+10/-5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
+      </tr>
+      <tr style="background: #f8fafc;">
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">600</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+10/-5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">800</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+10/-5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±2</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
+      </tr>
+      <tr style="background: #f8fafc;">
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">1000</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+10/-5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±2</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">1200</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+10/-5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+      </tr>
+      <tr style="background: #f8fafc;">
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">1400</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+10/-5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">1500</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+10/-5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+      </tr>
+      <tr style="background: #f8fafc;">
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">1600</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+10/-5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">1800</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+10/-5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+      </tr>
+      <tr style="background: #f8fafc;">
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">2000</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+12/-6</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">2200</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+12/-6</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
+      </tr>
+      <tr style="background: #f8fafc;">
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">2400</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+12/-6</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">3000</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+12/-6</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div style="background: #f0f8ff; border: 2px solid #1e40af; border-radius: 8px; padding: 15px; margin: 15px 0;">
+  <strong>Примечание:</strong> Знак "—" означает, что данное требование не распространяется на трубы указанного диаметра.
+</div><br/><br/>
+
+<div style="text-align: center; margin: 30px 0;">
+  <button id="quality-explanation-btn" class="explanation-btn-gray" onclick="toggleQualityExplanation()">
+    <span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>
+  </button>
+</div>
+
+<div id="quality-explanation" class="explanation-content" style="display: none;">
+  <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
+    <h4 style="color: #1e40af; margin-top: 0;">Точность изготовления и качество поверхностей (простыми словами):</h4>
+    <p>ГОСТ строго регламентирует точность изготовления железобетонных труб. Все размеры должны соответствовать заданным допускам, которые зависят от диаметра трубы.</p>
+    
+    <p><strong>Отклонения от перпендикулярности:</strong> торцы труб должны быть ровными, с допустимыми отклонениями от 3 до 12 мм в зависимости от диаметра.</p>
+    
+    <p><strong>Защитный слой бетона:</strong> арматура должна быть защищена бетоном — минимум 15 мм снаружи и 20 мм изнутри трубы.</p>
+    
+    <p><strong>Фиксаторы:</strong> для правильного расположения арматуры используют пластмассовые или бетонные фиксаторы, а для соединения каркасов — стальные скобки.</p>
+    
+    <p><strong>Качество поверхностей:</strong> не допускаются крупные раковины, наплывы и трещины шире 0,1 мм.</p>
+    
+    <p><strong>Комплектность:</strong> трубы с резиновыми уплотнителями поставляются в комплекте с кольцами.</p>
+    
+    <p><strong>👉 Главная мысль:</strong> все размеры и качество поверхностей строго контролируются, арматура защищается бетоном, а дефекты не должны превышать установленных пределов.</p>
+  </div>
+</div>`,
   },
   {
     id: 'pravila-priyomki',
@@ -420,85 +781,139 @@ export const sections: Section[] = [
     title: 'Правила приёмки',
     keywords: ['приёмка','правила приёмки','партия','сертификат','документация'],
     summary: 'Формирование партии, сопроводительная документация, объём контроля и основания для браковки.',
-    content: `Приемку труб следует проводить партиями в соответствии с требованиями ГОСТ
-13015 и настоящего стандарта. В состав партии включают трубы одного типа,
-последовательно изготовленные предприятием по одной технологии из материалов одного
-вида и качества в течение не более 1 мес.
-Число труб в партии должно быть не более, штук:
-1000 - для труб диаметром 300 мм
-500 - для труб диаметром 400-800 мм;
-200 - для труб диаметром 1000-1600 мм;
-100 - для труб диаметром 1800-2400 мм;
-50 - для труб диаметром 3000 мм.
+    content: `<strong>Приёмка труб</strong><br/><br/>
 
-Приемку продукции по показателям прочности, трещиностойкости и
-водонепроницаемости труб, а также водонепроницаемости, морозостойкости,
-водопоглощению бетона и удельной эффективной активности естественных радионуклидов в
-бетоне следует проводить по результатам периодических испытаний.
+Приёмку труб проводят партиями в соответствии с требованиями ГОСТ 13015 и настоящего стандарта.<br/><br/>
 
-Испытания труб по прочности и трещиностойкости следует проводить перед началом
-их массового производства, при внесении в них конструктивных изменений или изменений
-технологии изготовления и далее в процессе серийного производства не реже:
-- одного раза в 1 мес - для труб диаметром 300 мм;
-- одного раза в 3 мес - для труб диаметром 400-1000 мм;
-- одного раза в 6 мес - для труб диаметром свыше 1200 мм.
-Испытанию нагружением подвергают трубу или фрагмент трубы каждой марки, отобранные
-из одной партии.
-При получении неудовлетворительных результатов проводят повторное испытание на
-удвоенном числе труб. При неудовлетворительном результате повторных испытаний партию
-считают не выдержавшей испытания и трубы переводят в более низкую группу по несущей
-способности, а трубы первой группы принимают поштучно.
-В процессе серийного производства периодические испытания труб нагружением для
-контроля их прочности и трещиностойкости могут не проводиться, если осуществляется
-неразрушающий контроль этих показателей по ГОСТ 13015.
+В состав партии включают трубы одного типа, последовательно изготовленные предприятием по одной технологии, из материалов одного вида и качества, в течение не более 1 мес.<br/><br/>
 
-Периодические испытания труб на водонепроницаемость, а также бетона труб на
-водонепроницаемость и водопоглощение проводят перед началом массового производства и
-затем не реже одного раза в 3 мес.
-Испытаниям на водонепроницаемость подвергают две трубы, отобранные из одной партии.
-При получении неудовлетворительных результатов при испытании хотя бы одной трубы
-проводят повторное испытание на удвоенном числе труб. При неудовлетворительном
-результате повторных испытаний партию считают не выдержавшей испытание и трубы
-принимают поштучно.
-В процессе серийного производства труб с толщиной стенки 150 мм и более
-периодические испытания на водонепроницаемость не проводят, если обеспечиваются
-требуемые показатели по водонепроницаемости и водопоглощению бетона труб.
+<strong>Число труб в партии не должно превышать:</strong><br/><br/>
 
-Периодические испытания по показателю удельной эффективной активности
-естественных радионуклидов в бетоне проводят при первичном подборе состава бетона, а
-также при изменении качества применяемых материалов, если удельная эффективная
-активность естественных радионуклидов в новых материалах превышает соответствующие
-характеристики ранее применяемых материалов.
+• <span data-mark-key="batch-1000" tabindex="0" role="button" aria-label="Партия 1000 шт">1000 шт.</span> — для труб диаметром <span data-mark-key="diameter-300mm" tabindex="0" role="button" aria-label="Диаметр 300 мм">300 мм</span>;<br/><br/>
 
-Приемку труб по показателям прочности бетона (классу по прочности на сжатие и
-отпускной прочности), соответствия арматурных изделий рабочим чертежам, прочности
-сварных соединений, точности геометрических параметров, толщине защитного слоя бетона
-до рабочей арматуры, ширине раскрытия трещин и качеству бетонных поверхностей проводят
-по результатам приемо-сдаточных испытаний.
+• <span data-mark-key="batch-500" tabindex="0" role="button" aria-label="Партия 500 шт">500 шт.</span> — для труб диаметром <span data-mark-key="diameter-400-800mm" tabindex="0" role="button" aria-label="Диаметр 400-800 мм">400–800 мм</span>;<br/><br/>
 
-Приемку труб по показателям точности геометрических параметров, толщины
-защитного слоя бетона до рабочей арматуры, качества бетонных поверхностей, кроме
-стыковой поверхности раструба и втулочной части, ширины раскрытия трещин,
-контролируемых путем измерений, следует проводить одноступенчатым выборочным
-контролем.
+• <span data-mark-key="batch-200" tabindex="0" role="button" aria-label="Партия 200 шт">200 шт.</span> — для труб диаметром <span data-mark-key="diameter-1000-1600mm" tabindex="0" role="button" aria-label="Диаметр 1000-1600 мм">1000–1600 мм</span>;<br/><br/>
 
-Приемку труб типа ТБ по размерам и качеству стыковой поверхности раструба и
-втулочной части, наличию закладных деталей, а также правильности нанесения
-маркировочных надписей и знаков, отметок центров шелыги и лотка (если это предусмотрено
-в рабочих чертежах) для труб всех типов следует проводить по результатам сплошного
-контроля.
+• <span data-mark-key="batch-100" tabindex="0" role="button" aria-label="Партия 100 шт">100 шт.</span> — для труб диаметром <span data-mark-key="diameter-1800-2400mm" tabindex="0" role="button" aria-label="Диаметр 1800-2400 мм">1800–2400 мм</span>;<br/><br/>
 
-Каждая партия труб должна сопровождаться документом о качестве по ГОСТ 13015, в
-котором должны быть указаны:
-- наименование и адрес предприятия-изготовителя;
-- номер и дата выдачи документа;
-- номер партии;
-- наименование и марка трубы;
-- число труб каждой марки;
-- класс бетона по прочности на сжатие;
-- отпускная прочность бетона;
-- марка бетона по водонепроницаемости;
-- марка бетона на морозостойкость (по требованию заказчика).`,
+• <span data-mark-key="batch-50" tabindex="0" role="button" aria-label="Партия 50 шт">50 шт.</span> — для труб диаметром <span data-mark-key="diameter-3000mm" tabindex="0" role="button" aria-label="Диаметр 3000 мм">3000 мм</span>.<br/><br/>
+
+<strong>Периодические испытания</strong><br/><br/>
+
+Приёмку продукции по показателям прочности, трещиностойкости и водонепроницаемости труб, а также по показателям водонепроницаемости, морозостойкости, водопоглощения бетона и удельной эффективной активности естественных радионуклидов проводят на основании периодических испытаний.<br/><br/>
+
+<strong>Испытания труб по прочности и трещиностойкости:</strong><br/><br/>
+
+• перед началом массового производства;<br/><br/>
+
+• при внесении конструктивных изменений или изменений технологии изготовления;<br/><br/>
+
+• в процессе серийного производства — не реже:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;• один раз в <span data-mark-key="period-1month" tabindex="0" role="button" aria-label="Период 1 месяц">1 мес</span> — для труб диаметром <span data-mark-key="diameter-300mm-test" tabindex="0" role="button" aria-label="Диаметр 300 мм для испытаний">300 мм</span>;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;• один раз в <span data-mark-key="period-3month" tabindex="0" role="button" aria-label="Период 3 месяца">3 мес</span> — для труб диаметром <span data-mark-key="diameter-400-1000mm-test" tabindex="0" role="button" aria-label="Диаметр 400-1000 мм для испытаний">400–1000 мм</span>;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;• один раз в <span data-mark-key="period-6month" tabindex="0" role="button" aria-label="Период 6 месяцев">6 мес</span> — для труб диаметром свыше <span data-mark-key="diameter-1200mm-test" tabindex="0" role="button" aria-label="Диаметр свыше 1200 мм для испытаний">1200 мм</span>.<br/><br/>
+
+Испытанию нагружением подвергают одну трубу или фрагмент трубы каждой марки, отобранные из партии.<br/><br/>
+
+При неудовлетворительных результатах проводят повторное испытание на удвоенном числе труб. При повторном неудовлетворительном результате партию считают не выдержавшей испытания:<br/><br/>
+
+• трубы переводят в более низкую группу по несущей способности;<br/><br/>
+
+• трубы первой группы принимают поштучно.<br/><br/>
+
+В процессе серийного производства периодические испытания нагружением могут не проводиться, если осуществляется неразрушающий контроль по ГОСТ 13015.<br/><br/>
+
+<strong>Испытания на водонепроницаемость:</strong><br/><br/>
+
+• перед началом массового производства;<br/><br/>
+
+• далее — не реже одного раза в <span data-mark-key="period-3month-water" tabindex="0" role="button" aria-label="Период 3 месяца для водонепроницаемости">3 мес</span>.<br/><br/>
+
+Испытанию подвергают <span data-mark-key="test-2pipes" tabindex="0" role="button" aria-label="Испытание 2 трубы">2 трубы</span> из партии.<br/><br/>
+
+При неудовлетворительном результате хотя бы одной трубы проводят повторное испытание на удвоенном числе труб. При повторном неудовлетворительном результате партию принимают поштучно.<br/><br/>
+
+Для труб с толщиной стенки <span data-mark-key="wall-150mm" tabindex="0" role="button" aria-label="Толщина стенки 150 мм">150 мм</span> и более испытания на водонепроницаемость могут не проводиться при обеспечении требуемых показателей по водонепроницаемости и водопоглощению бетона.<br/><br/>
+
+Испытания по показателю удельной эффективной активности естественных радионуклидов проводят при первичном подборе состава бетона и при изменении качества материалов, если активность в новых материалах превышает характеристики ранее применяемых.<br/><br/>
+
+<strong>Приемо-сдаточные испытания</strong><br/><br/>
+
+Приёмку труб проводят по результатам приемо-сдаточных испытаний по показателям:<br/><br/>
+
+• класс бетона по прочности на сжатие и отпускная прочность;<br/><br/>
+
+• соответствие арматурных изделий рабочим чертежам;<br/><br/>
+
+• прочность сварных соединений;<br/><br/>
+
+• точность геометрических параметров;<br/><br/>
+
+• толщина защитного слоя бетона до рабочей арматуры;<br/><br/>
+
+• ширина раскрытия трещин;<br/><br/>
+
+• качество бетонных поверхностей.<br/><br/>
+
+Приёмку по показателям точности геометрических параметров, толщины защитного слоя, качества поверхностей (кроме стыковой поверхности раструба и втулочной части), а также ширины раскрытия трещин проводят одноступенчатым выборочным контролем.<br/><br/>
+
+<strong>Сплошной контроль</strong><br/><br/>
+
+Приёмку труб типа <span data-mark-key="type-TB" tabindex="0" role="button" aria-label="Тип ТБ">ТБ</span> проводят по результатам сплошного контроля:<br/><br/>
+
+• размеры и качество стыковой поверхности раструба и втулочной части;<br/><br/>
+
+• наличие закладных деталей;<br/><br/>
+
+• правильность нанесения маркировочных надписей и знаков;<br/><br/>
+
+• отметки центров шелыги и лотка (если это предусмотрено рабочими чертежами).<br/><br/>
+
+<strong>Сопроводительные документы</strong><br/><br/>
+
+Каждая партия труб должна сопровождаться документом о качестве по ГОСТ 13015, содержащим:<br/><br/>
+
+• наименование и адрес предприятия-изготовителя;<br/><br/>
+
+• номер и дату выдачи документа;<br/><br/>
+
+• номер партии;<br/><br/>
+
+• наименование и марку трубы;<br/><br/>
+
+• число труб каждой марки;<br/><br/>
+
+• класс бетона по прочности на сжатие;<br/><br/>
+
+• отпускную прочность бетона;<br/><br/>
+
+• марку бетона по водонепроницаемости;<br/><br/>
+
+• марку бетона по морозостойкости (по требованию заказчика).<br/><br/>
+
+<div style="text-align: center; margin: 30px 0;">
+  <button id="acceptance-explanation-btn" class="explanation-btn-gray" onclick="toggleAcceptanceExplanation()">
+    <span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>
+  </button>
+</div>
+
+<div id="acceptance-explanation" class="explanation-content" style="display: none;">
+  <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
+    <h4 style="color: #1e40af; margin-top: 0;">Правила приёмки (простыми словами):</h4>
+    <p>Приёмка железобетонных труб проводится партиями. Размер партии зависит от диаметра труб — от 50 штук для больших диаметров до 1000 штук для малых.</p>
+    
+    <p><strong>Периодические испытания:</strong> проводятся регулярно для проверки прочности, трещиностойкости и водонепроницаемости. Частота зависит от диаметра труб — от 1 раза в месяц до 1 раза в полгода.</p>
+    
+    <p><strong>Приёмка:</strong> включает проверку прочности бетона, качества арматуры, точности размеров, толщины защитного слоя и отсутствия трещин.</p>
+    
+    <p><strong>Контроль:</strong> может быть выборочным или сплошным, в зависимости от типа труб и контролируемых параметров.</p>
+    
+    <p><strong>Документация:</strong> каждая партия сопровождается документом о качестве с указанием всех характеристик труб.</p>
+    
+    <p><strong>👉 Главная мысль:</strong> приёмка труб — это многоступенчатый процесс контроля качества, который включает периодические испытания, проверку всех параметров и обязательное документирование результатов.</p>
+  </div>
+</div>`,
   },
   {
     id: 'metody-ispytaniy',
@@ -506,159 +921,208 @@ export const sections: Section[] = [
     title: 'Методы испытаний и контроля',
     keywords: ['испытания','контроль','методы','гидроиспытания','прочность','жёсткость'],
     summary: 'Процедуры проверки прочности, герметичности, водонепроницаемости и геометрических параметров.',
-    content: `Испытания труб нагружением для контроля их прочности и трещиностойкости следует
-проводить в соответствии с требованиями ГОСТ 8829 и настоящего стандарта по схемам (см.
-рисунки В.1 и В.2 приложения В) на нагрузки, указанные в рабочих чертежах.
+    content: `<strong>Методы испытаний и контроля качества труб</strong><br/><br/>
 
-Испытаниям подвергают одну трубу или вырезанный из ее цилиндрической части
-фрагмент длиной не менее 1 м. Для испытаний может быть использована труба, прошедшая
-гидростатическое испытание на водонепроницаемость.
+<strong>Испытания на прочность и трещиностойкость</strong><br/><br/>
 
-Трубы устанавливают горизонтально на два деревянных бруса, уложенных
-параллельно продольной оси трубы на неподвижное основание. Сверху на трубу вдоль ее
-верхней образующей цилиндрической части кладут деревянный брус и на него устанавливают
-стальную траверсу. Размеры деревянного бруса - по таблице 3.
+Испытания труб нагружением проводят в соответствии с <span data-mark-key="gost-8829" tabindex="0" role="button" aria-label="ГОСТ 8829">ГОСТ 8829</span> по схемам, указанным в рабочих чертежах.<br/><br/>
 
-Таблица 3 - Размеры деревянного бруса для испытания труб (в миллиметрах) (информация в виде таблице будет размещена в данном пункте) 
+Испытаниям подвергают одну трубу или фрагмент длиной не менее <span data-mark-key="length-1m" tabindex="0" role="button" aria-label="1 м">1 м</span>.<br/><br/>
 
-Диаметр условного прохода трубы / ширина и высота бруса
-300 – 25
-300-500 – 50
-600-1000 - 80
-1200-1600 – 100
-2000-3000 - 120
-С целью равномерной передачи нагрузки на трубу под верхний и нижний брусы
-укладывают выравнивающий слой цементного раствора или полосы листовой резины
-толщиной 20-30 мм. Резиновые полосы должны иметь твердость по Шору от 45 до 60 единиц.
-Жесткость траверсы должна быть такой, чтобы ее прогиб при максимальном нагружении
-по балочной схеме не превышал 1/720 длины испытуемой трубы.
+<strong>Установка труб для испытаний</strong><br/><br/>
 
-Силовые установки и измерительные приборы, установленные на стенде, должны
-обеспечивать возможность измерения нагрузки на трубу с погрешностью ±3%.
+Трубы устанавливают горизонтально на два деревянных бруса, параллельных продольной оси трубы.<br/><br/>
 
-Нагружение трубы при испытании проводят ступенями, равными 0,1 контрольной
-нагрузки. На каждой ступени нагрузку наращивают равномерно в течение 2-3 мин и
-выдерживают трубу под этой нагрузкой в течение 10 мин.
-При достижении нагрузки, равной контрольной (по проверке трещиностойкости), измеряют
-наибольшую ширину раскрытия трещин при помощи лупы по ГОСТ 25706, микроскопа и
-других оптических приборов с погрешностью измерения ±0,01 мм.
+Сверху на трубу кладут деревянный брус и устанавливают стальную траверсу.<br/><br/>
 
-Прочность железобетонных труб оценивают по значению нагрузки, вызывающей одно
-из следующих состояний, свидетельствующих о том, что сопротивление трубы действию
-данной нагрузки исчерпано:
-- текучесть спиральной арматуры, характеризующаяся шириной раскрытия трещин более
-1,5 мм в трубах с двойным каркасом и более 2 мм - в трубах с одинарным каркасом;
-- раздробление бетона от сжатия;
-- разрыв спиральной арматуры;
-- расслоение стенки трубы (отрыв арматуры в шелыге или лотке).
+<strong>Таблица 3 — Размеры деревянного бруса для испытания труб</strong><br/><br/>
 
-Прочность трубы считают обеспеченной, если ее разрушение произошло при
-значении нагрузки, равном или превышающем значение контрольной нагрузки по проверке
-прочности, указанном в рабочих чертежах.
+<div style="background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px; padding: 15px; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<tr style="background: #e9ecef;">
+<th style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><strong>Диаметр условного прохода трубы, мм</strong></th>
+<th style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><strong>Ширина и высота бруса, мм</strong></th>
+</tr>
+<tr>
+<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="diameter-300" tabindex="0" role="button" aria-label="300 мм">300</span></td>
+<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="size-25" tabindex="0" role="button" aria-label="25 мм">25</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="diameter-300-500" tabindex="0" role="button" aria-label="300-500 мм">300-500</span></td>
+<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="size-50" tabindex="0" role="button" aria-label="50 мм">50</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="diameter-600-1000" tabindex="0" role="button" aria-label="600-1000 мм">600-1000</span></td>
+<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="size-80" tabindex="0" role="button" aria-label="80 мм">80</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="diameter-1200-1600" tabindex="0" role="button" aria-label="1200-1600 мм">1200-1600</span></td>
+<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="size-100" tabindex="0" role="button" aria-label="100 мм">100</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="diameter-2000-3000" tabindex="0" role="button" aria-label="2000-3000 мм">2000-3000</span></td>
+<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="size-120" tabindex="0" role="button" aria-label="120 мм">120</span></td>
+</tr>
+</table>
+</div>
 
-Трещиностойкость трубы считается обеспеченной, если при контрольной нагрузке
-значение измеренной ширины раскрытия трещин не превышает контрольного значения,
-указанного в рабочих чертежах.
-Для труб, в которых не допускаются появление трещин в условиях эксплуатации,
-трещиностойкость считается обеспеченной, если значение нагрузки при появлении первой
-трещины равна значению контрольной нагрузки по проверке трещиностойкости или
-превышает ее.
+<strong>Выравнивающий слой</strong><br/><br/>
 
-Испытания труб на водонепроницаемость проводят гидростатическим методом на горизонтальных стендах или на сопротивление просачиванию воды сквозь стенки при вертикальном положении труб.
-Гидростатические испытания на горизонтальных стендах
+Под верхний и нижний брусы укладывают выравнивающий слой цементного раствора или резиновые полосы толщиной <span data-mark-key="thickness-20-30" tabindex="0" role="button" aria-label="20-30 мм">20-30 мм</span>.<br/><br/>
 
-Гидростатические испытания труб типов ТБ, ТБП на водонепроницаемость проводят по
-схеме, приведенной на рисунке Г.2 приложения Г, на установках, имеющих заглушки со
-стыками, конструкция которых аналогична конструкции стыкового соединения, принятого для
-труб указанных типов, а также уплотняющие кольца или прокладки, входящие в комплект
-поставки труб.
-Испытание труб типов Т, ТП, ТФП проводят на установках с плоскими заглушками по
-схеме, приведенной на рисунке Г.2 приложения Г.
-Испытанию на водонепроницаемость подвергают две трубы.
-Трубу герметически закрывают с обоих концов заглушками и наполняют водой, не допуская
-образования "воздушных мешков". Затем в течение 1 мин равномерно повышают давление в
-установке до 0,05 МПа и выдерживают трубу под давлением в течение 10 мин.
-Давление определяют на уровне шелыги трубы манометром, обеспечивающим точность
-измерения не более 0,005 МПа.
-До испытания допускается замачивать трубы в течение 48 ч в ванне или на испытательном
-стенде с водой.
-Трубы считают выдержавшими испытание на водонепроницаемость, если к моменту его
-окончания не будет обнаружено просачивания воды сквозь стенку в виде течи или отдельных
-капель, а для труб типов ТБ, ТБП - также просачивания воды под уплотнительным кольцом.
-Появление сырых пятен на наружной поверхности трубы не является основанием для ее
-выбраковки.
+Твёрдость резиновых полос по Шору — от <span data-mark-key="shore-45-60" tabindex="0" role="button" aria-label="45 до 60 единиц">45 до 60 единиц</span>.<br/><br/>
 
-Испытания труб в вертикальном положении на просачивание воды сквозь стенку
-проводят для труб длиной 2,0-3,5 м, армированных одинарным каркасом, при отсутствии
-горизонтального стенда для гидростатических испытаний и при условии согласования такого
-метода с проектировщиком и заказчиком.
-Испытание проводят (для раструбных труб раструбом вниз) по 4.8 ГОСТ 24547 
-Промежутки времени, через которое проверяют состояние трубы, наполненной водой, и
-испытательное гидравлическое давление, должны соответствовать таблице 4.
+Прогиб траверсы при максимальном нагружении не должен превышать <span data-mark-key="deflection-1-720" tabindex="0" role="button" aria-label="1/720 длины трубы">1/720 длины испытуемой трубы</span>.<br/><br/>
 
-Таблица 4 - Показатели труб для испытания на водонепроницаемость (информация в виде таблице будет размещена в данном пункте) 
+<strong>Требования к измерительным приборам</strong><br/><br/>
 
-Уровень стенок трубы Верх трубы Середина трубы Низ трубы
-Испытательное гидравлическое давление, кПа
-(кгс/см ), для труб длиной :
-2,0 м 1,0 (0,01) 10,0 (0,10) 20,0 (0,20)
-2,5 м 1,0 (0,01) 12,5 (0,125) 25,0 (0,25)
-3,0 м 1,0 (0,01) 15,0 (0,15) 30,0 (0,30)
-3,5 м 1,0 (0,01) 17,5 (0,175) 35,0 (0,35)
-Время выдержки, ч 48 36 24
-Трубы считают выдержавшими испытания на сопротивление просачиванию воды сквозь
-стенки, если после выдержки воды под испытательным гидравлическим давлением,
-указанным в таблице 4, на их наружной поверхности не будут обнаружены потеки или
-вытекание воды.
-Если при испытаниях труб на наружной поверхности одной из них будут обнаружены
-потеки или вытекание воды под давлением, испытания повторяют в соответствии с 6.4.
+Погрешность измерения нагрузки — не более <span data-mark-key="error-3-percent" tabindex="0" role="button" aria-label="±3%">±3%</span>.<br/><br/>
 
-Прочность бетона на сжатие определяют по ГОСТ 10180 на образцах, изготовленных
-вибрированием из бетонной смеси рабочего состава.
-Для оценки прочности бетона труб результаты испытания вибрированных образцов
-умножают на переводной коэффициент, значение которого устанавливают опытным путем
-при организации производства труб, изменении технологии их изготовления, но не реже
-одного раза в полтора года.
+<strong>Процедура нагружения</strong><br/><br/>
 
-Прочность бетона на сжатие допускается определять ультразвуковым методом
-по ГОСТ 17624 или механическими методами неразрушающего контроля по ГОСТ 22690.
+Нагружение проводят ступенями, равными <span data-mark-key="step-0-1" tabindex="0" role="button" aria-label="0,1 контрольной нагрузки">0,1 контрольной нагрузки</span>.<br/><br/>
 
-Водонепроницаемость бетона определяют по ГОСТ 12730.0 и ГОСТ 12730.5 на
-образцах, изготовленных вибрированием из бетонной смеси рабочего состава.
+На каждой ступени нагрузку наращивают равномерно в течение <span data-mark-key="time-2-3min" tabindex="0" role="button" aria-label="2-3 мин">2-3 мин</span> и выдерживают <span data-mark-key="hold-10min" tabindex="0" role="button" aria-label="10 мин">10 мин</span>.<br/><br/>
 
-Водопоглощение бетона труб определяют по ГОСТ 12730.0 и ГОСТ 12730.3 на
-образцах, отобранных из разных мест трубы. Образцы должны быть без видимых трещин.
+<strong>Измерение трещин</strong><br/><br/>
 
-Морозостойкость бетона определяют по ГОСТ 10060.0, ГОСТ 10060.1 или ГОСТ
-10060.2на образцах, изготовленных вибрированием из бетонной смеси рабочего состава.
+Ширину раскрытия трещин измеряют с погрешностью <span data-mark-key="crack-error-0-01" tabindex="0" role="button" aria-label="±0,01 мм">±0,01 мм</span>.<br/><br/>
 
-Удельную эффективную активность естественных радионуклидов в бетоне определяют
-по ГОСТ 30108.
+<strong>Критерии прочности</strong><br/><br/>
 
-Контроль сварных соединений арматурных изделий проводят по ГОСТ 10922.
+Прочность оценивают по следующим состояниям:<br/><br/>
 
-Размеры и положение арматурных каркасов, а также толщину защитного слоя бетона
-до арматуры определяют по ГОСТ 17625 и ГОСТ 22904 в местах, указанных в рабочих
-чертежах.
+• Текучесть спиральной арматуры — трещины более <span data-mark-key="crack-1-5" tabindex="0" role="button" aria-label="1,5 мм">1,5 мм</span> (двойной каркас) или более <span data-mark-key="crack-2" tabindex="0" role="button" aria-label="2 мм">2 мм</span> (одинарный каркас)<br/><br/>
 
-Геометрические размеры, отклонения от перпендикулярности торцевых плоскостей,
-качество поверхностей труб проверяют методами, установленными ГОСТ 26433.0 и ГОСТ
-26433.1, при этом:
-- толщину стенок труб измеряют по торцам труб в четырех местах по двум взаимно
-перпендикулярным диаметрам;
-- наружные диаметры втулочного конца раструбных труб и их буртика, внутренний диаметр
-и глубину раструба измеряют по двум взаимно перпендикулярным диаметрам
-(максимальному и минимальному). Внутренний диаметр раструба измеряют в средней части
-его глубины ;
-- внутренний диаметр цилиндрической части трубы измеряют по двум взаимно
-перпендикулярным диаметрам - максимальному и минимальному - на расстоянии 0,2-0,4 м от
-торца трубы;
-- диаметры и глубину фальцев в фальцевых трубах измеряют по двум взаимно
-перпендикулярным диаметрам. Диаметры фальцев измеряют в середине их глубины , ;
-- высоту буртика труб измеряют в четырех местах по двум взаимно перпендикулярным
-диаметрам;
-- длину трубы измеряют по четырем образующим в двух диаметрально противоположных
-сечениях.`,
+• Раздробление бетона от сжатия<br/><br/>
+
+• Разрыв спиральной арматуры<br/><br/>
+
+• Расслоение стенки трубы<br/><br/>
+
+<strong>Критерии трещиностойкости</strong><br/><br/>
+
+Трещиностойкость обеспечена, если при контрольной нагрузке ширина трещин не превышает контрольного значения.<br/><br/>
+
+Для труб без трещин в эксплуатации — нагрузка при появлении первой трещины должна быть не менее контрольной.<br/><br/>
+
+<strong>Испытания на водонепроницаемость</strong><br/><br/>
+
+<strong>Гидростатические испытания на горизонтальных стендах</strong><br/><br/>
+
+Испытанию подвергают <span data-mark-key="test-2-pipes" tabindex="0" role="button" aria-label="две трубы">две трубы</span>.<br/><br/>
+
+Трубу герметически закрывают заглушками и наполняют водой без воздушных мешков.<br/><br/>
+
+Давление повышают до <span data-mark-key="pressure-0-05" tabindex="0" role="button" aria-label="0,05 МПа">0,05 МПа</span> в течение 1 мин и выдерживают <span data-mark-key="hold-10min-water" tabindex="0" role="button" aria-label="10 мин">10 мин</span>.<br/><br/>
+
+Точность измерения давления — не более <span data-mark-key="pressure-error-0-005" tabindex="0" role="button" aria-label="0,005 МПа">0,005 МПа</span>.<br/><br/>
+
+Допускается замачивание труб в течение <span data-mark-key="soak-48h" tabindex="0" role="button" aria-label="48 ч">48 ч</span>.<br/><br/>
+
+<strong>Испытания в вертикальном положении</strong><br/><br/>
+
+Проводят для труб длиной <span data-mark-key="length-2-3-5" tabindex="0" role="button" aria-label="2,0-3,5 м">2,0-3,5 м</span> с одинарным каркасом.<br/><br/>
+
+<strong>Таблица 4 — Показатели для испытания на водонепроницаемость</strong><br/><br/>
+
+<div style="background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px; padding: 15px; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse; font-size: 0.9em;">
+<tr style="background: #e9ecef;">
+<th style="border: 1px solid #dee2e6; padding: 6px; text-align: center;"><strong>Уровень стенок трубы</strong></th>
+<th style="border: 1px solid #dee2e6; padding: 6px; text-align: center;"><strong>Испытательное давление, кПа (кгс/см²)</strong></th>
+<th style="border: 1px solid #dee2e6; padding: 6px; text-align: center;"><strong>Время выдержки, ч</strong></th>
+</tr>
+<tr>
+<td style="border: 1px solid #dee2e6; padding: 6px; text-align: center;">Верх трубы</td>
+<td style="border: 1px solid #dee2e6; padding: 6px; text-align: center;">1,0 (0,01)</td>
+<td style="border: 1px solid #dee2e6; padding: 6px; text-align: center;"><span data-mark-key="time-48h" tabindex="0" role="button" aria-label="48 ч">48</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #dee2e6; padding: 6px; text-align: center;">Середина трубы</td>
+<td style="border: 1px solid #dee2e6; padding: 6px; text-align: center;">10,0-17,5 (0,10-0,175)</td>
+<td style="border: 1px solid #dee2e6; padding: 6px; text-align: center;"><span data-mark-key="time-36h" tabindex="0" role="button" aria-label="36 ч">36</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #dee2e6; padding: 6px; text-align: center;">Низ трубы</td>
+<td style="border: 1px solid #dee2e6; padding: 6px; text-align: center;">20,0-35,0 (0,20-0,35)</td>
+<td style="border: 1px solid #dee2e6; padding: 6px; text-align: center;"><span data-mark-key="time-24h" tabindex="0" role="button" aria-label="24 ч">24</span></td>
+</tr>
+</table>
+</div>
+
+<strong>Контроль свойств бетона</strong><br/><br/>
+
+<strong>Прочность на сжатие</strong><br/><br/>
+
+Определяют по <span data-mark-key="gost-10180" tabindex="0" role="button" aria-label="ГОСТ 10180">ГОСТ 10180</span> на образцах, изготовленных вибрированием.<br/><br/>
+
+Результаты умножают на переводной коэффициент, устанавливаемый опытным путём.<br/><br/>
+
+Допускается ультразвуковой метод (<span data-mark-key="gost-17624" tabindex="0" role="button" aria-label="ГОСТ 17624">ГОСТ 17624</span>) или механические методы (<span data-mark-key="gost-22690" tabindex="0" role="button" aria-label="ГОСТ 22690">ГОСТ 22690</span>).<br/><br/>
+
+<strong>Водонепроницаемость</strong><br/><br/>
+
+Определяют по <span data-mark-key="gost-12730-0" tabindex="0" role="button" aria-label="ГОСТ 12730.0">ГОСТ 12730.0</span> и <span data-mark-key="gost-12730-5" tabindex="0" role="button" aria-label="ГОСТ 12730.5">ГОСТ 12730.5</span>.<br/><br/>
+
+<strong>Водопоглощение</strong><br/><br/>
+
+Определяют по <span data-mark-key="gost-12730-3" tabindex="0" role="button" aria-label="ГОСТ 12730.3">ГОСТ 12730.3</span> на образцах без видимых трещин.<br/><br/>
+
+<strong>Морозостойкость</strong><br/><br/>
+
+Определяют по <span data-mark-key="gost-10060" tabindex="0" role="button" aria-label="ГОСТ 10060">ГОСТ 10060</span>.<br/><br/>
+
+<strong>Радиационная активность</strong><br/><br/>
+
+Определяют по <span data-mark-key="gost-30108" tabindex="0" role="button" aria-label="ГОСТ 30108">ГОСТ 30108</span>.<br/><br/>
+
+<strong>Контроль арматуры</strong><br/><br/>
+
+Сварные соединения контролируют по <span data-mark-key="gost-10922" tabindex="0" role="button" aria-label="ГОСТ 10922">ГОСТ 10922</span>.<br/><br/>
+
+Размеры и положение арматурных каркасов определяют по <span data-mark-key="gost-17625" tabindex="0" role="button" aria-label="ГОСТ 17625">ГОСТ 17625</span> и <span data-mark-key="gost-22904" tabindex="0" role="button" aria-label="ГОСТ 22904">ГОСТ 22904</span>.<br/><br/>
+
+<strong>Геометрический контроль</strong><br/><br/>
+
+Проводят по <span data-mark-key="gost-26433" tabindex="0" role="button" aria-label="ГОСТ 26433">ГОСТ 26433</span>:<br/><br/>
+
+• Толщину стенок измеряют в четырёх местах по двум взаимно перпендикулярным диаметрам<br/><br/>
+
+• Наружные диаметры втулочного конца и буртика — по двум взаимно перпендикулярным диаметрам<br/><br/>
+
+• Внутренний диаметр цилиндрической части — на расстоянии <span data-mark-key="distance-0-2-0-4" tabindex="0" role="button" aria-label="0,2-0,4 м">0,2-0,4 м</span> от торца<br/><br/>
+
+• Диаметры и глубину фальцев — по двум взаимно перпендикулярным диаметрам<br/><br/>
+
+• Высоту буртика — в четырёх местах<br/><br/>
+
+• Длину трубы — по четырём образующим в двух диаметрально противоположных сечениях<br/><br/>
+
+<div style="text-align: center; margin: 30px 0;">
+  <button id="testing-explanation-btn" class="explanation-btn-gray" onclick="toggleTestingExplanation()">
+    <span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>
+  </button>
+</div>
+
+<div id="testing-explanation" class="explanation-content" style="display: none;">
+  <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
+    <h4 style="color: #1e40af; margin-top: 0;">Методы испытаний и контроля (простыми словами):</h4>
+    <p><strong>Испытания на прочность:</strong> трубу кладут горизонтально на деревянные брусья и нагружают до разрушения. Размеры брусьев зависят от диаметра трубы (от 25 мм для труб 300 мм до 120 мм для труб 2000-3000 мм).</p>
+    
+    <p><strong>Процедура нагружения:</strong> нагрузку увеличивают ступенями по 10% от контрольной, на каждой ступени выдерживают 10 минут. Измеряют трещины с точностью до 0,01 мм.</p>
+    
+    <p><strong>Критерии разрушения:</strong> текучесть арматуры (трещины более 1,5-2 мм), раздробление бетона, разрыв арматуры или расслоение стенки.</p>
+    
+    <p><strong>Испытания на водонепроницаемость:</strong> трубу заполняют водой и создают давление 0,05 МПа на 10 минут. Испытывают две трубы. Не должно быть протечек или капель.</p>
+    
+    <p><strong>Контроль бетона:</strong> прочность определяют на образцах, водонепроницаемость и морозостойкость — по соответствующим ГОСТам. Арматуру проверяют на качество сварных соединений.</p>
+    
+    <p><strong>Геометрический контроль:</strong> измеряют все размеры труб с высокой точностью — толщину стенок, диаметры, длину, качество поверхностей.</p>
+    
+    <p><strong>👉 Главная мысль:</strong> качество железобетонных труб проверяется комплексно — на прочность, водонепроницаемость, геометрию и свойства материалов. Все испытания проводятся по строгим методикам с точными приборами.</p>
+  </div>
+</div>`,
   },
   {
     id: 'transport-hranenie-garantii',
@@ -666,62 +1130,105 @@ export const sections: Section[] = [
     title: 'Транспортирование, хранение и гарантии изготовителя',
     keywords: ['транспортирование','транспортировка','перевозка','хранение','складирование','гарантии','поставка'],
     summary: 'Требования к безопасной перевозке, складированию на объекте и гарантийным обязательствам.',
-    content: `Трубы транспортируют и хранят в соответствии с требованиями ГОСТ 13015 и настоящего стандарта.
+    content: `<strong>Транспортирование, хранение и гарантии изготовителя</strong><br/><br/>
 
-Транспортирование и хранение труб осуществляют в рабочем положении, укладывая
-на инвентарные прокладки или опоры другого типа из дерева или других материалов,
-обеспечивающих сохранность труб.
+<strong>Общие требования</strong><br/><br/>
 
-Перекатка труб допускается только по подкладкам с условием, чтобы трубы не опирались
-раструбами и втулочными концами на подкладки или на пол.
+Трубы транспортируют и хранят в соответствии с требованиями <span data-mark-key="gost-13015" tabindex="0" role="button" aria-label="ГОСТ 13015">ГОСТ 13015</span> и настоящего стандарта.<br/><br/>
 
-Трубы полезной длиной 2,5-3,5 м и менее допускается транспортировать и хранить в
-вертикальном положении (при обеспечении их устойчивости).
+<strong>Положение труб при транспортировании и хранении</strong><br/><br/>
 
-Трубы следует хранить на складе готовой продукции в штабелях или контейнерах,
-рассортированными по маркам. Число рядов труб в штабеле по высоте в зависимости от
-диаметра условного прохода должно быть не более указанного в таблице 5. 
+Транспортирование и хранение труб осуществляют в <span data-mark-key="working-position" tabindex="0" role="button" aria-label="рабочем положении">рабочем положении</span>, укладывая на инвентарные прокладки или опоры из дерева или других материалов.<br/><br/>
 
-Трубы в рядах укладывают так, чтобы раструбы двух смежных рядов были обращены в разные стороны.
+Перекатка труб допускается только по подкладкам с условием, чтобы трубы не опирались раструбами и втулочными концами на подкладки или на пол.<br/><br/>
 
-Таблица 5 - Число рядов труб в штабеле в зависимости от их диаметра (информация в виде таблице будет размещена в данном пункте) 
+Трубы длиной <span data-mark-key="length-2-5-3-5" tabindex="0" role="button" aria-label="2,5-3,5 м">2,5-3,5 м</span> и менее допускается транспортировать и хранить в вертикальном положении (при обеспечении их устойчивости).<br/><br/>
 
-Диаметр условного прохода трубы, мм Число рядов труб в штабеле, шт.
-300, 400 5
-500, 600 4
-800-1200 3
-1400-2400 2
-3000 1
+<strong>Хранение на складе</strong><br/><br/>
 
-Под нижний ряд штабеля по плотному выровненному основанию должны быть уложены
-параллельно две подкладки - каждая на расстоянии 0,2 длины трубы от ее торцов.
-Конструкция подкладок должна препятствовать раскатыванию нижнего ряда труб и
-соприкосновению раструбов труб с полом склада.
+Трубы хранят на складе готовой продукции в штабелях или контейнерах, рассортированными по маркам.<br/><br/>
 
-Погрузку, транспортирование и разгрузку труб следует проводить, соблюдая меры,
-исключающие возможность их повреждения.
+Число рядов труб в штабеле по высоте зависит от диаметра условного прохода (см. таблицу 5).<br/><br/>
 
-Автомобили или железнодорожный подвижной состав, предназначенные для перевозки
-труб в горизонтальном положении, должны быть оборудованы седлообразными подкладками,
-исключающими возможность смещения и соприкосновения труб между собой или опирания
-раструба на дно транспортного средства.
+Трубы в рядах укладывают так, чтобы раструбы двух смежных рядов были обращены в разные стороны.<br/><br/>
 
-Гарантии изготовителя
+<strong>Таблица 5 — Число рядов труб в штабеле</strong><br/><br/>
 
-Предприятие-изготовитель гарантирует соответствие поставляемых труб требованиям
-настоящего стандарта при соблюдении транспортными организациями правил
-транспортирования, а потребителем - условий применения и хранения, установленных
-настоящим стандартом.
+<div style="background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px; padding: 15px; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<tr style="background: #e9ecef;">
+<th style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><strong>Диаметр условного прохода трубы, мм</strong></th>
+<th style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><strong>Число рядов труб в штабеле, шт.</strong></th>
+</tr>
+<tr>
+<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="diameter-300-400" tabindex="0" role="button" aria-label="300, 400 мм">300, 400</span></td>
+<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="rows-5" tabindex="0" role="button" aria-label="5 рядов">5</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="diameter-500-600" tabindex="0" role="button" aria-label="500, 600 мм">500, 600</span></td>
+<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="rows-4" tabindex="0" role="button" aria-label="4 ряда">4</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="diameter-800-1200" tabindex="0" role="button" aria-label="800-1200 мм">800-1200</span></td>
+<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="rows-3" tabindex="0" role="button" aria-label="3 ряда">3</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="diameter-1400-2400" tabindex="0" role="button" aria-label="1400-2400 мм">1400-2400</span></td>
+<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="rows-2" tabindex="0" role="button" aria-label="2 ряда">2</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="diameter-3000" tabindex="0" role="button" aria-label="3000 мм">3000</span></td>
+<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="rows-1" tabindex="0" role="button" aria-label="1 ряд">1</span></td>
+</tr>
+</table>
+</div>
 
-Гарантийный срок хранения и эксплуатации труб, в течение которого изготовитель
-обязан устранять обнаруженные потребителем скрытые дефекты, устанавливается не менее
-двух лет с даты отгрузки потребителю, но не более 2,5 лет с даты изготовления.
+<strong>Укладка подкладок</strong><br/><br/>
 
-При поставке труб с отпускной прочностью бетона на сжатие менее значения,
-соответствующего проектному классу бетона, изготовитель гарантирует достижение бетоном
-проектной прочности на сжатие, определяемой по результатам испытаний контрольных
-образцов, хранившихся в нормальных условиях по ГОСТ 10180 в возрасте 28 дней с момента
-изготовления.`,
+Под нижний ряд штабеля по плотному выровненному основанию укладывают параллельно две подкладки — каждая на расстоянии <span data-mark-key="distance-0-2" tabindex="0" role="button" aria-label="0,2 длины трубы">0,2 длины трубы</span> от её торцов.<br/><br/>
+
+Конструкция подкладок должна препятствовать раскатыванию нижнего ряда труб и соприкосновению раструбов с полом склада.<br/><br/>
+
+<strong>Требования к транспортированию</strong><br/><br/>
+
+Погрузку, транспортирование и разгрузку труб проводят, соблюдая меры, исключающие возможность их повреждения.<br/><br/>
+
+Автомобили или железнодорожный подвижной состав должны быть оборудованы <span data-mark-key="saddle-pads" tabindex="0" role="button" aria-label="седлообразными подкладками">седлообразными подкладками</span>, исключающими смещение и соприкосновение труб между собой.<br/><br/>
+
+<strong>Гарантии изготовителя</strong><br/><br/>
+
+Предприятие-изготовитель гарантирует соответствие труб требованиям стандарта при соблюдении правил транспортирования и условий применения.<br/><br/>
+
+<strong>Гарантийный срок</strong><br/><br/>
+
+Гарантийный срок хранения и эксплуатации труб — не менее <span data-mark-key="warranty-2-years" tabindex="0" role="button" aria-label="2 лет">двух лет</span> с даты отгрузки, но не более <span data-mark-key="warranty-2-5-years" tabindex="0" role="button" aria-label="2,5 лет">2,5 лет</span> с даты изготовления.<br/><br/>
+
+В течение этого срока изготовитель обязан устранять обнаруженные потребителем скрытые дефекты.<br/><br/>
+
+<strong>Гарантия прочности бетона</strong><br/><br/>
+
+При поставке труб с отпускной прочностью бетона менее проектного класса, изготовитель гарантирует достижение проектной прочности в возрасте <span data-mark-key="age-28-days" tabindex="0" role="button" aria-label="28 дней">28 дней</span> (по ГОСТ 10180).<br/><br/>
+
+<div style="text-align: center; margin: 30px 0;">
+  <button id="transport-explanation-btn" class="explanation-btn-gray" onclick="toggleTransportExplanation()">
+    <span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>
+  </button>
+</div>
+
+<div id="transport-explanation" class="explanation-content" style="display: none;">
+  <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
+    <h4 style="color: #1e40af; margin-top: 0;">Транспортирование, хранение и гарантии изготовителя (простыми словами):</h4>
+    <p><strong>Транспортирование:</strong> трубы перевозят в горизонтальном положении на специальных подкладках, чтобы не повредить раструбы. Короткие трубы (до 3,5 м) можно перевозить вертикально.</p>
+    
+    <p><strong>Хранение:</strong> трубы складывают в штабели по определённым правилам — количество рядов зависит от диаметра трубы (от 1 ряда для труб 3000 мм до 5 рядов для труб 300-400 мм). Раструбы соседних рядов должны смотреть в разные стороны.</p>
+    
+    <p><strong>Подкладки:</strong> под нижний ряд кладут две подкладки на расстоянии 20% от длины трубы от каждого торца, чтобы трубы не раскатывались и раструбы не касались пола.</p>
+    
+    <p><strong>Гарантии:</strong> производитель даёт гарантию на 2 года с момента отгрузки (но не более 2,5 лет с изготовления). Если бетон не достиг нужной прочности при отгрузке, производитель гарантирует, что он наберёт прочность через 28 дней.</p>
+    
+    <p><strong>👉 Главная мысль:</strong> правильная транспортировка и хранение труб — залог их сохранности. Производитель даёт гарантию на 2 года, но только при соблюдении всех правил перевозки и хранения.</p>
+  </div>
+</div>`,
   },
   {
     id: 'gde-priobresti',
@@ -729,12 +1236,72 @@ export const sections: Section[] = [
     title: 'Где приобрести трубы (производители)',
     keywords: ['производители','поставщики','купить','где приобрести','ценa','заказ'],
     summary: 'Справочная информация о производителях и поставщиках, критерии выбора и запрос коммерческого предложения.',
-    content: `Современное предприятие, производитель железобетонных труб по ГОСТ 6482-2011
-ООО «Завод железобетонных труб ОДИНЕЦ»
-Три производственные площадки расположенные в Московской области
-Отдел сбыта, купить железобетонные трубы: (495) 640-04-12, (495) 960-14-40 
-Электронная почта: zakaz@zavod-odinec.ru
-Адрес сайта: www.zavod-odinec.ru`,
+    content: `<strong>Производители железобетонных труб по ГОСТ 6482-2011</strong><br/><br/>
+
+<strong>ООО «Завод железобетонных труб ОДИНЕЦ»</strong><br/><br/>
+
+Современное предприятие, специализирующееся на производстве железобетонных труб в соответствии с требованиями <span data-mark-key="gost-6482" tabindex="0" role="button" aria-label="ГОСТ 6482-2011">ГОСТ 6482-2011</span>.<br/><br/>
+
+<strong>Производственные мощности</strong><br/><br/>
+
+• <span data-mark-key="production-sites" tabindex="0" role="button" aria-label="Три производственные площадки">Три производственные площадки</span> в Московской области<br/><br/>
+
+• Современное оборудование для производства труб всех типов<br/><br/>
+
+• Полный цикл производства от сырья до готовой продукции<br/><br/>
+
+<strong>Контактная информация</strong><br/><br/>
+
+<strong>Отдел сбыта:</strong><br/><br/>
+
+Телефоны: <span data-mark-key="phone-1" tabindex="0" role="button" aria-label="(495) 640-04-12">(495) 640-04-12</span>, <span data-mark-key="phone-2" tabindex="0" role="button" aria-label="(495) 960-14-40">(495) 960-14-40</span><br/><br/>
+
+Email: <span data-mark-key="email" tabindex="0" role="button" aria-label="zakaz@zavod-odinec.ru">zakaz@zavod-odinec.ru</span><br/><br/>
+
+Сайт: <span data-mark-key="website" tabindex="0" role="button" aria-label="www.zavod-odinec.ru">www.zavod-odinec.ru</span><br/><br/>
+
+<strong>Ассортимент продукции</strong><br/><br/>
+
+• Трубы железобетонные безнапорные всех типов<br/><br/>
+
+• Трубы напорные железобетонные<br/><br/>
+
+• Соединительные детали и комплектующие<br/><br/>
+
+• Специальные трубы для агрессивных сред<br/><br/>
+
+<strong>Условия поставки</strong><br/><br/>
+
+• Доставка по всей России<br/><br/>
+
+• Возможность самовывоза с производственных площадок<br/><br/>
+
+• Гибкие условия оплаты<br/><br/>
+
+• Техническая поддержка и консультации<br/><br/>
+
+<div style="text-align: center; margin: 30px 0;">
+  <button id="purchase-explanation-btn" class="explanation-btn-gray" onclick="togglePurchaseExplanation()">
+    <span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>
+  </button>
+</div>
+
+<div id="purchase-explanation" class="explanation-content" style="display: none;">
+  <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
+    <h4 style="color: #1e40af; margin-top: 0;">Где приобрести трубы (простыми словами):</h4>
+    <p><strong>Основной производитель:</strong> ООО «Завод железобетонных труб ОДИНЕЦ» — современное предприятие с тремя производственными площадками в Московской области.</p>
+    
+    <p><strong>Что производит:</strong> полный ассортимент железобетонных труб по ГОСТ 6482-2011 — безнапорные, напорные, для агрессивных сред, а также соединительные детали.</p>
+    
+    <p><strong>Как связаться:</strong> по телефонам (495) 640-04-12, (495) 960-14-40, email zakaz@zavod-odinec.ru или через сайт www.zavod-odinec.ru.</p>
+    
+    <p><strong>Условия:</strong> доставка по всей России, самовывоз, гибкая оплата, техническая поддержка.</p>
+    
+    <p><strong>Преимущества:</strong> собственное производство, контроль качества, соответствие всем требованиям ГОСТ, опыт работы на рынке.</p>
+    
+    <p><strong>👉 Главная мысль:</strong> для покупки качественных железобетонных труб по ГОСТ 6482-2011 обращайтесь к проверенному производителю ООО «Завод железобетонных труб ОДИНЕЦ» — у них есть всё необходимое для вашего проекта.</p>
+  </div>
+</div>`,
   },
   {
     id: 'normativnye-ssylki',
@@ -742,76 +1309,116 @@ export const sections: Section[] = [
     title: 'Нормативные ссылки',
     keywords: ['нормативные ссылки','стандарты','ГОСТ','СНиП','СП','документы'],
     summary: 'Перечень использованных нормативных документов, на которые ссылается стандарт.',
-    content: `В настоящем стандарте использованы ссылки на следующие межгосударственные
-стандарты:
-ГОСТ 12.1.005-88 Система стандартов безопасности труда. Общие санитарно-гигиенические
-требования к воздуху рабочей зоны
-ГОСТ 12.1.007-76 Система стандартов безопасности труда. Вредные вещества. Классификация и
-общие требования безопасности
-ГОСТ 12.1.019-79* Система стандартов безопасности труда. Электробезопасность. Общие
-требования и номенклатура видов защиты
-________________
-* На территории Российской Федерации документ не действует. ДействуетГОСТ Р 12.1.019-2009 ,
-здесь и далее по тексту. - Примечание изготовителя базы данных.
-ГОСТ 12.1.030-81 Система стандартов безопасности труда. Электробезопасность. Защитное
-заземление, зануление
-ГОСТ 12.2.003-91 Система стандартов безопасности труда. Оборудование производственное.
-Общие требования безопасности
-ГОСТ 12.3.002-75 Система стандартов безопасности труда. Процессы производственные. Общие
-требования безопасности
-ГОСТ 12.4.021-75 Система стандартов безопасности труда. Системы вентиляционные. Общие
-требования
-ГОСТ 17.2.3.02-78 Охрана природы. Атмосфера. Правила установления допустимых выбросов
-вредных веществ промышленными предприятиями
-ГОСТ 2874-82 (Р 51232-98) Вода питьевая. Гигиенические требования и контроль за качеством
-ГОСТ 5781-82 Сталь горячекатаная для армирования железобетонных конструкций.
-Технические условия
-ГОСТ 6727-80 Проволока из низкоуглеродистой стали холоднотянутая для армирования
-железобетонных конструкций. Технические условия
-ГОСТ 8267-93 Щебень и гравий из плотных горных пород для строительных работ.
-Технические условия
-ГОСТ 8736-93 Песок для строительных работ. Технические условия
-ГОСТ 8829-94 Изделия строительные железобетонные и бетонные заводского изготовления.
-Методы испытаний нагружением. Правила оценки прочности, жесткости
-трещиностойкости
-ГОСТ 10060.0-95 Бетоны. Методы определения морозостойкости. Общие требования
-ГОСТ 10060.1-95 Бетоны. Базовый метод определения морозостойкости
-ГОСТ 10060.2-95 Бетоны. Ускоренные методы определения морозостойкости при многократном
-замораживании и оттаивании
-ГОСТ 10178-85 Портландцемент и шлакопортландцемент. Технические условия
-ГОСТ 10180-90 Бетоны. Методы определения прочности по контрольным образцам
-ГОСТ 10922-90 Арматурные и закладные изделия сварные, соединения сварные арматуры и
-закладных изделий железобетонных конструкций. Общие технические условия
-ГОСТ 12730.0-78 Бетоны. Общие требования к методам определения плотности, влажности,
-водопоглощения, пористости и водонепроницаемости
-ГОСТ 12730.3-78 Бетоны. Метод определения водопоглощения
-ГОСТ 12730.5-84 Бетоны. Методы определения водонепроницаемости
-ГОСТ 13015-2003 Изделия железобетонные и бетонные для строительства. Общие технические
-требования. Правила приемки, маркировки, транспортирования и хранения
-ГОСТ 14098-91 Соединения сварные арматуры и закладных изделий железобетонных
-конструкций. Типы, конструкции и размеры
-ГОСТ 17624-87 Бетоны. Ультразвуковой метод определения прочности
-ГОСТ 17625-83 Конструкции и изделия железобетонные. Радиационный метод определения
-толщины защитного слоя бетона, размеров и расположения арматуры
-ГОСТ 18105-86 (ГОСТ 18105-2010) Бетоны. Правила контроля прочности
-ГОСТ 22690-88 Бетоны. Определение прочности механическими методами неразрушающего
-контроля
-ГОСТ 22733-2002 Грунты. Метод лабораторного определения максимальной плотности
-ГОСТ 22904-93 Конструкции железобетонные. Магнитный метод определения толщины
-защитного слоя бетона и расположения арматуры
-ГОСТ 23009-78 Конструкции и изделия бетонные и железобетонные сборные. Условные
-обозначения (марки)
-ГОСТ 23732-79 (ГОСТ 23732-2011) Вода для бетонов и растворов. Технические условия
-ГОСТ 24547-81 Звенья железобетонные водопропускных труб под насыпи автомобильных и
-железных дорог. Общие технические условия
-ГОСТ 25706-83 Лупы. Типы, основные параметры. Общие технические требования
-ГОСТ 26433.0-85 Система обеспечения точности геометрических параметров в строительстве.
-Правила выполнения измерений. Общие положения
-ГОСТ 26433.1-89 Система обеспечения точности геометрических параметров в строительстве.
-Правила выполнения измерений. Элементы заводского изготовления
-ГОСТ 26633-91 Бетоны тяжелые и мелкозернистые. Технические условия
-ГОСТ 30108-94 Материалы и изделия строительные. Определение удельной эффективной
-активности естественных радионуклидов`,
+    content: `<strong>Ссылки на межгосударственные стандарты</strong><br/><br/>
+
+В настоящем стандарте использованы ссылки на следующие документы:<br/><br/>
+
+<span data-mark-key="gost-12-1-005" tabindex="0" role="button" aria-label="ГОСТ 12.1.005-88">ГОСТ 12.1.005-88</span> — Система стандартов безопасности труда. Общие санитарно-гигиенические требования к воздуху рабочей зоны.<br/><br/>
+
+<span data-mark-key="gost-12-1-007" tabindex="0" role="button" aria-label="ГОСТ 12.1.007-76">ГОСТ 12.1.007-76</span> — Система стандартов безопасности труда. Вредные вещества. Классификация и общие требования безопасности.<br/><br/>
+
+<span data-mark-key="gost-12-1-019" tabindex="0" role="button" aria-label="ГОСТ 12.1.019-79">ГОСТ 12.1.019-79*</span> — Система стандартов безопасности труда. Электробезопасность. Общие требования и номенклатура видов защиты.<br/><br/>
+
+На территории РФ не действует. Действует <span data-mark-key="gost-r-12-1-019" tabindex="0" role="button" aria-label="ГОСТ Р 12.1.019-2009">ГОСТ Р 12.1.019-2009</span>.<br/><br/>
+
+<span data-mark-key="gost-12-1-030" tabindex="0" role="button" aria-label="ГОСТ 12.1.030-81">ГОСТ 12.1.030-81</span> — Система стандартов безопасности труда. Электробезопасность. Защитное заземление, зануление.<br/><br/>
+
+<span data-mark-key="gost-12-2-003" tabindex="0" role="button" aria-label="ГОСТ 12.2.003-91">ГОСТ 12.2.003-91</span> — Система стандартов безопасности труда. Оборудование производственное. Общие требования безопасности.<br/><br/>
+
+<span data-mark-key="gost-12-3-002" tabindex="0" role="button" aria-label="ГОСТ 12.3.002-75">ГОСТ 12.3.002-75</span> — Система стандартов безопасности труда. Процессы производственные. Общие требования.<br/><br/>
+
+<span data-mark-key="gost-12-4-021" tabindex="0" role="button" aria-label="ГОСТ 12.4.021-75">ГОСТ 12.4.021-75</span> — Система стандартов безопасности труда. Системы вентиляционные. Общие требования.<br/><br/>
+
+<span data-mark-key="gost-17-2-3-02" tabindex="0" role="button" aria-label="ГОСТ 17.2.3.02-78">ГОСТ 17.2.3.02-78</span> — Охрана природы. Атмосфера. Правила установления допустимых выбросов вредных веществ.<br/><br/>
+
+<span data-mark-key="gost-2874" tabindex="0" role="button" aria-label="ГОСТ 2874-82">ГОСТ 2874-82 (Р 51232-98)</span> — Вода питьевая. Гигиенические требования и контроль качества.<br/><br/>
+
+<span data-mark-key="gost-5781" tabindex="0" role="button" aria-label="ГОСТ 5781-82">ГОСТ 5781-82</span> — Сталь горячекатаная для армирования железобетонных конструкций.<br/><br/>
+
+<span data-mark-key="gost-6727" tabindex="0" role="button" aria-label="ГОСТ 6727-80">ГОСТ 6727-80</span> — Проволока из низкоуглеродистой стали для армирования железобетонных конструкций.<br/><br/>
+
+<span data-mark-key="gost-8267" tabindex="0" role="button" aria-label="ГОСТ 8267-93">ГОСТ 8267-93</span> — Щебень и гравий из плотных горных пород для строительных работ.<br/><br/>
+
+<span data-mark-key="gost-8736" tabindex="0" role="button" aria-label="ГОСТ 8736-93">ГОСТ 8736-93</span> — Песок для строительных работ.<br/><br/>
+
+<span data-mark-key="gost-8829" tabindex="0" role="button" aria-label="ГОСТ 8829-94">ГОСТ 8829-94</span> — Изделия строительные железобетонные и бетонные. Методы испытаний нагружением.<br/><br/>
+
+<span data-mark-key="gost-10060-0" tabindex="0" role="button" aria-label="ГОСТ 10060.0-95">ГОСТ 10060.0-95</span> — Бетоны. Методы определения морозостойкости. Общие требования.<br/><br/>
+
+<span data-mark-key="gost-10060-1" tabindex="0" role="button" aria-label="ГОСТ 10060.1-95">ГОСТ 10060.1-95</span> — Бетоны. Базовый метод определения морозостойкости.<br/><br/>
+
+<span data-mark-key="gost-10060-2" tabindex="0" role="button" aria-label="ГОСТ 10060.2-95">ГОСТ 10060.2-95</span> — Бетоны. Ускоренные методы определения морозостойкости.<br/><br/>
+
+<span data-mark-key="gost-10178" tabindex="0" role="button" aria-label="ГОСТ 10178-85">ГОСТ 10178-85</span> — Портландцемент и шлакопортландцемент.<br/><br/>
+
+<span data-mark-key="gost-10180" tabindex="0" role="button" aria-label="ГОСТ 10180-90">ГОСТ 10180-90</span> — Бетоны. Методы определения прочности по контрольным образцам.<br/><br/>
+
+<span data-mark-key="gost-10922" tabindex="0" role="button" aria-label="ГОСТ 10922-90">ГОСТ 10922-90</span> — Арматурные и закладные изделия сварные. Общие технические условия.<br/><br/>
+
+<span data-mark-key="gost-12730-0" tabindex="0" role="button" aria-label="ГОСТ 12730.0-78">ГОСТ 12730.0-78</span> — Бетоны. Общие требования к методам определения плотности, влажности, водопоглощения, пористости и водонепроницаемости.<br/><br/>
+
+<span data-mark-key="gost-12730-3" tabindex="0" role="button" aria-label="ГОСТ 12730.3-78">ГОСТ 12730.3-78</span> — Бетоны. Метод определения водопоглощения.<br/><br/>
+
+<span data-mark-key="gost-12730-5" tabindex="0" role="button" aria-label="ГОСТ 12730.5-84">ГОСТ 12730.5-84</span> — Бетоны. Методы определения водонепроницаемости.<br/><br/>
+
+<span data-mark-key="gost-13015" tabindex="0" role="button" aria-label="ГОСТ 13015-2003">ГОСТ 13015-2003</span> — Изделия железобетонные и бетонные для строительства. Общие технические требования.<br/><br/>
+
+<span data-mark-key="gost-14098" tabindex="0" role="button" aria-label="ГОСТ 14098-91">ГОСТ 14098-91</span> — Соединения сварные арматуры и закладных изделий железобетонных конструкций.<br/><br/>
+
+<span data-mark-key="gost-17624" tabindex="0" role="button" aria-label="ГОСТ 17624-87">ГОСТ 17624-87</span> — Бетоны. Ультразвуковой метод определения прочности.<br/><br/>
+
+<span data-mark-key="gost-17625" tabindex="0" role="button" aria-label="ГОСТ 17625-83">ГОСТ 17625-83</span> — Конструкции и изделия железобетонные. Радиационный метод определения толщины защитного слоя бетона.<br/><br/>
+
+<span data-mark-key="gost-18105" tabindex="0" role="button" aria-label="ГОСТ 18105-86">ГОСТ 18105-86 (18105-2010)</span> — Бетоны. Правила контроля прочности.<br/><br/>
+
+<span data-mark-key="gost-22690" tabindex="0" role="button" aria-label="ГОСТ 22690-88">ГОСТ 22690-88</span> — Бетоны. Определение прочности механическими методами неразрушающего контроля.<br/><br/>
+
+<span data-mark-key="gost-22733" tabindex="0" role="button" aria-label="ГОСТ 22733-2002">ГОСТ 22733-2002</span> — Грунты. Метод лабораторного определения максимальной плотности.<br/><br/>
+
+<span data-mark-key="gost-22904" tabindex="0" role="button" aria-label="ГОСТ 22904-93">ГОСТ 22904-93</span> — Конструкции железобетонные. Магнитный метод определения толщины защитного слоя бетона.<br/><br/>
+
+<span data-mark-key="gost-23009" tabindex="0" role="button" aria-label="ГОСТ 23009-78">ГОСТ 23009-78</span> — Конструкции и изделия бетонные и железобетонные сборные. Условные обозначения.<br/><br/>
+
+<span data-mark-key="gost-23732" tabindex="0" role="button" aria-label="ГОСТ 23732-79">ГОСТ 23732-79 (23732-2011)</span> — Вода для бетонов и растворов.<br/><br/>
+
+<span data-mark-key="gost-24547" tabindex="0" role="button" aria-label="ГОСТ 24547-81">ГОСТ 24547-81</span> — Звенья железобетонные водопропускных труб.<br/><br/>
+
+<span data-mark-key="gost-25706" tabindex="0" role="button" aria-label="ГОСТ 25706-83">ГОСТ 25706-83</span> — Лупы. Типы, основные параметры.<br/><br/>
+
+<span data-mark-key="gost-26433-0" tabindex="0" role="button" aria-label="ГОСТ 26433.0-85">ГОСТ 26433.0-85</span> — Система обеспечения точности геометрических параметров. Общие положения.<br/><br/>
+
+<span data-mark-key="gost-26433-1" tabindex="0" role="button" aria-label="ГОСТ 26433.1-89">ГОСТ 26433.1-89</span> — Система обеспечения точности геометрических параметров. Элементы заводского изготовления.<br/><br/>
+
+<span data-mark-key="gost-26633" tabindex="0" role="button" aria-label="ГОСТ 26633-91">ГОСТ 26633-91</span> — Бетоны тяжёлые и мелкозернистые.<br/><br/>
+
+<span data-mark-key="gost-30108" tabindex="0" role="button" aria-label="ГОСТ 30108-94">ГОСТ 30108-94</span> — Материалы и изделия строительные. Определение удельной активности радионуклидов.<br/><br/>
+
+<div style="text-align: center; margin: 30px 0;">
+  <button id="references-explanation-btn" class="explanation-btn-gray" onclick="toggleReferencesExplanation()">
+    <span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>
+  </button>
+</div>
+
+<div id="references-explanation" class="explanation-content" style="display: none;">
+  <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
+    <h4 style="color: #1e40af; margin-top: 0;">Нормативные ссылки (простыми словами):</h4>
+    <p>ГОСТ 6482-2011 ссылается на множество других стандартов, которые регламентируют различные аспекты производства железобетонных труб:</p>
+    
+    <p><strong>Безопасность труда:</strong> стандарты по охране труда, электробезопасности, вентиляции и защите от вредных веществ.</p>
+    
+    <p><strong>Материалы:</strong> стандарты на цемент, песок, щебень, арматурную сталь и воду для бетонов.</p>
+    
+    <p><strong>Методы испытаний:</strong> стандарты по определению прочности, морозостойкости, водонепроницаемости бетона.</p>
+    
+    <p><strong>Контроль качества:</strong> стандарты по приёмке, маркировке, транспортированию и хранению изделий.</p>
+    
+    <p><strong>Измерения:</strong> стандарты по определению геометрических параметров, толщины защитного слоя бетона.</p>
+    
+    <p><strong>Экология:</strong> стандарты по охране природы и радиационной безопасности.</p>
+    
+    <p><strong>👉 Главная мысль:</strong> ГОСТ 6482-2011 не существует изолированно — он опирается на целую систему взаимосвязанных стандартов, которые обеспечивают качество, безопасность и экологичность производства железобетонных труб.</p>
+  </div>
+</div>`,
   },
   {
     id: 'trebovaniya-bezopasnosti-eko',
@@ -819,53 +1426,106 @@ ________________
     title: 'Требования безопасности и охраны окружающей среды',
     keywords: ['безопасность','охрана окружающей среды','экология','охрана труда'],
     summary: 'Меры безопасности при производстве, транспортировании и монтаже, а также экологические требования.',
-    content: `Трубы, изготовленные по настоящему стандарту, относятся к пожаро-взрывобезопасным строительным изделиям.
+    content: `<strong>Требования безопасности, охраны труда и экологии</strong><br/><br/>
 
-Трубы из тяжелого бетона относят к 4-му классу опасности (вещества малоопасные) по ГОСТ 12.1.007.
+<strong>Общие положения</strong><br/><br/>
 
-В процессе производства труб предельно-допустимая концентрация (ПДК) в воздухе рабочей зоны:
-- портландцемент (силикатосодержащие пыли) - 8,0 мг/м ;
-- песок (диоксид кремния-кварц) - 1,0 мг/м.
+Трубы, изготовленные по настоящему стандарту, относятся к пожаро- и взрывобезопасным строительным изделиям.<br/><br/>
 
-В условиях хранения и эксплуатации трубы не выделяют в окружающую среду токсичных веществ и не оказывают при непосредственном контакте вредного действия на организм человека, работа с ними не требует применения специальных средств индивидуальной защиты.
+Трубы из тяжёлого бетона относятся к <span data-mark-key="class-4" tabindex="0" role="button" aria-label="4-й класс опасности">4-му классу опасности</span> (вещества малоопасные) по ГОСТ 12.1.007.<br/><br/>
 
-Санитарный контроль содержания вредных веществ в воздухе рабочей зоны определяют по специальным методикам и осуществляют в соответствии с санитарными правилами СП 1.1.1058-2001 Организация и проведение производственного контроля за соблюдением санитарных правил и выполнением санитарно-эпидемиологических мероприятий
+<strong>Содержание вредных веществ в воздухе рабочей зоны</strong><br/><br/>
 
-Санитарно-химические исследования воздуха проводят в соответствии с ГОСТ 12.1.005,ГОСТ 12.1.007 и ГН 2.2.5.1313-2003 Предельно-допустимые концентрации (ПДК) загрязняющих веществ в воздухе рабочей зоны
+Портландцемент (силикатосодержащие пыли) — не более <span data-mark-key="pdk-8" tabindex="0" role="button" aria-label="ПДК 8.0 мг/м³">8,0 мг/м³</span>.<br/><br/>
 
-Оптимальные параметры микроклимата на рабочих местах в производственных помещениях должны соответствовать значениям, приведенным в СанПиН 2.2.4.548-96 Гигиенические требования к микроклимату производственных помещений.
+Песок (диоксид кремния — кварц) — не более <span data-mark-key="pdk-1" tabindex="0" role="button" aria-label="ПДК 1.0 мг/м³">1,0 мг/м³</span>.<br/><br/>
 
-Помещения, в которых ведутся работы по производству труб, должны быть оборудованы приточно-вытяжной вентиляцией в соответствии с СП 60.13330.2010 Отопление, вентиляция и кондиционирование , ГОСТ 12.4.021, содержание выделяемых вредных веществ в концентрациях, не превышающих предельно-
-допустимые концентрации (ПДК) в воздухе рабочей зоны производственных помещений - в
-соответствии с требованиями ГН 2.2.5.1313-2003 Предельно-допустимые концентрации (ПДК) загрязняющих веществ в воздухе рабочей зоны. Помещения должны быть обеспечены питьевой водой
-по ГОСТ 23732 и оснащены в соответствии с требованиями СП 131.13330.2012 «СНиП 23-01-99*. Строительная климатология».
+<strong>Условия хранения и эксплуатации труб</strong><br/><br/>
 
-Производственное оборудование должно соответствовать требованиям ГОСТ
-12.2.003,ГОСТ 12.3.002, ГОСТ 12.1.019, ГОСТ 12.1.030 и [14].
+В процессе хранения и эксплуатации трубы не выделяют токсичных веществ.<br/><br/>
 
-Эквивалентный уровень звука в производственных помещениях должен быть не более
-80 дБА в соответствии с требованиями СН 2.2.4/2.1.8.562-96 Шум на рабочих местах, в помещениях, общественных зданиях и на территории жилой застройки
-5.9 Нормы радиационной безопасности должны соответствовать требованиям СанПиН 2.6.1.2523-2009 Нормы радиационной безопасности (НРБ-99/2009) Радиационно-гигиеническую оценку материалов, применяемых для изготовления труб, проводят по документам о качестве, выдаваемым предприятиями-поставщиками этих материалов.
+При контакте с человеком трубы не оказывают вредного воздействия.<br/><br/>
 
-Удельная эффективная активность естественных радионуклидов в трубах, применяемых в
-пределах населенных пунктов и зон перспективной застройки, должна быть не более 740
-Бк/кг, а применяемых вне населенных пунктов - не более 1350 Бк/кг.
+Работа с трубами не требует применения специальных средств индивидуальной защиты.<br/><br/>
 
-К работе по производству труб допускаются лица не моложе 18 лет, прошедшие
-предварительный медицинский осмотр, а также профессиональную подготовку, вводный
-инструктаж по технике безопасности труда, производственной санитарии. Периодичность
-проведения инструктажей на рабочих местах и проверка знания рабочих по охране труда и
-безопасному ведению процессов - не реже одного раза в 6 мес.
+<strong>Санитарный контроль</strong><br/><br/>
 
-С целью охраны атмосферного воздуха от загрязнения должен быть организован
-постоянный контроль соблюдения предельно допустимого выброса и концентрации (ПДВ и
-ПДК) вредных веществ, утвержденных в установленном порядке в соответствии с ГОСТ
-17.2.3.02 и ГН 2.1.6.1338-2003 Предельно-допустимые концентрации (ПДК) загрязняющих веществ в атмосферном воздухе населенных мест
+Контроль содержания вредных веществ проводят по <span data-mark-key="sp-1-1-1058" tabindex="0" role="button" aria-label="СП 1.1.1058-2001">СП 1.1.1058-2001</span>.<br/><br/>
 
-Производство труб методом вибропрессования, радиального прессования и вибрирования является безотходным. При производстве труб методом центрифугирования должны быть приняты меры по утилизации шлама, например, добавлением обезвоженного его в состав бетонной смеси.
+Санитарно-химические исследования воздуха — по ГОСТ 12.1.005, ГОСТ 12.1.007 и <span data-mark-key="gn-2-2-5-1313" tabindex="0" role="button" aria-label="ГН 2.2.5.1313-2003">ГН 2.2.5.1313-2003</span>.<br/><br/>
 
-При организации производства изготовитель должен выполнить весь комплекс
-приемочных испытаний, изложенных в настоящем стандарте`,
+Оптимальные параметры микроклимата в производственных помещениях — по <span data-mark-key="sanpin-2-2-4-548" tabindex="0" role="button" aria-label="СанПиН 2.2.4.548-96">СанПиН 2.2.4.548-96</span>.<br/><br/>
+
+<strong>Вентиляция и водоснабжение</strong><br/><br/>
+
+Производственные помещения должны быть оборудованы приточно-вытяжной вентиляцией (<span data-mark-key="sp-60-13330" tabindex="0" role="button" aria-label="СП 60.13330.2010">СП 60.13330.2010</span>, ГОСТ 12.4.021).<br/><br/>
+
+Концентрация вредных веществ не должна превышать ПДК (<span data-mark-key="gn-2-2-5-1313-2" tabindex="0" role="button" aria-label="ГН 2.2.5.1313-2003">ГН 2.2.5.1313-2003</span>).<br/><br/>
+
+Помещения должны быть обеспечены питьевой водой по ГОСТ 23732.<br/><br/>
+
+Требования к климату помещений — по <span data-mark-key="sp-131-13330" tabindex="0" role="button" aria-label="СП 131.13330.2012">СП 131.13330.2012</span> (СНиП 23-01-99).<br/><br/>
+
+<strong>Производственное оборудование</strong><br/><br/>
+
+Должно соответствовать ГОСТ 12.2.003, ГОСТ 12.3.002, ГОСТ 12.1.019, ГОСТ 12.1.030.<br/><br/>
+
+Уровень звука — не более <span data-mark-key="sound-80" tabindex="0" role="button" aria-label="80 дБА">80 дБА</span> (<span data-mark-key="sn-2-2-4-562" tabindex="0" role="button" aria-label="СН 2.2.4/2.1.8.562-96">СН 2.2.4/2.1.8.562-96</span>).<br/><br/>
+
+<strong>Нормы радиационной безопасности</strong><br/><br/>
+
+Устанавливаются по <span data-mark-key="sanpin-2-6-1-2523" tabindex="0" role="button" aria-label="СанПиН 2.6.1.2523-2009">СанПиН 2.6.1.2523-2009</span> (НРБ-99/2009).<br/><br/>
+
+Радиационно-гигиеническая оценка материалов проводится по документам качества поставщиков.<br/><br/>
+
+Допустимая удельная активность радионуклидов:<br/><br/>
+
+• в пределах населённых пунктов — не более <span data-mark-key="activity-740" tabindex="0" role="button" aria-label="740 Бк/кг">740 Бк/кг</span>;<br/><br/>
+
+• вне населённых пунктов — не более <span data-mark-key="activity-1350" tabindex="0" role="button" aria-label="1350 Бк/кг">1350 Бк/кг</span>.<br/><br/>
+
+<strong>Требования к персоналу</strong><br/><br/>
+
+К работе допускаются лица не моложе <span data-mark-key="age-18" tabindex="0" role="button" aria-label="18 лет">18 лет</span>, прошедшие медосмотр, профподготовку и вводный инструктаж по технике безопасности.<br/><br/>
+
+Периодичность инструктажей и проверок знаний по охране труда — не реже одного раза в <span data-mark-key="period-6months" tabindex="0" role="button" aria-label="6 месяцев">6 месяцев</span>.<br/><br/>
+
+<strong>Охрана атмосферного воздуха</strong><br/><br/>
+
+Должен быть организован постоянный контроль за соблюдением ПДВ и ПДК вредных веществ (ГОСТ 17.2.3.02, <span data-mark-key="gn-2-1-6-1338" tabindex="0" role="button" aria-label="ГН 2.1.6.1338-2003">ГН 2.1.6.1338-2003</span>).<br/><br/>
+
+<strong>Особенности производства</strong><br/><br/>
+
+Производство труб методом вибропрессования, радиального прессования и вибрирования является безотходным.<br/><br/>
+
+При производстве методом центрифугирования должен обеспечиваться сбор и утилизация шлама (например, добавлением обезвоженного шлама в бетонную смесь).<br/><br/>
+
+<strong>Контроль качества</strong><br/><br/>
+
+При организации производства изготовитель обязан выполнить весь комплекс приёмочных испытаний, предусмотренный настоящим стандартом.<br/><br/>
+
+<div style="text-align: center; margin: 30px 0;">
+  <button id="safety-explanation-btn" class="explanation-btn-gray" onclick="toggleSafetyExplanation()">
+    <span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>
+  </button>
+</div>
+
+<div id="safety-explanation" class="explanation-content" style="display: none;">
+  <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
+    <h4 style="color: #1e40af; margin-top: 0;">Требования безопасности и охраны окружающей среды (простыми словами):</h4>
+    <p><strong>Безопасность изделий:</strong> железобетонные трубы относятся к пожаро- и взрывобезопасным изделиям 4-го класса опасности (малоопасные).</p>
+    
+    <p><strong>Защита работников:</strong> в производственных помещениях контролируется содержание пыли (цемент — до 8 мг/м³, песок — до 1 мг/м³), уровень шума (не более 80 дБА), обеспечивается вентиляция и питьевая вода.</p>
+    
+    <p><strong>Радиационная безопасность:</strong> трубы проверяются на содержание радионуклидов — до 740 Бк/кг в населённых пунктах и до 1350 Бк/кг вне их.</p>
+    
+    <p><strong>Требования к персоналу:</strong> к работе допускаются лица от 18 лет, прошедшие медосмотр и инструктаж. Повторные инструктажи — каждые 6 месяцев.</p>
+    
+    <p><strong>Экология:</strong> производство является безотходным, контролируются выбросы в атмосферу, обеспечивается утилизация отходов.</p>
+    
+    <p><strong>👉 Главная мысль:</strong> производство труб должно быть безопасным для работников и окружающей среды, с контролем всех вредных факторов и соблюдением санитарных норм.</p>
+  </div>
+</div>`,
   },
 ];
 
