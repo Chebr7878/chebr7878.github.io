@@ -143,6 +143,183 @@
           btn.innerHTML = '<span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>';
         }
       }
+      
+      function toggleAggressiveExplanation() {
+        const content = document.getElementById('aggressive-explanation');
+        const btn = document.getElementById('aggressive-explanation-btn');
+        
+        if (content.style.display === 'none' || content.style.display === '') {
+          content.style.display = 'block';
+          btn.innerHTML = '<span style="font-weight: bold; color: white;">СКРЫТЬ</span>';
+        } else {
+          content.style.display = 'none';
+          btn.innerHTML = '<span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>';
+        }
+      }
+      
+      function toggleQualityExplanation() {
+        const content = document.getElementById('quality-explanation');
+        const btn = document.getElementById('quality-explanation-btn');
+        
+        if (content.style.display === 'none' || content.style.display === '') {
+          content.style.display = 'block';
+          btn.innerHTML = '<span style="font-weight: bold; color: white;">СКРЫТЬ</span>';
+        } else {
+          content.style.display = 'none';
+          btn.innerHTML = '<span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>';
+        }
+      }
+      
+      function toggleAcceptanceExplanation() {
+        const content = document.getElementById('acceptance-explanation');
+        const btn = document.getElementById('acceptance-explanation-btn');
+        
+        if (content.style.display === 'none' || content.style.display === '') {
+          content.style.display = 'block';
+          btn.innerHTML = '<span style="font-weight: bold; color: white;">СКРЫТЬ</span>';
+        } else {
+          content.style.display = 'none';
+          btn.innerHTML = '<span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>';
+        }
+      }
+      
+      function toggleTestingExplanation() {
+        const content = document.getElementById('testing-explanation');
+        const btn = document.getElementById('testing-explanation-btn');
+        
+        if (content.style.display === 'none' || content.style.display === '') {
+          content.style.display = 'block';
+          btn.innerHTML = '<span style="font-weight: bold; color: white;">СКРЫТЬ</span>';
+        } else {
+          content.style.display = 'none';
+          btn.innerHTML = '<span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>';
+        }
+      }
+      
+      function toggleTransportExplanation() {
+        const content = document.getElementById('transport-explanation');
+        const btn = document.getElementById('transport-explanation-btn');
+        
+        if (content.style.display === 'none' || content.style.display === '') {
+          content.style.display = 'block';
+          btn.innerHTML = '<span style="font-weight: bold; color: white;">СКРЫТЬ</span>';
+        } else {
+          content.style.display = 'none';
+          btn.innerHTML = '<span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>';
+        }
+      }
+      
+      function togglePurchaseExplanation() {
+        const content = document.getElementById('purchase-explanation');
+        const btn = document.getElementById('purchase-explanation-btn');
+        
+        if (content.style.display === 'none' || content.style.display === '') {
+          content.style.display = 'block';
+          btn.innerHTML = '<span style="font-weight: bold; color: white;">СКРЫТЬ</span>';
+        } else {
+          content.style.display = 'none';
+          btn.innerHTML = '<span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>';
+        }
+      }
+      
+      function toggleReferencesExplanation() {
+        const content = document.getElementById('references-explanation');
+        const btn = document.getElementById('references-explanation-btn');
+        
+        if (content.style.display === 'none' || content.style.display === '') {
+          content.style.display = 'block';
+          btn.innerHTML = '<span style="font-weight: bold; color: white;">СКРЫТЬ</span>';
+        } else {
+          content.style.display = 'none';
+          btn.innerHTML = '<span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>';
+        }
+      }
+      
+      function toggleSafetyExplanation() {
+        const content = document.getElementById('safety-explanation');
+        const btn = document.getElementById('safety-explanation-btn');
+        
+        if (content.style.display === 'none' || content.style.display === '') {
+          content.style.display = 'block';
+          btn.innerHTML = '<span style="font-weight: bold; color: white;">СКРЫТЬ</span>';
+        } else {
+          content.style.display = 'none';
+          btn.innerHTML = '<span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>';
+        }
+      }
+      
+      // Функции для интерактивности маркировки
+      function highlightGroup(groupNumber) {
+        // Подсвечиваем группу в маркировке
+        const markGroups = document.querySelectorAll('.mark-group');
+        markGroups.forEach(group => {
+          if (group.getAttribute('data-group') == groupNumber) {
+            group.style.backgroundColor = '#ffeb3b';
+            group.style.color = '#000';
+          }
+        });
+        
+        // Подсвечиваем соответствующую расшифровку
+        const explanationGroups = document.querySelectorAll('.explanation-group');
+        explanationGroups.forEach(group => {
+          if (group.getAttribute('data-group') == groupNumber) {
+            group.style.backgroundColor = '#ffeb3b';
+            group.style.color = '#000';
+          }
+        });
+      }
+      
+      function unhighlightGroup() {
+        // Убираем подсветку с маркировки
+        const markGroups = document.querySelectorAll('.mark-group');
+        markGroups.forEach(group => {
+          group.style.backgroundColor = '';
+          group.style.color = '';
+        });
+        
+        // Убираем подсветку с расшифровки
+        const explanationGroups = document.querySelectorAll('.explanation-group');
+        explanationGroups.forEach(group => {
+          group.style.backgroundColor = '';
+          group.style.color = '';
+        });
+      }
+      
+      function highlightMarkGroup(groupNumber) {
+        // Подсвечиваем группу в маркировке
+        const markGroups = document.querySelectorAll('.mark-group');
+        markGroups.forEach(group => {
+          if (group.getAttribute('data-group') == groupNumber) {
+            group.style.backgroundColor = '#ffeb3b';
+            group.style.color = '#000';
+          }
+        });
+        
+        // Подсвечиваем соответствующую расшифровку
+        const explanationGroups = document.querySelectorAll('.explanation-group');
+        explanationGroups.forEach(group => {
+          if (group.getAttribute('data-group') == groupNumber) {
+            group.style.backgroundColor = '#ffeb3b';
+            group.style.color = '#000';
+          }
+        });
+      }
+      
+      function unhighlightMarkGroup() {
+        // Убираем подсветку с маркировки
+        const markGroups = document.querySelectorAll('.mark-group');
+        markGroups.forEach(group => {
+          group.style.backgroundColor = '';
+          group.style.color = '';
+        });
+        
+        // Убираем подсветку с расшифровки
+        const explanationGroups = document.querySelectorAll('.explanation-group');
+        explanationGroups.forEach(group => {
+          group.style.backgroundColor = '';
+          group.style.color = '';
+        });
+      }
     </script>
   </body>
 </html>

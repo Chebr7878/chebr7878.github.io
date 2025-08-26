@@ -169,6 +169,144 @@ export const sections: Section[] = [
 
 длина труб диаметром более 2400 мм определяется по согласованию с предприятием-изготовителем и потребителем.<br/><br/>
 
+<strong>Приложение Б — Рекомендуемые основные размеры труб</strong><br/><br/>
+
+<div style="overflow-x: auto; margin: 20px 0;">
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.8em; background: white; border: 2px solid #1e40af;">
+    <thead>
+      <tr style="background: #1e40af; color: white;">
+        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Тип труб</th>
+        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Внутренний диаметр, мм</th>
+        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Полезная длина, мм</th>
+        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Минимальная толщина стенки, мм</th>
+        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Глубина раструба, мм</th>
+        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Глубина фальца, мм</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">Т, ТБ, ТС, ТФ</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">300</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2000</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">45</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">80</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">25</td>
+      </tr>
+      <tr style="background: #f8fafc;">
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">Т, ТБ, ТС, ТФ</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">400</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500 (5000)</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">50</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">100</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">30</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">Т, ТБ, ТС, ТФ</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">500</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500 (5000)</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">55</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">100</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">30</td>
+      </tr>
+      <tr style="background: #f8fafc;">
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">Т, ТБ, ТС, ТФ</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">600</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500 (5000)</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">60</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">100</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">35</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">Т, ТП, ТБ, ТС, ТБП, ТСП, ТФП</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">800</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500-3000 (5000)</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">80</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">110</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">55</td>
+      </tr>
+      <tr style="background: #f8fafc;">
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">Т, ТП, ТБ, ТС, ТБП, ТСП, ТФП</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">1000</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500-3000 (5000)</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">100</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">110</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">80</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">Т, ТП, ТБ, ТС, ТБП, ТСП, ТФП</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">1200</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500-3000 (5000)</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">110</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">110</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">100</td>
+      </tr>
+      <tr style="background: #f8fafc;">
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">Т, ТП, ТБ, ТС, ТБП, ТСП, ТФП</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">1400</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500-3000 (5000)</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">120</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">110</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">100</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">Т, ТП, ТБ, ТС, ТБП, ТСП, ТФП</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">1600</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500-3000 (5000)</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">120</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">110</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">100</td>
+      </tr>
+      <tr style="background: #f8fafc;">
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">ТП, ТБП, ТСП, ТФП</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">1800</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">125</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">120</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">100</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">ТП, ТБП, ТСП, ТФП</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2000</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">130</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">130</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">110</td>
+      </tr>
+      <tr style="background: #f8fafc;">
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">ТП, ТБП, ТСП, ТФП</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2200</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">140</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">135</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">120</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">ТП, ТБП, ТСП, ТФП</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2400</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">150</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">140</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">140</td>
+      </tr>
+      <tr style="background: #f8fafc;">
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">ТП, ТБП, ТСП, ТФП</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">3000</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2000</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">170</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">150</td>
+        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">140</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div style="background: #f0f8ff; border: 2px solid #1e40af; border-radius: 8px; padding: 15px; margin: 15px 0;">
+  <strong>Примечания:</strong><br/>
+  1. В таблице приведены значения полезной длины, толщины стенки, глубин раструба и фальца для различных типов труб, которые рекомендуется принимать при разработке рабочих чертежей труб.<br/>
+  2. При экономически обоснованном случае допускается изготовление и применение труб других размеров.<br/>
+  3. В скобках указаны длины труб, изготавливаемых методом центрифугирования.
+</div><br/><br/>
+
 <div style="text-align: center; margin: 30px 0;">
   <button id="dimensions-explanation-btn" class="explanation-btn-gray" onclick="toggleDimensionsExplanation()">
     <span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>
@@ -195,56 +333,56 @@ export const sections: Section[] = [
 <strong>Пример марки:</strong><br/><br/>
 
 <div style="background: #f0f8ff; border: 2px solid #1e40af; border-radius: 8px; padding: 15px; margin: 15px 0; text-align: center; font-size: 1.2em; font-weight: bold;">
-<span data-mark-key="mark-example" tabindex="0" role="button" aria-label="ТС 80.25-3-П ГОСТ 6482-2011">ТС 80.25-3-П ГОСТ 6482-2011</span>
+<span class="mark-group" data-group="1" style="cursor: pointer; padding: 2px 4px; border-radius: 4px; transition: background-color 0.3s;" onmouseover="highlightGroup(1)" onmouseout="unhighlightGroup()">ТС 80.25</span>-<span class="mark-group" data-group="2" style="cursor: pointer; padding: 2px 4px; border-radius: 4px; transition: background-color 0.3s;" onmouseover="highlightGroup(2)" onmouseout="unhighlightGroup()">3</span>-<span class="mark-group" data-group="3" style="cursor: pointer; padding: 2px 4px; border-radius: 4px; transition: background-color 0.3s;" onmouseover="highlightGroup(3)" onmouseout="unhighlightGroup()">П</span> ГОСТ 6482-2011
 </div>
 
 <strong>Структура марки (группы, разделённые дефисом):</strong><br/><br/>
 
-<strong>Первая группа <span data-mark-key="first-group" tabindex="0" role="button" aria-label="ТС 80.25">(ТС 80.25)</span></strong> — указывают:<br/><br/>
+<strong>Первая группа <span class="explanation-group" data-group="1" style="cursor: pointer; padding: 2px 4px; border-radius: 4px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(1)" onmouseout="unhighlightMarkGroup()">(ТС 80.25)</span></strong> — указывают:<br/><br/>
 
-• <span data-mark-key="pipe-type" tabindex="0" role="button" aria-label="тип трубы">тип трубы</span> — <span data-mark-key="type-ts" tabindex="0" role="button" aria-label="ТС">ТС</span>;<br/><br/>
+• <span class="explanation-group" data-group="1" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(1)" onmouseout="unhighlightMarkGroup()">тип трубы</span> — <span class="explanation-group" data-group="1" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(1)" onmouseout="unhighlightMarkGroup()">ТС</span>;<br/><br/>
 
-• <span data-mark-key="diameter-cm" tabindex="0" role="button" aria-label="диаметр в сантиметрах">диаметр условного прохода в сантиметрах</span> — <span data-mark-key="diameter-80" tabindex="0" role="button" aria-label="80">80</span>;<br/><br/>
+• <span class="explanation-group" data-group="1" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(1)" onmouseout="unhighlightMarkGroup()">диаметр условного прохода в сантиметрах</span> — <span class="explanation-group" data-group="1" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(1)" onmouseout="unhighlightMarkGroup()">80</span>;<br/><br/>
 
-• <span data-mark-key="length-dm" tabindex="0" role="button" aria-label="длина в дециметрах">полезную длину в дециметрах</span> — <span data-mark-key="length-25" tabindex="0" role="button" aria-label="25">25</span>.<br/><br/>
+• <span class="explanation-group" data-group="1" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(1)" onmouseout="unhighlightMarkGroup()">полезную длину в дециметрах</span> — <span class="explanation-group" data-group="1" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(1)" onmouseout="unhighlightMarkGroup()">25</span>.<br/><br/>
 
-<strong>Вторая группа <span data-mark-key="second-group" tabindex="0" role="button" aria-label="3">(3)</span></strong> — обозначает группу по несущей способности:<br/><br/>
+<strong>Вторая группа <span class="explanation-group" data-group="2" style="cursor: pointer; padding: 2px 4px; border-radius: 4px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(2)" onmouseout="unhighlightMarkGroup()">(3)</span></strong> — обозначает группу по несущей способности:<br/><br/>
 
-• <span data-mark-key="group-1" tabindex="0" role="button" aria-label="1 группа">1</span> — первая группа<br/><br/>
+• <span class="explanation-group" data-group="2" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(2)" onmouseout="unhighlightMarkGroup()">1</span> — первая группа<br/><br/>
 
-• <span data-mark-key="group-2" tabindex="0" role="button" aria-label="2 группа">2</span> — вторая группа<br/><br/>
+• <span class="explanation-group" data-group="2" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(2)" onmouseout="unhighlightMarkGroup()">2</span> — вторая группа<br/><br/>
 
-• <span data-mark-key="group-3" tabindex="0" role="button" aria-label="3 группа">3</span> — третья группа<br/><br/>
+• <span class="explanation-group" data-group="2" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(2)" onmouseout="unhighlightMarkGroup()">3</span> — третья группа<br/><br/>
 
-• <span data-mark-key="group-4" tabindex="0" role="button" aria-label="4 группа">4</span> — четвёртая группа<br/><br/>
+• <span class="explanation-group" data-group="2" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(2)" onmouseout="unhighlightMarkGroup()">4</span> — четвёртая группа<br/><br/>
 
-<strong>Третья группа <span data-mark-key="third-group" tabindex="0" role="button" aria-label="П">(П)</span></strong> — дополнительные характеристики:<br/><br/>
+<strong>Третья группа <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 2px 4px; border-radius: 4px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">(П)</span></strong> — дополнительные характеристики:<br/><br/>
 
 <strong>Стойкость к агрессивной среде (проницаемость бетона):</strong><br/><br/>
 
-• <span data-mark-key="permeability-n" tabindex="0" role="button" aria-label="Н - нормальная W4">Н</span> — нормальная (<span data-mark-key="w4" tabindex="0" role="button" aria-label="W4">W4</span>)<br/><br/>
+• <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">Н</span> — нормальная (<span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">W4</span>)<br/><br/>
 
-• <span data-mark-key="permeability-p" tabindex="0" role="button" aria-label="П - пониженная W6">П</span> — пониженная (<span data-mark-key="w6" tabindex="0" role="button" aria-label="W6">W6</span>)<br/><br/>
+• <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">П</span> — пониженная (<span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">W6</span>)<br/><br/>
 
-• <span data-mark-key="permeability-o" tabindex="0" role="button" aria-label="О - особо низкая W10">О</span> — особо низкая (не ниже <span data-mark-key="w10" tabindex="0" role="button" aria-label="W10">W10</span>)<br/><br/>
+• <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">О</span> — особо низкая (не ниже <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">W10</span>)<br/><br/>
 
 <strong>Вид агрессии:</strong><br/><br/>
 
-• <span data-mark-key="aggression-sh" tabindex="0" role="button" aria-label="Щ - щелочная">Щ</span> — щелочная<br/><br/>
+• <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">Щ</span> — щелочная<br/><br/>
 
-• <span data-mark-key="aggression-k" tabindex="0" role="button" aria-label="К - кислотная">К</span> — кислотная<br/><br/>
+• <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">К</span> — кислотная<br/><br/>
 
-• <span data-mark-key="aggression-h" tabindex="0" role="button" aria-label="Х - хлориды">Х</span> — хлориды<br/><br/>
+• <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">Х</span> — хлориды<br/><br/>
 
-• <span data-mark-key="aggression-s" tabindex="0" role="button" aria-label="С - сульфаты">С</span> — сульфаты<br/><br/>
+• <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">С</span> — сульфаты<br/><br/>
 
 <strong>Стойкость внутреннего защитного покрытия:</strong><br/><br/>
 
-• <span data-mark-key="coating-k" tabindex="0" role="button" aria-label="к - кислотостойкое">к</span> — кислотостойкое<br/><br/>
+• <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">к</span> — кислотостойкое<br/><br/>
 
-• <span data-mark-key="coating-sh" tabindex="0" role="button" aria-label="щ - щелочестойкое">щ</span> — щелочестойкое<br/><br/>
+• <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">щ</span> — щелочестойкое<br/><br/>
 
-• <span data-mark-key="coating-h" tabindex="0" role="button" aria-label="х - химически стойкое">х</span> — химически стойкое<br/><br/>
+• <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">х</span> — химически стойкое<br/><br/>
 
 <strong>Пример расшифровки марки:</strong><br/><br/>
 
@@ -301,7 +439,26 @@ export const sections: Section[] = [
 
 Трубы рекомендуется изготавливать высокопроизводительными способами вибропрессования и радиального прессования.<br/><br/>
 
-Допускается применение труб, изготовленных методом уплотнения вибрированием и центрифугированием, при наличии технико-экономического обоснования и согласования с потребителем.`,
+Допускается применение труб, изготовленных методом уплотнения вибрированием и центрифугированием, при наличии технико-экономического обоснования и согласования с потребителем.<br/><br/>
+
+<div style="text-align: center; margin: 30px 0;">
+  <button id="technology-explanation-btn" class="explanation-btn-gray" onclick="toggleTechnologyExplanation()">
+    <span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>
+  </button>
+</div>
+
+<div id="technology-explanation" class="explanation-content" style="display: none;">
+  <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
+    <h4 style="color: #1e40af; margin-top: 0;">Технология изготовления (простыми словами):</h4>
+    <p>Железобетонные трубы делают строго по рабочим чертежам и требованиям ГОСТа — все размеры, форма соединений и расход материалов должны полностью совпадать с проектом.</p>
+    
+    <p>Основные методы производства — это вибропрессование и радиальное прессование. Эти технологии считаются наиболее современными и позволяют выпускать прочные и долговечные трубы.</p>
+    
+    <p>Также возможен выпуск труб методом вибрирования или центрифугирования, но только при наличии обоснования и согласования с заказчиком.</p>
+    
+    <p><strong>👉 Суть в одном предложении:</strong> трубы изготавливаются по ГОСТу и проекту, чаще всего методом вибропрессования или радиального прессования, что обеспечивает их точность и высокое качество.</p>
+  </div>
+</div>`,
   },
   {
     id: 'usloviya-primeneniya-rascheta',
@@ -348,7 +505,36 @@ export const sections: Section[] = [
 Качество труб по прочности и трещиностойкости устанавливается по результатам испытаний нагружением контрольными нагрузками, значения которых указываются в проектной документации.<br/>
 Качество труб по водонепроницаемости определяется испытаниями на действие внутреннего гидростатического давления 0,05 МПа.<br/><br/>
 
-Расчётный срок эксплуатации труб — не менее 50 лет.`,
+Расчётный срок эксплуатации труб — не менее 50 лет.<br/><br/>
+
+<div style="text-align: center; margin: 30px 0;">
+  <button id="conditions-explanation-btn" class="explanation-btn-gray" onclick="toggleConditionsExplanation()">
+    <span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>
+  </button>
+</div>
+
+<div id="conditions-explanation" class="explanation-content" style="display: none;">
+  <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
+    <h4 style="color: #1e40af; margin-top: 0;">Условия применения и расчёта (простыми словами):</h4>
+    <p>Железобетонные трубы можно использовать для подземных трубопроводов в большинстве климатических условий, но есть ограничения:</p>
+    
+    <p><strong>Климат:</strong> трубы допускается применять при температурах до –40 °C. Их нельзя использовать в районах вечной мерзлоты.</p>
+    
+    <p><strong>Сейсмика:</strong> в зонах с сейсмичностью свыше 8 баллов трубы применять нельзя. В районах 7–8 баллов разрешены только трубы с резиновыми уплотнительными кольцами.</p>
+    
+    <p><strong>Грунты:</strong> в сложных грунтах (просадочных, пучинистых) нужны специальные инженерные решения для защиты труб.</p>
+    
+    <p><strong>Нагрузки:</strong> трубы должны выдерживать вес грунта, транспортную нагрузку (включая трамваи и тяжёлые машины) и сохранять прочность и герметичность.</p>
+    
+    <p><strong>Основание:</strong> маленькие диаметры (до 500 мм) можно класть на плоское основание, крупные — на профилированное.</p>
+    
+    <p><strong>Качество:</strong> трубы проходят испытания на прочность, трещиностойкость и водонепроницаемость (давление воды 0,05 МПа).</p>
+    
+    <p><strong>Срок службы:</strong> правильно изготовленные и уложенные трубы служат не менее 50 лет.</p>
+    
+    <p><strong>👉 Суть в одном предложении:</strong> железобетонные трубы можно использовать почти везде, кроме вечной мерзлоты и сильной сейсмики, они должны выдерживать нагрузку грунта и транспорта, а при правильном монтаже служат больше 50 лет.</p>
+  </div>
+</div>`,
   },
   {
     id: 'materialy-beton-armirovanie',
@@ -426,7 +612,28 @@ export const sections: Section[] = [
 
 от номинальной длины каркаса и шага спиральной арматуры: ±5 мм;<br/><br/>
 
-по числу шагов спиральной арматуры: ±1 — для труб длиной до 2,5 м включительно; ±2 — для труб длиной более 2,5 м.`,
+по числу шагов спиральной арматуры: ±1 — для труб длиной до 2,5 м включительно; ±2 — для труб длиной более 2,5 м.<br/><br/>
+
+<div style="text-align: center; margin: 30px 0;">
+  <button id="materials-explanation-btn" class="explanation-btn-gray" onclick="toggleMaterialsExplanation()">
+    <span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>
+  </button>
+</div>
+
+<div id="materials-explanation" class="explanation-content" style="display: none;">
+  <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
+    <h4 style="color: #1e40af; margin-top: 0;">Материалы, бетон и армирование (простыми словами):</h4>
+    <p><strong>Бетон:</strong> трубы делают из прочного тяжёлого бетона (не ниже В30). Он должен быть водонепроницаемым (от W4 до W6), морозостойким и почти не впитывать влагу (до 6%). В тёплое время труба должна достигать 70% прочности перед отпуском, зимой — не меньше 90%.</p>
+    
+    <p><strong>Армирование:</strong> трубы усиливают стальными каркасами (спиральными — одинарными или двойными). Для особо больших диаметров (от 2000 мм) допускают дополнительное армирование сетками.</p>
+    
+    <p><strong>Материалы:</strong> используют арматурные стержни и проволоку разных классов прочности, все соединения свариваются, форма и размеры каркасов должны строго совпадать с чертежами.</p>
+    
+    <p><strong>Точность:</strong> допуски по размерам очень маленькие — отклонения в каркасе всего несколько миллиметров.</p>
+    
+    <p><strong>👉 Суть в одном предложении:</strong> железобетонные трубы изготавливаются из высококачественного бетона и усиливаются сварными стальными каркасами, что обеспечивает им прочность, долговечность и устойчивость к влаге и морозу.</p>
+  </div>
+</div>`,
   },
   {
     id: 'trebovaniya-styku',
@@ -463,7 +670,32 @@ export const sections: Section[] = [
 <strong>Стыковое соединение труб должно обеспечивать поворот трубопровода на угол не менее 1°30′.</strong><br/>
 (Это отклонение осей соседних труб до 1°30′ (1,5°) позволяет плавно поворачивать трассу трубопровода без применения колен и дополнительных фитингов, сохраняя герметичность и надёжность соединения.)<br/><br/>
 
-Изделия из эластомерных материалов, применяемые для герметизации стыковых соединений труб, должны соответствовать требованиям действующих нормативных документов.`,
+Изделия из эластомерных материалов, применяемые для герметизации стыковых соединений труб, должны соответствовать требованиям действующих нормативных документов.<br/><br/>
+
+<div style="text-align: center; margin: 30px 0;">
+  <button id="joint-explanation-btn" class="explanation-btn-gray" onclick="toggleJointExplanation()">
+    <span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>
+  </button>
+</div>
+
+<div id="joint-explanation" class="explanation-content" style="display: none;">
+  <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
+    <h4 style="color: #1e40af; margin-top: 0;">Стыковые соединения труб (простыми словами):</h4>
+    <p>Главное требование к соединению труб — оно должно быть герметичным и надёжным на весь срок эксплуатации.</p>
+    
+    <p>Для герметизации используют резиновые уплотнительные кольца или специальные герметики.</p>
+    
+    <p>Размер зазора между торцами труб зависит от диаметра (от 12 мм для маленьких до 24 мм для самых больших труб).</p>
+    
+    <p>Уплотнители должны сжиматься примерно на 25–45% (для круглых) или 25–50% (для специальных форм), чтобы соединение было плотным.</p>
+    
+    <p>Кольца должны быть прочными и эластичными: удлиняться на 5–10% и иметь твёрдость 40–50 единиц по Шору А.</p>
+    
+    <p>Соединение должно допускать небольшой поворот труб (до 1,5°), что позволяет делать плавные изгибы трассы без дополнительных деталей, сохраняя герметичность.</p>
+    
+    <p><strong>👉 Суть в одном предложении:</strong> стыковые соединения железобетонных труб делают с резиновыми уплотнителями, которые обеспечивают полную герметичность и позволяют трубопроводу слегка изгибаться без потери надёжности.</p>
+  </div>
+</div>`,
   },
   {
     id: 'agressivnye-sredy',
@@ -486,14 +718,16 @@ export const sections: Section[] = [
 
 <div id="aggressive-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
-    <h4 style="color: #1e40af; margin-top: 0;">Агрессивные среды и внутренние покрытия (простыми словами):</h4>
-    <p>Когда трубы работают в агрессивной или биологически активной среде (например, в канализационных коллекторах), к ним предъявляются дополнительные требования.</p>
+    <h4 style="color: #1e40af; margin-top: 0;">Трубы для агрессивной среды (простыми словами):</h4>
+    <p>Когда трубы работают в сложных условиях — например, в канализационных коллекторах с агрессивными стоками или биологически активной средой — к ним предъявляются особые требования:</p>
     
-    <p>Уплотнители (резиновые кольца, герметики) должны быть специально рассчитаны на такие условия и подтверждены проектной документацией.</p>
+    <p>Все уплотнительные материалы должны быть устойчивыми к химическому воздействию и соответствовать проектной документации.</p>
     
-    <p>Трубы для сильно агрессивных сред обязаны иметь внутреннее защитное покрытие, которое предотвращает разрушение бетона. Вид и свойства этого покрытия (кислотостойкое, щелочестойкое и т.п.) указываются в проекте и в заказе на изготовление.</p>
+    <p>Такие трубы обязательно делают с внутренним защитным покрытием, которое защищает бетон от разрушения.</p>
     
-    <p><strong>👉 Суть в одном предложении:</strong> для работы в агрессивных средах трубы делают с дополнительной защитой — используют специальные уплотнители и внутренние покрытия, которые задаются проектом и фиксируются в заказе.</p>
+    <p>Вид покрытия и его характеристики определяются проектом и фиксируются в заказе на изготовление.</p>
+    
+    <p><strong>👉 Суть в одном предложении:</strong> для эксплуатации в агрессивных средах железобетонные трубы делают с защитным внутренним покрытием и используют специальные уплотнители, стойкие к химическому воздействию.</p>
   </div>
 </div>`,
   },
@@ -549,7 +783,63 @@ export const sections: Section[] = [
 
 <strong>Требования к качеству поверхностей</strong><br/><br/>
 
-Размеры раковин, местных наплывов и впадин на бетонных поверхностях и торцах труб, а также сколов бетона рёбер на торцах не должны превышать значений, приведённых в таблице 2 (будет размещена в данном пункте).<br/><br/>
+Размеры раковин, местных наплывов и впадин на бетонных поверхностях и торцах труб, а также сколов бетона рёбер на торцах не должны превышать значений, приведённых в таблице 2.<br/><br/>
+
+<strong>Таблица 2 — Дефекты на бетонных поверхностях и торцах труб</strong><br/><br/>
+
+<div style="overflow-x: auto; margin: 20px 0;">
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.85em; background: white; border: 2px solid #1e40af;">
+    <thead>
+      <tr style="background: #1e40af; color: white;">
+        <th rowspan="2" style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold; vertical-align: middle;">Вид поверхности</th>
+        <th colspan="5" style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Виды дефектов</th>
+      </tr>
+      <tr style="background: #1e40af; color: white;">
+        <th colspan="2" style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Раковин</th>
+        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Местных наплывов и впадин</th>
+        <th colspan="2" style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Сколов бетона (торцов)</th>
+      </tr>
+      <tr style="background: #e2e8f0;">
+        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;"></th>
+        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Диаметр, мм</th>
+        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Глубина, мм</th>
+        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">наплывов (высота) и впадин (глубина), мм</th>
+        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Глубина, мм</th>
+        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Суммарная длина на 1 м ребра, мм</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Наружная и внутренняя</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">15</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
+      </tr>
+      <tr style="background: #f8fafc;">
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Стыковая в трубах (ТБ, ТБП, ТС и ТСП)</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">4</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">3</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">1</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Торцевая</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">15</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">5</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">50</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div style="background: #f0f8ff; border: 2px solid #1e40af; border-radius: 8px; padding: 15px; margin: 15px 0;">
+  <strong>Примечание:</strong> Знак "—" означает, что данное требование не распространяется на указанный вид поверхности.
+</div><br/><br/>
 
 <strong>Ширина раскрытия усадочных и технологических трещин не должна превышать <span data-mark-key="crack-0-1" tabindex="0" role="button" aria-label="Трещины 0.1 мм">0,1 мм</span>.</strong><br/><br/>
 
@@ -900,18 +1190,22 @@ export const sections: Section[] = [
 
 <div id="acceptance-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
-    <h4 style="color: #1e40af; margin-top: 0;">Правила приёмки (простыми словами):</h4>
-    <p>Приёмка железобетонных труб проводится партиями. Размер партии зависит от диаметра труб — от 50 штук для больших диаметров до 1000 штук для малых.</p>
+    <h4 style="color: #1e40af; margin-top: 0;">Правила приёмки труб (простыми словами):</h4>
+    <p>Железобетонные трубы принимают партиями. В одной партии должны быть трубы одного типа и качества, изготовленные за месяц. Количество труб в партии зависит от диаметра: от 1000 штук для мелких (300 мм) до 50 штук для самых больших (3000 мм).</p>
     
-    <p><strong>Периодические испытания:</strong> проводятся регулярно для проверки прочности, трещиностойкости и водонепроницаемости. Частота зависит от диаметра труб — от 1 раза в месяц до 1 раза в полгода.</p>
+    <p>Качество каждой партии проверяют с помощью испытаний:</p>
     
-    <p><strong>Приёмка:</strong> включает проверку прочности бетона, качества арматуры, точности размеров, толщины защитного слоя и отсутствия трещин.</p>
+    <p><strong>Прочность и трещиностойкость</strong> — проверяют перед началом массового производства, при изменении конструкции или технологии, а затем регулярно (от 1 раза в месяц до 1 раза в полгода в зависимости от диаметра).</p>
     
-    <p><strong>Контроль:</strong> может быть выборочным или сплошным, в зависимости от типа труб и контролируемых параметров.</p>
+    <p><strong>Водонепроницаемость</strong> — тестируют не реже одного раза в 3 месяца на двух трубах из партии.</p>
     
-    <p><strong>Документация:</strong> каждая партия сопровождается документом о качестве с указанием всех характеристик труб.</p>
+    <p>Дополнительно проверяют морозостойкость, водопоглощение и радиационную безопасность бетона.</p>
     
-    <p><strong>👉 Главная мысль:</strong> приёмка труб — это многоступенчатый процесс контроля качества, который включает периодические испытания, проверку всех параметров и обязательное документирование результатов.</p>
+    <p>Если труба не проходит испытания, проводят повторную проверку на удвоенном числе образцов. При повторном браке партия переводится в более низкую категорию или принимается поштучно.</p>
+    
+    <p>Отдельно проверяются геометрические размеры, толщина защитного слоя бетона, качество поверхности и правильность сварных соединений. Для труб типа ТБ обязательна сплошная проверка стыков и маркировки.</p>
+    
+    <p>Каждая партия сопровождается документом о качестве, где указываются производитель, дата выпуска, номер партии, марка труб, количество, характеристики бетона (прочность, водонепроницаемость, морозостойкость).</p>
   </div>
 </div>`,
   },
@@ -937,34 +1231,42 @@ export const sections: Section[] = [
 
 <strong>Таблица 3 — Размеры деревянного бруса для испытания труб</strong><br/><br/>
 
-<div style="background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px; padding: 15px; margin: 15px 0;">
-<table style="width: 100%; border-collapse: collapse;">
-<tr style="background: #e9ecef;">
-<th style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><strong>Диаметр условного прохода трубы, мм</strong></th>
-<th style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><strong>Ширина и высота бруса, мм</strong></th>
-</tr>
-<tr>
-<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="diameter-300" tabindex="0" role="button" aria-label="300 мм">300</span></td>
-<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="size-25" tabindex="0" role="button" aria-label="25 мм">25</span></td>
-</tr>
-<tr>
-<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="diameter-300-500" tabindex="0" role="button" aria-label="300-500 мм">300-500</span></td>
-<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="size-50" tabindex="0" role="button" aria-label="50 мм">50</span></td>
-</tr>
-<tr>
-<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="diameter-600-1000" tabindex="0" role="button" aria-label="600-1000 мм">600-1000</span></td>
-<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="size-80" tabindex="0" role="button" aria-label="80 мм">80</span></td>
-</tr>
-<tr>
-<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="diameter-1200-1600" tabindex="0" role="button" aria-label="1200-1600 мм">1200-1600</span></td>
-<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="size-100" tabindex="0" role="button" aria-label="100 мм">100</span></td>
-</tr>
-<tr>
-<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="diameter-2000-3000" tabindex="0" role="button" aria-label="2000-3000 мм">2000-3000</span></td>
-<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="size-120" tabindex="0" role="button" aria-label="120 мм">120</span></td>
-</tr>
-</table>
+<div style="overflow-x: auto; margin: 20px 0;">
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.9em; background: white; border: 2px solid #1e40af;">
+    <thead>
+      <tr style="background: #1e40af; color: white;">
+        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Диаметр условного прохода трубы, мм</th>
+        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Ширина и высота бруса, мм</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">300</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">25</td>
+      </tr>
+      <tr style="background: #f8fafc;">
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">300-500</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">50</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">600-1000</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">80</td>
+      </tr>
+      <tr style="background: #f8fafc;">
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">1200-1600</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">100</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">2000-3000</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">120</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
+
+<div style="background: #f0f8ff; border: 2px solid #1e40af; border-radius: 8px; padding: 15px; margin: 15px 0;">
+  <strong>Примечание:</strong> В миллиметрах.
+</div><br/><br/>
 
 <strong>Выравнивающий слой</strong><br/><br/>
 
@@ -1026,30 +1328,63 @@ export const sections: Section[] = [
 
 <strong>Таблица 4 — Показатели для испытания на водонепроницаемость</strong><br/><br/>
 
-<div style="background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px; padding: 15px; margin: 15px 0;">
-<table style="width: 100%; border-collapse: collapse; font-size: 0.9em;">
-<tr style="background: #e9ecef;">
-<th style="border: 1px solid #dee2e6; padding: 6px; text-align: center;"><strong>Уровень стенок трубы</strong></th>
-<th style="border: 1px solid #dee2e6; padding: 6px; text-align: center;"><strong>Испытательное давление, кПа (кгс/см²)</strong></th>
-<th style="border: 1px solid #dee2e6; padding: 6px; text-align: center;"><strong>Время выдержки, ч</strong></th>
-</tr>
-<tr>
-<td style="border: 1px solid #dee2e6; padding: 6px; text-align: center;">Верх трубы</td>
-<td style="border: 1px solid #dee2e6; padding: 6px; text-align: center;">1,0 (0,01)</td>
-<td style="border: 1px solid #dee2e6; padding: 6px; text-align: center;"><span data-mark-key="time-48h" tabindex="0" role="button" aria-label="48 ч">48</span></td>
-</tr>
-<tr>
-<td style="border: 1px solid #dee2e6; padding: 6px; text-align: center;">Середина трубы</td>
-<td style="border: 1px solid #dee2e6; padding: 6px; text-align: center;">10,0-17,5 (0,10-0,175)</td>
-<td style="border: 1px solid #dee2e6; padding: 6px; text-align: center;"><span data-mark-key="time-36h" tabindex="0" role="button" aria-label="36 ч">36</span></td>
-</tr>
-<tr>
-<td style="border: 1px solid #dee2e6; padding: 6px; text-align: center;">Низ трубы</td>
-<td style="border: 1px solid #dee2e6; padding: 6px; text-align: center;">20,0-35,0 (0,20-0,35)</td>
-<td style="border: 1px solid #dee2e6; padding: 6px; text-align: center;"><span data-mark-key="time-24h" tabindex="0" role="button" aria-label="24 ч">24</span></td>
-</tr>
-</table>
+<div style="overflow-x: auto; margin: 20px 0;">
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.85em; background: white; border: 2px solid #1e40af;">
+    <thead>
+      <tr style="background: #1e40af; color: white;">
+        <th rowspan="2" style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold; vertical-align: middle;">Уровень стенок трубы</th>
+        <th colspan="3" style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Испытательное гидравлическое давление, кПа (кгс/см²), для труб длиной:</th>
+      </tr>
+      <tr style="background: #1e40af; color: white;">
+        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Верх трубы</th>
+        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Середина трубы</th>
+        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Низ трубы</th>
+      </tr>
+      <tr style="background: #e2e8f0;">
+        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;"></th>
+        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">кПа (кгс/см²)</th>
+        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">кПа (кгс/см²)</th>
+        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">кПа (кгс/см²)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">2,0 м</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">1,0 (0,01)</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">10,0 (0,10)</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">20,0 (0,20)</td>
+      </tr>
+      <tr style="background: #f8fafc;">
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">2,5 м</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">1,0 (0,01)</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">12,5 (0,125)</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">25,0 (0,25)</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">3,0 м</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">1,0 (0,01)</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">15,0 (0,15)</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">30,0 (0,30)</td>
+      </tr>
+      <tr style="background: #f8fafc;">
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">3,5 м</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">1,0 (0,01)</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">17,5 (0,175)</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">35,0 (0,35)</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Время выдержки, ч</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">48</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">36</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">24</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
+
+<div style="background: #f0f8ff; border: 2px solid #1e40af; border-radius: 8px; padding: 15px; margin: 15px 0;">
+  <strong>Примечание:</strong> Давление указано в кПа и кгс/см², время выдержки в часах.
+</div><br/><br/>
 
 <strong>Контроль свойств бетона</strong><br/><br/>
 
@@ -1108,19 +1443,41 @@ export const sections: Section[] = [
 <div id="testing-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
     <h4 style="color: #1e40af; margin-top: 0;">Методы испытаний и контроля (простыми словами):</h4>
-    <p><strong>Испытания на прочность:</strong> трубу кладут горизонтально на деревянные брусья и нагружают до разрушения. Размеры брусьев зависят от диаметра трубы (от 25 мм для труб 300 мм до 120 мм для труб 2000-3000 мм).</p>
+    <p>Чтобы убедиться в качестве железобетонных труб, они проходят несколько обязательных проверок.</p>
     
-    <p><strong>Процедура нагружения:</strong> нагрузку увеличивают ступенями по 10% от контрольной, на каждой ступени выдерживают 10 минут. Измеряют трещины с точностью до 0,01 мм.</p>
+    <p><strong>Проверка прочности и трещиностойкости</strong></p>
     
-    <p><strong>Критерии разрушения:</strong> текучесть арматуры (трещины более 1,5-2 мм), раздробление бетона, разрыв арматуры или расслоение стенки.</p>
+    <p>Трубы испытывают на специальных стендах: их укладывают на деревянные брусья, сверху прижимают стальной траверсой и постепенно нагружают.</p>
     
-    <p><strong>Испытания на водонепроницаемость:</strong> трубу заполняют водой и создают давление 0,05 МПа на 10 минут. Испытывают две трубы. Не должно быть протечек или капель.</p>
+    <p>Нагрузка увеличивается поэтапно, фиксируются моменты появления и раскрытия трещин.</p>
     
-    <p><strong>Контроль бетона:</strong> прочность определяют на образцах, водонепроницаемость и морозостойкость — по соответствующим ГОСТам. Арматуру проверяют на качество сварных соединений.</p>
+    <p>Прочность считается обеспеченной, если труба выдержала нагрузку без разрушения, а трещиностойкость — если ширина трещин не превысила нормы.</p>
     
-    <p><strong>Геометрический контроль:</strong> измеряют все размеры труб с высокой точностью — толщину стенок, диаметры, длину, качество поверхностей.</p>
+    <p><strong>Проверка водонепроницаемости</strong></p>
     
-    <p><strong>👉 Главная мысль:</strong> качество железобетонных труб проверяется комплексно — на прочность, водонепроницаемость, геометрию и свойства материалов. Все испытания проводятся по строгим методикам с точными приборами.</p>
+    <p>Трубы герметично закрывают заглушками, заполняют водой и создают внутреннее давление.</p>
+    
+    <p>Давление выдерживают в течение определённого времени (например, 10 минут при 0,05 МПа или дольше по таблице).</p>
+    
+    <p>Если вода не просачивается сквозь стенку и стыки — труба считается водонепроницаемой.</p>
+    
+    <p><strong>Проверка свойств бетона</strong></p>
+    
+    <p>Прочность бетона определяют по образцам или с помощью ультразвука и неразрушающих методов.</p>
+    
+    <p>Отдельно проверяют морозостойкость, водопоглощение и радиационную безопасность.</p>
+    
+    <p><strong>Контроль арматуры</strong></p>
+    
+    <p>Проверяют качество сварки, расположение арматурных каркасов и толщину защитного слоя бетона.</p>
+    
+    <p><strong>Геометрический контроль</strong></p>
+    
+    <p>Измеряют толщину стенок, диаметры, глубину раструба, размеры фальцев, высоту буртика и длину трубы.</p>
+    
+    <p>Все размеры должны укладываться в допуски по ГОСТ.</p>
+    
+    <p><strong>👉 Проще говоря, трубы проходят «стресс-тесты»:</strong> их нагружают, чтобы проверить прочность и устойчивость к трещинам, наполняют водой под давлением, чтобы убедиться в герметичности, а также тщательно измеряют геометрию и проверяют качество бетона и арматуры.</p>
   </div>
 </div>`,
   },
@@ -1154,34 +1511,42 @@ export const sections: Section[] = [
 
 <strong>Таблица 5 — Число рядов труб в штабеле</strong><br/><br/>
 
-<div style="background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px; padding: 15px; margin: 15px 0;">
-<table style="width: 100%; border-collapse: collapse;">
-<tr style="background: #e9ecef;">
-<th style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><strong>Диаметр условного прохода трубы, мм</strong></th>
-<th style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><strong>Число рядов труб в штабеле, шт.</strong></th>
-</tr>
-<tr>
-<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="diameter-300-400" tabindex="0" role="button" aria-label="300, 400 мм">300, 400</span></td>
-<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="rows-5" tabindex="0" role="button" aria-label="5 рядов">5</span></td>
-</tr>
-<tr>
-<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="diameter-500-600" tabindex="0" role="button" aria-label="500, 600 мм">500, 600</span></td>
-<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="rows-4" tabindex="0" role="button" aria-label="4 ряда">4</span></td>
-</tr>
-<tr>
-<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="diameter-800-1200" tabindex="0" role="button" aria-label="800-1200 мм">800-1200</span></td>
-<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="rows-3" tabindex="0" role="button" aria-label="3 ряда">3</span></td>
-</tr>
-<tr>
-<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="diameter-1400-2400" tabindex="0" role="button" aria-label="1400-2400 мм">1400-2400</span></td>
-<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="rows-2" tabindex="0" role="button" aria-label="2 ряда">2</span></td>
-</tr>
-<tr>
-<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="diameter-3000" tabindex="0" role="button" aria-label="3000 мм">3000</span></td>
-<td style="border: 1px solid #dee2e6; padding: 8px; text-align: center;"><span data-mark-key="rows-1" tabindex="0" role="button" aria-label="1 ряд">1</span></td>
-</tr>
-</table>
+<div style="overflow-x: auto; margin: 20px 0;">
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.9em; background: white; border: 2px solid #1e40af;">
+    <thead>
+      <tr style="background: #1e40af; color: white;">
+        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Диаметр условного прохода трубы, мм</th>
+        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Число рядов труб в штабеле, шт.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">300, 400</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">5</td>
+      </tr>
+      <tr style="background: #f8fafc;">
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">500, 600</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">4</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">800-1200</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">3</td>
+      </tr>
+      <tr style="background: #f8fafc;">
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">1400-2400</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">2</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">3000</td>
+        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">1</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
+
+<div style="background: #f0f8ff; border: 2px solid #1e40af; border-radius: 8px; padding: 15px; margin: 15px 0;">
+  <strong>Примечание:</strong> Количество рядов зависит от диаметра трубы для обеспечения безопасного хранения.
+</div><br/><br/>
 
 <strong>Укладка подкладок</strong><br/><br/>
 
@@ -1218,22 +1583,38 @@ export const sections: Section[] = [
 <div id="transport-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
     <h4 style="color: #1e40af; margin-top: 0;">Транспортирование, хранение и гарантии изготовителя (простыми словами):</h4>
-    <p><strong>Транспортирование:</strong> трубы перевозят в горизонтальном положении на специальных подкладках, чтобы не повредить раструбы. Короткие трубы (до 3,5 м) можно перевозить вертикально.</p>
+    <p>Железобетонные трубы перевозят и хранят в строгом соответствии с ГОСТ 13015.</p>
     
-    <p><strong>Хранение:</strong> трубы складывают в штабели по определённым правилам — количество рядов зависит от диаметра трубы (от 1 ряда для труб 3000 мм до 5 рядов для труб 300-400 мм). Раструбы соседних рядов должны смотреть в разные стороны.</p>
+    <p><strong>Положение при перевозке и хранении</strong></p>
+    <p>Трубы укладывают в рабочем положении на деревянные или другие мягкие прокладки, чтобы избежать повреждений. Перекатывать трубы можно только по подкладкам — недопустимо опирать раструбы или втулочные концы на пол.</p>
     
-    <p><strong>Подкладки:</strong> под нижний ряд кладут две подкладки на расстоянии 20% от длины трубы от каждого торца, чтобы трубы не раскатывались и раструбы не касались пола.</p>
+    <p><strong>Вертикальное хранение</strong></p>
+    <p>Короткие трубы (длиной до 2,5–3,5 м) можно хранить вертикально, если обеспечена их устойчивость.</p>
     
-    <p><strong>Гарантии:</strong> производитель даёт гарантию на 2 года с момента отгрузки (но не более 2,5 лет с изготовления). Если бетон не достиг нужной прочности при отгрузке, производитель гарантирует, что он наберёт прочность через 28 дней.</p>
+    <p><strong>Хранение на складе</strong></p>
+    <p>Трубы размещают в штабелях или контейнерах, сортируя по маркам. В штабеле число рядов зависит от диаметра трубы (см. таблицу):</p>
     
-    <p><strong>👉 Главная мысль:</strong> правильная транспортировка и хранение труб — залог их сохранности. Производитель даёт гарантию на 2 года, но только при соблюдении всех правил перевозки и хранения.</p>
+    <p>• диаметр 300–400 мм → до 5 рядов;</p>
+    <p>• диаметр 500–600 мм → до 4 рядов;</p>
+    <p>• диаметр 800–1200 мм → до 3 рядов;</p>
+    <p>• диаметр 1400–2400 мм → до 2 рядов;</p>
+    <p>• диаметр 3000 мм → только 1 ряд.</p>
+    
+    <p>При укладке раструбы соседних рядов должны быть обращены в разные стороны.</p>
+    
+    <p><strong>Гарантии изготовителя</strong></p>
+    <p>Завод гарантирует соответствие труб стандарту при правильной транспортировке, хранении и эксплуатации.</p>
+    <p>Минимальный гарантийный срок — 2 года с даты отгрузки, но не более 2,5 лет с даты изготовления.</p>
+    <p>Если трубы отгружаются с неполной прочностью бетона, производитель гарантирует, что к 28-му дню они наберут проектную прочность.</p>
+    
+    <p><strong>👉 Проще говоря, трубы нельзя складировать «как попало» — их укладывают на прокладки, не допускают перекоса и перекатки по бетону. Количество рядов в штабеле ограничено диаметром, а производитель даёт гарантию на качество при соблюдении всех правил.</strong></p>
   </div>
 </div>`,
   },
   {
     id: 'gde-priobresti',
     number: 16,
-    title: 'Где приобрести трубы (производители)',
+    title: 'Где купить железобетонные трубы, производители',
     keywords: ['производители','поставщики','купить','где приобрести','ценa','заказ'],
     summary: 'Справочная информация о производителях и поставщиках, критерии выбора и запрос коммерческого предложения.',
     content: `<strong>Производители железобетонных труб по ГОСТ 6482-2011</strong><br/><br/>
@@ -1288,18 +1669,32 @@ Email: <span data-mark-key="email" tabindex="0" role="button" aria-label="zakaz@
 
 <div id="purchase-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
-    <h4 style="color: #1e40af; margin-top: 0;">Где приобрести трубы (простыми словами):</h4>
-    <p><strong>Основной производитель:</strong> ООО «Завод железобетонных труб ОДИНЕЦ» — современное предприятие с тремя производственными площадками в Московской области.</p>
+    <h4 style="color: #1e40af; margin-top: 0;">Где приобрести трубы (производители):</h4>
+    <p>ООО «Завод железобетонных труб ОДИНЕЦ» — современное предприятие, выпускающее железобетонные трубы по ГОСТ 6482-2011.</p>
     
-    <p><strong>Что производит:</strong> полный ассортимент железобетонных труб по ГОСТ 6482-2011 — безнапорные, напорные, для агрессивных сред, а также соединительные детали.</p>
+    <p><strong>Производственные мощности</strong></p>
+    <p>• Три площадки в Московской области</p>
+    <p>• Современное оборудование</p>
+    <p>• Полный цикл производства: от сырья до готовой продукции</p>
     
-    <p><strong>Как связаться:</strong> по телефонам (495) 640-04-12, (495) 960-14-40, email zakaz@zavod-odinec.ru или через сайт www.zavod-odinec.ru.</p>
+    <p><strong>Контакты</strong></p>
+    <p>Отдел сбыта: (495) 640-04-12, (495) 960-14-40</p>
+    <p>Email: zakaz@zavod-odinec.ru</p>
+    <p>Сайт: www.zavod-odinec.ru</p>
     
-    <p><strong>Условия:</strong> доставка по всей России, самовывоз, гибкая оплата, техническая поддержка.</p>
+    <p><strong>Ассортимент</strong></p>
+    <p>• Железобетонные безнапорные трубы всех типов</p>
+    <p>• Напорные трубы</p>
+    <p>• Соединительные детали и комплектующие</p>
+    <p>• Специальные трубы для агрессивных сред</p>
     
-    <p><strong>Преимущества:</strong> собственное производство, контроль качества, соответствие всем требованиям ГОСТ, опыт работы на рынке.</p>
+    <p><strong>Условия поставки</strong></p>
+    <p>• Доставка по всей России</p>
+    <p>• Возможность самовывоза</p>
+    <p>• Гибкие варианты оплаты</p>
+    <p>• Техническая поддержка и консультации</p>
     
-    <p><strong>👉 Главная мысль:</strong> для покупки качественных железобетонных труб по ГОСТ 6482-2011 обращайтесь к проверенному производителю ООО «Завод железобетонных труб ОДИНЕЦ» — у них есть всё необходимое для вашего проекта.</p>
+    <p><strong>👉 Таким образом, на сайте сразу понятно, где и у кого можно купить трубы, есть контакты, ассортимент и условия работы.</strong></p>
   </div>
 </div>`,
   },
@@ -1401,22 +1796,13 @@ Email: <span data-mark-key="email" tabindex="0" role="button" aria-label="zakaz@
 
 <div id="references-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
-    <h4 style="color: #1e40af; margin-top: 0;">Нормативные ссылки (простыми словами):</h4>
-    <p>ГОСТ 6482-2011 ссылается на множество других стандартов, которые регламентируют различные аспекты производства железобетонных труб:</p>
+    <h4 style="color: #1e40af; margin-top: 0;">Нормативные ссылки:</h4>
+    <p>ГОСТ 6482-2011 не живёт сам по себе — он связан с кучей других документов. Тут и правила безопасности труда, и нормы для цемента, песка, щебня, воды, арматуры, методы испытаний, даже санитарные нормы воздуха и шум на рабочих местах.</p>
     
-    <p><strong>Безопасность труда:</strong> стандарты по охране труда, электробезопасности, вентиляции и защите от вредных веществ.</p>
+    <p>Проще говоря, если собрать все эти ГОСТы в одну стопку, то получится кирпич знаний потолще, чем сами трубы 🙂</p>
     
-    <p><strong>Материалы:</strong> стандарты на цемент, песок, щебень, арматурную сталь и воду для бетонов.</p>
-    
-    <p><strong>Методы испытаний:</strong> стандарты по определению прочности, морозостойкости, водонепроницаемости бетона.</p>
-    
-    <p><strong>Контроль качества:</strong> стандарты по приёмке, маркировке, транспортированию и хранению изделий.</p>
-    
-    <p><strong>Измерения:</strong> стандарты по определению геометрических параметров, толщины защитного слоя бетона.</p>
-    
-    <p><strong>Экология:</strong> стандарты по охране природы и радиационной безопасности.</p>
-    
-    <p><strong>👉 Главная мысль:</strong> ГОСТ 6482-2011 не существует изолированно — он опирается на целую систему взаимосвязанных стандартов, которые обеспечивают качество, безопасность и экологичность производства железобетонных труб.</p>
+    <p><strong>📌 Вывод:</strong></p>
+    <p>Все эти ссылки нужны, чтобы трубы были не только прочные и водонепроницаемые, но ещё и безопасные для людей и экологии. А объяснить их «на пальцах» сложно — потому что ГОСТы сами по себе как отдельная вселенная. Но если коротко: хочешь надёжные трубы — будь готов дружить с ГОСТами.</p>
   </div>
 </div>`,
   },
@@ -1512,18 +1898,28 @@ Email: <span data-mark-key="email" tabindex="0" role="button" aria-label="zakaz@
 
 <div id="safety-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
-    <h4 style="color: #1e40af; margin-top: 0;">Требования безопасности и охраны окружающей среды (простыми словами):</h4>
-    <p><strong>Безопасность изделий:</strong> железобетонные трубы относятся к пожаро- и взрывобезопасным изделиям 4-го класса опасности (малоопасные).</p>
+    <h4 style="color: #1e40af; margin-top: 0;">Требования безопасности и охраны окружающей среды:</h4>
+    <p>Железобетонные трубы по ГОСТ 6482-2011 относятся к безопасным строительным изделиям: они не горят, не взрывоопасны и считаются малоопасными по классу воздействия на человека и окружающую среду.</p>
     
-    <p><strong>Защита работников:</strong> в производственных помещениях контролируется содержание пыли (цемент — до 8 мг/м³, песок — до 1 мг/м³), уровень шума (не более 80 дБА), обеспечивается вентиляция и питьевая вода.</p>
+    <p><strong>Рабочие условия</strong></p>
+    <p>При их производстве допускается лишь ограниченное содержание цементной пыли и кварца в воздухе рабочей зоны. На хранении и при эксплуатации трубы не выделяют токсинов и не требуют специальных средств защиты при обращении с ними.</p>
     
-    <p><strong>Радиационная безопасность:</strong> трубы проверяются на содержание радионуклидов — до 740 Бк/кг в населённых пунктах и до 1350 Бк/кг вне их.</p>
+    <p><strong>Санитарные и климатические нормы</strong></p>
+    <p>Контроль качества воздуха и микроклимата на производстве проводится по санитарным правилам и ГОСТам. Производственные помещения должны быть оборудованы вентиляцией, обеспечены питьевой водой и соответствовать установленным требованиям по температуре и шуму.</p>
     
-    <p><strong>Требования к персоналу:</strong> к работе допускаются лица от 18 лет, прошедшие медосмотр и инструктаж. Повторные инструктажи — каждые 6 месяцев.</p>
+    <p><strong>Радиационная безопасность</strong></p>
+    <p>Допустимый уровень радиационной активности бетона ограничен:</p>
+    <p>• до 740 Бк/кг — для применения в населённых пунктах;</p>
+    <p>• до 1350 Бк/кг — для применения вне жилых зон.</p>
     
-    <p><strong>Экология:</strong> производство является безотходным, контролируются выбросы в атмосферу, обеспечивается утилизация отходов.</p>
+    <p><strong>Требования к персоналу</strong></p>
+    <p>К производству допускаются только работники старше 18 лет, прошедшие медосмотр, обучение и регулярные инструктажи по охране труда (не реже одного раза в полгода).</p>
     
-    <p><strong>👉 Главная мысль:</strong> производство труб должно быть безопасным для работников и окружающей среды, с контролем всех вредных факторов и соблюдением санитарных норм.</p>
+    <p><strong>Экология и производство</strong></p>
+    <p>Технологии вибропрессования, радиального прессования и вибрирования считаются безотходными. При центрифугировании остаточный шлам должен собираться и утилизироваться, например, с повторным использованием в бетонной смеси.</p>
+    
+    <p><strong>Контроль качества</strong></p>
+    <p>Изготовитель обязан проводить все предусмотренные испытания и проверки, чтобы гарантировать соответствие труб стандарту.</p>
   </div>
 </div>`,
   },
