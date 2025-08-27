@@ -29,13 +29,13 @@ export default function ScrollToTop() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 z-50 p-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 border-0 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 backdrop-blur-sm"
+          className="fixed bottom-6 right-6 z-50 p-4 bg-white border-2 border-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 backdrop-blur-sm"
           aria-label="Прокрутить наверх"
           style={{
-            boxShadow: '0 4px 20px rgba(59, 130, 246, 0.3)',
+            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.15)',
           }}
         >
-          <ChevronUp className="h-5 w-5 text-white" />
+          <ChevronUp className="h-6 w-6 text-gray-800" />
         </button>
       )}
     </>

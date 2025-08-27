@@ -62,11 +62,11 @@ export const sections: Section[] = [
 
 <div id="simple-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
-    <h4 style="color: #1e40af; margin-top: 0;">Область применения:</h4>
+    <h4 style="color: #374151; margin-top: 0;">Область применения:</h4>
     <p>Стандарт ГОСТ 6482-2011 регулирует требования к железобетонным безнапорным трубам, которые используют для подземных самотёчных трубопроводов (бытовые, промышленные стоки, дождевая и грунтовая вода, в том числе в агрессивных средах).</p>
     <p>Он не распространяется на водопропускные трубы под дорогами и трубы для микротоннелирования.</p>
     
-    <h4 style="color: #1e40af;">Основные термины:</h4>
+    <h4 style="color: #374151;">Основные термины:</h4>
     <ul style="list-style-type: none; padding-left: 0;">
       <li><strong>Вибропрессование / радиальное прессование</strong> — современные технологии производства прочных труб из жёстких бетонных смесей.</li>
       <li><strong>Диаметр условного прохода</strong> — расчётный внутренний диаметр трубы.</li>
@@ -111,10 +111,12 @@ export const sections: Section[] = [
 
 <div id="classification-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
-    <h4 style="color: #1e40af; margin-top: 0;">Классификация труб:</h4>
+    <h4 style="color: #374151; margin-top: 0;">Классификация труб:</h4>
     <p>ГОСТ выделяет несколько видов железобетонных труб. Одни соединяются с помощью герметика, другие — с резиновыми кольцами. Некоторые трубы делают с плоским основанием, чтобы они лучше стояли и не перекатывались. Есть также фальцевые трубы с замковым соединением. А в особых случаях допускаются трубы не только круглые, но и овальные или эллиптические — по отдельным чертежам.</p>
   </div>
-</div>`,
+</div>
+
+<div id="pipe-type-buttons-container"></div>`,
   },
   {
     id: 'gruppy-nesushchey',
@@ -142,7 +144,7 @@ export const sections: Section[] = [
 
 <div id="strength-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
-    <h4 style="color: #1e40af; margin-top: 0;">Группы по несущей способности:</h4>
+    <h4 style="color: #374151; margin-top: 0;">Группы по несущей способности:</h4>
     <p>Железобетонные трубы бывают разных «классов прочности». Одни можно укладывать неглубоко — под 2 метра грунта, другие выдерживают до 10 метров засыпки сверху. Поэтому при проектировании важно правильно выбрать группу: чем глубже закладывается труба, тем более прочной она должна быть.</p>
   </div>
 </div>`,
@@ -172,135 +174,135 @@ export const sections: Section[] = [
 <strong>Приложение Б — Рекомендуемые основные размеры труб</strong><br/><br/>
 
 <div style="overflow-x: auto; margin: 20px 0;">
-  <table style="width: 100%; border-collapse: collapse; font-size: 0.8em; background: white; border: 2px solid #1e40af;">
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.8em; background: white; border: 2px solid #374151;">
     <thead>
-      <tr style="background: #1e40af; color: white;">
-        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Тип труб</th>
-        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Внутренний диаметр, мм</th>
-        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Полезная длина, мм</th>
-        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Минимальная толщина стенки, мм</th>
-        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Глубина раструба, мм</th>
-        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Глубина фальца, мм</th>
+      <tr style="background: #374151; color: white;">
+        <th style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">Тип труб</th>
+        <th style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">Внутренний диаметр, мм</th>
+        <th style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">Полезная длина, мм</th>
+        <th style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">Минимальная толщина стенки, мм</th>
+        <th style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">Глубина раструба, мм</th>
+        <th style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">Глубина фальца, мм</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">Т, ТБ, ТС, ТФ</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">300</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2000</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">45</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">80</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">25</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center; font-weight: bold;">Т, ТБ, ТС, ТФ</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">300</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">2000</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">45</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">80</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">25</td>
       </tr>
       <tr style="background: #f8fafc;">
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">Т, ТБ, ТС, ТФ</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">400</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500 (5000)</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">50</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">100</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">30</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center; font-weight: bold;">Т, ТБ, ТС, ТФ</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">400</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">2500 (5000)</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">50</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">100</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">30</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">Т, ТБ, ТС, ТФ</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">500</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500 (5000)</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">55</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">100</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">30</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center; font-weight: bold;">Т, ТБ, ТС, ТФ</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">500</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">2500 (5000)</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">55</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">100</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">30</td>
       </tr>
       <tr style="background: #f8fafc;">
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">Т, ТБ, ТС, ТФ</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">600</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500 (5000)</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">60</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">100</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">35</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center; font-weight: bold;">Т, ТБ, ТС, ТФ</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">600</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">2500 (5000)</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">60</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">100</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">35</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">Т, ТП, ТБ, ТС, ТБП, ТСП, ТФП</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">800</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500-3000 (5000)</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">80</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">110</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">55</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center; font-weight: bold;">Т, ТП, ТБ, ТС, ТБП, ТСП, ТФП</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">800</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">2500-3000 (5000)</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">80</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">110</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">55</td>
       </tr>
       <tr style="background: #f8fafc;">
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">Т, ТП, ТБ, ТС, ТБП, ТСП, ТФП</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">1000</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500-3000 (5000)</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">100</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">110</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">80</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center; font-weight: bold;">Т, ТП, ТБ, ТС, ТБП, ТСП, ТФП</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">1000</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">2500-3000 (5000)</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">100</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">110</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">80</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">Т, ТП, ТБ, ТС, ТБП, ТСП, ТФП</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">1200</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500-3000 (5000)</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">110</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">110</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">100</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center; font-weight: bold;">Т, ТП, ТБ, ТС, ТБП, ТСП, ТФП</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">1200</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">2500-3000 (5000)</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">110</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">110</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">100</td>
       </tr>
       <tr style="background: #f8fafc;">
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">Т, ТП, ТБ, ТС, ТБП, ТСП, ТФП</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">1400</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500-3000 (5000)</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">120</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">110</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">100</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center; font-weight: bold;">Т, ТП, ТБ, ТС, ТБП, ТСП, ТФП</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">1400</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">2500-3000 (5000)</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">120</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">110</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">100</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">Т, ТП, ТБ, ТС, ТБП, ТСП, ТФП</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">1600</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500-3000 (5000)</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">120</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">110</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">100</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center; font-weight: bold;">Т, ТП, ТБ, ТС, ТБП, ТСП, ТФП</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">1600</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">2500-3000 (5000)</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">120</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">110</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">100</td>
       </tr>
       <tr style="background: #f8fafc;">
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">ТП, ТБП, ТСП, ТФП</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">1800</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">125</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">120</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">100</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center; font-weight: bold;">ТП, ТБП, ТСП, ТФП</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">1800</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">2500</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">125</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">120</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">100</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">ТП, ТБП, ТСП, ТФП</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2000</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">130</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">130</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">110</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center; font-weight: bold;">ТП, ТБП, ТСП, ТФП</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">2000</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">2500</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">130</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">130</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">110</td>
       </tr>
       <tr style="background: #f8fafc;">
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">ТП, ТБП, ТСП, ТФП</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2200</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">140</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">135</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">120</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center; font-weight: bold;">ТП, ТБП, ТСП, ТФП</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">2200</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">2500</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">140</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">135</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">120</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">ТП, ТБП, ТСП, ТФП</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2400</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2500</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">150</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">140</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">140</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center; font-weight: bold;">ТП, ТБП, ТСП, ТФП</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">2400</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">2500</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">150</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">140</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">140</td>
       </tr>
       <tr style="background: #f8fafc;">
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center; font-weight: bold;">ТП, ТБП, ТСП, ТФП</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">3000</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">2000</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">170</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">150</td>
-        <td style="border: 1px solid #1e40af; padding: 4px; text-align: center;">140</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center; font-weight: bold;">ТП, ТБП, ТСП, ТФП</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">3000</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">2000</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">170</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">150</td>
+        <td style="border: 1px solid #374151; padding: 4px; text-align: center;">140</td>
       </tr>
     </tbody>
   </table>
 </div>
 
-<div style="background: #f0f8ff; border: 2px solid #1e40af; border-radius: 8px; padding: 15px; margin: 15px 0;">
+<div style="background: #f8fafc; border: 2px solid #374151; border-radius: 8px; padding: 15px; margin: 15px 0;">
   <strong>Примечания:</strong><br/>
   1. В таблице приведены значения полезной длины, толщины стенки, глубин раструба и фальца для различных типов труб, которые рекомендуется принимать при разработке рабочих чертежей труб.<br/>
   2. При экономически обоснованном случае допускается изготовление и применение труб других размеров.<br/>
@@ -315,7 +317,7 @@ export const sections: Section[] = [
 
 <div id="dimensions-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
-    <h4 style="color: #1e40af; margin-top: 0;">Размеры и геометрия:</h4>
+    <h4 style="color: #374151; margin-top: 0;">Размеры и геометрия:</h4>
     <p>ГОСТ задаёт стандартный ряд диаметров железобетонных труб — от 300 мм до 3 метров. Длина подбирается в зависимости от диаметра: чем больше диаметр, тем длиннее должна быть труба. При особых условиях допускаются нестандартные размеры, но они требуют согласования с производителем.</p>
   </div>
 </div>`,
@@ -332,7 +334,7 @@ export const sections: Section[] = [
 
 <strong>Пример марки:</strong><br/><br/>
 
-<div style="background: #f0f8ff; border: 2px solid #1e40af; border-radius: 8px; padding: 15px; margin: 15px 0; text-align: center; font-size: 1.2em; font-weight: bold;">
+<div style="background: #f8fafc; border: 2px solid #374151; border-radius: 8px; padding: 15px; margin: 15px 0; text-align: center; font-size: 1.2em; font-weight: bold;">
 <span class="mark-group" data-group="1" style="cursor: pointer; padding: 2px 4px; border-radius: 4px; transition: background-color 0.3s;" onmouseover="highlightGroup(1)" onmouseout="unhighlightGroup()">ТС 80.25</span>-<span class="mark-group" data-group="2" style="cursor: pointer; padding: 2px 4px; border-radius: 4px; transition: background-color 0.3s;" onmouseover="highlightGroup(2)" onmouseout="unhighlightGroup()">3</span>-<span class="mark-group" data-group="3" style="cursor: pointer; padding: 2px 4px; border-radius: 4px; transition: background-color 0.3s;" onmouseover="highlightGroup(3)" onmouseout="unhighlightGroup()">П</span> ГОСТ 6482-2011
 </div>
 
@@ -346,43 +348,15 @@ export const sections: Section[] = [
 
 • <span class="explanation-group" data-group="1" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(1)" onmouseout="unhighlightMarkGroup()">полезную длину в дециметрах</span> — <span class="explanation-group" data-group="1" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(1)" onmouseout="unhighlightMarkGroup()">25</span>.<br/><br/>
 
-<strong>Вторая группа <span class="explanation-group" data-group="2" style="cursor: pointer; padding: 2px 4px; border-radius: 4px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(2)" onmouseout="unhighlightMarkGroup()">(3)</span></strong> — обозначает группу по несущей способности:<br/><br/>
-
-• <span class="explanation-group" data-group="2" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(2)" onmouseout="unhighlightMarkGroup()">1</span> — первая группа<br/><br/>
-
-• <span class="explanation-group" data-group="2" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(2)" onmouseout="unhighlightMarkGroup()">2</span> — вторая группа<br/><br/>
-
-• <span class="explanation-group" data-group="2" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(2)" onmouseout="unhighlightMarkGroup()">3</span> — третья группа<br/><br/>
-
-• <span class="explanation-group" data-group="2" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(2)" onmouseout="unhighlightMarkGroup()">4</span> — четвёртая группа<br/><br/>
+<strong>Вторая группа <span class="explanation-group" data-group="2" style="cursor: pointer; padding: 2px 4px; border-radius: 4px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(2)" onmouseout="unhighlightMarkGroup()">(3)</span></strong> — обозначает группу по несущей способности: <span class="explanation-group" data-group="2" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(2)" onmouseout="unhighlightMarkGroup()">1</span> — первая группа, <span class="explanation-group" data-group="2" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(2)" onmouseout="unhighlightMarkGroup()">2</span> — вторая группа, <span class="explanation-group" data-group="2" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(2)" onmouseout="unhighlightMarkGroup()">3</span> — третья группа, <span class="explanation-group" data-group="2" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(2)" onmouseout="unhighlightMarkGroup()">4</span> — четвёртая группа.<br/><br/>
 
 <strong>Третья группа <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 2px 4px; border-radius: 4px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">(П)</span></strong> — дополнительные характеристики:<br/><br/>
 
-<strong>Стойкость к агрессивной среде (проницаемость бетона):</strong><br/><br/>
+<strong>Стойкость к агрессивной среде (проницаемость бетона):</strong> <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">Н</span> — нормальная (<span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">W4</span>), <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">П</span> — пониженная (<span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">W6</span>), <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">О</span> — особо низкая (не ниже <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">W10</span>).<br/><br/>
 
-• <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">Н</span> — нормальная (<span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">W4</span>)<br/><br/>
+<strong>Вид агрессии:</strong> <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">Щ</span> — щелочная, <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">К</span> — кислотная, <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">Х</span> — хлориды, <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">С</span> — сульфаты.<br/><br/>
 
-• <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">П</span> — пониженная (<span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">W6</span>)<br/><br/>
-
-• <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">О</span> — особо низкая (не ниже <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">W10</span>)<br/><br/>
-
-<strong>Вид агрессии:</strong><br/><br/>
-
-• <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">Щ</span> — щелочная<br/><br/>
-
-• <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">К</span> — кислотная<br/><br/>
-
-• <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">Х</span> — хлориды<br/><br/>
-
-• <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">С</span> — сульфаты<br/><br/>
-
-<strong>Стойкость внутреннего защитного покрытия:</strong><br/><br/>
-
-• <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">к</span> — кислотостойкое<br/><br/>
-
-• <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">щ</span> — щелочестойкое<br/><br/>
-
-• <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">х</span> — химически стойкое<br/><br/>
+<strong>Стойкость внутреннего защитного покрытия:</strong> <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">к</span> — кислотостойкое, <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">щ</span> — щелочестойкое, <span class="explanation-group" data-group="3" style="cursor: pointer; padding: 1px 3px; border-radius: 3px; transition: background-color 0.3s;" onmouseover="highlightMarkGroup(3)" onmouseout="unhighlightMarkGroup()">х</span> — химически стойкое.<br/><br/>
 
 <strong>Пример расшифровки марки:</strong><br/><br/>
 
@@ -412,7 +386,7 @@ export const sections: Section[] = [
 
 <div id="marking-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
-    <h4 style="color: #1e40af; margin-top: 0;">Обозначение труб (простыми словами):</h4>
+    <h4 style="color: #374151; margin-top: 0;">Обозначение труб (простыми словами):</h4>
     <p><strong>Структура марки:</strong> марка трубы состоит из трёх групп, разделённых дефисами. Например, ТС 80.25-3-П ГОСТ 6482-2011.</p>
     
     <p><strong>Первая группа (ТС 80.25):</strong> указывает тип трубы (ТС), диаметр в сантиметрах (80 = 800 мм) и длину в дециметрах (25 = 2,5 м).</p>
@@ -449,7 +423,7 @@ export const sections: Section[] = [
 
 <div id="technology-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
-    <h4 style="color: #1e40af; margin-top: 0;">Технология изготовления (простыми словами):</h4>
+    <h4 style="color: #374151; margin-top: 0;">Технология изготовления (простыми словами):</h4>
     <p>Железобетонные трубы делают строго по рабочим чертежам и требованиям ГОСТа — все размеры, форма соединений и расход материалов должны полностью совпадать с проектом.</p>
     
     <p>Основные методы производства — это вибропрессование и радиальное прессование. Эти технологии считаются наиболее современными и позволяют выпускать прочные и долговечные трубы.</p>
@@ -515,7 +489,7 @@ export const sections: Section[] = [
 
 <div id="conditions-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
-    <h4 style="color: #1e40af; margin-top: 0;">Условия применения и расчёта (простыми словами):</h4>
+    <h4 style="color: #374151; margin-top: 0;">Условия применения и расчёта (простыми словами):</h4>
     <p>Железобетонные трубы можно использовать для подземных трубопроводов в большинстве климатических условий, но есть ограничения:</p>
     
     <p><strong>Климат:</strong> трубы допускается применять при температурах до –40 °C. Их нельзя использовать в районах вечной мерзлоты.</p>
@@ -622,7 +596,7 @@ export const sections: Section[] = [
 
 <div id="materials-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
-    <h4 style="color: #1e40af; margin-top: 0;">Материалы, бетон и армирование (простыми словами):</h4>
+    <h4 style="color: #374151; margin-top: 0;">Материалы, бетон и армирование (простыми словами):</h4>
     <p><strong>Бетон:</strong> трубы делают из прочного тяжёлого бетона (не ниже В30). Он должен быть водонепроницаемым (от W4 до W6), морозостойким и почти не впитывать влагу (до 6%). В тёплое время труба должна достигать 70% прочности перед отпуском, зимой — не меньше 90%.</p>
     
     <p><strong>Армирование:</strong> трубы усиливают стальными каркасами (спиральными — одинарными или двойными). Для особо больших диаметров (от 2000 мм) допускают дополнительное армирование сетками.</p>
@@ -680,7 +654,7 @@ export const sections: Section[] = [
 
 <div id="joint-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
-    <h4 style="color: #1e40af; margin-top: 0;">Стыковые соединения труб (простыми словами):</h4>
+    <h4 style="color: #374151; margin-top: 0;">Стыковые соединения труб (простыми словами):</h4>
     <p>Главное требование к соединению труб — оно должно быть герметичным и надёжным на весь срок эксплуатации.</p>
     
     <p>Для герметизации используют резиновые уплотнительные кольца или специальные герметики.</p>
@@ -718,7 +692,7 @@ export const sections: Section[] = [
 
 <div id="aggressive-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
-    <h4 style="color: #1e40af; margin-top: 0;">Трубы для агрессивной среды (простыми словами):</h4>
+    <h4 style="color: #374151; margin-top: 0;">Трубы для агрессивной среды (простыми словами):</h4>
     <p>Когда трубы работают в сложных условиях — например, в канализационных коллекторах с агрессивными стоками или биологически активной средой — к ним предъявляются особые требования:</p>
     
     <p>Все уплотнительные материалы должны быть устойчивыми к химическому воздействию и соответствовать проектной документации.</p>
@@ -788,56 +762,56 @@ export const sections: Section[] = [
 <strong>Таблица 2 — Дефекты на бетонных поверхностях и торцах труб</strong><br/><br/>
 
 <div style="overflow-x: auto; margin: 20px 0;">
-  <table style="width: 100%; border-collapse: collapse; font-size: 0.85em; background: white; border: 2px solid #1e40af;">
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.85em; background: white; border: 2px solid #374151;">
     <thead>
-      <tr style="background: #1e40af; color: white;">
-        <th rowspan="2" style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold; vertical-align: middle;">Вид поверхности</th>
-        <th colspan="5" style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Виды дефектов</th>
+      <tr style="background: #374151; color: white;">
+        <th rowspan="2" style="border: 1px solid #374151; padding: 8px; text-align: center; font-weight: bold; vertical-align: middle;">Вид поверхности</th>
+        <th colspan="5" style="border: 1px solid #374151; padding: 8px; text-align: center; font-weight: bold;">Виды дефектов</th>
       </tr>
-      <tr style="background: #1e40af; color: white;">
-        <th colspan="2" style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Раковин</th>
-        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Местных наплывов и впадин</th>
-        <th colspan="2" style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Сколов бетона (торцов)</th>
+      <tr style="background: #374151; color: white;">
+        <th colspan="2" style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">Раковин</th>
+        <th style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">Местных наплывов и впадин</th>
+        <th colspan="2" style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">Сколов бетона (торцов)</th>
       </tr>
       <tr style="background: #e2e8f0;">
-        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;"></th>
-        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Диаметр, мм</th>
-        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Глубина, мм</th>
-        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">наплывов (высота) и впадин (глубина), мм</th>
-        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Глубина, мм</th>
-        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Суммарная длина на 1 м ребра, мм</th>
+        <th style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;"></th>
+        <th style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">Диаметр, мм</th>
+        <th style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">Глубина, мм</th>
+        <th style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">наплывов (высота) и впадин (глубина), мм</th>
+        <th style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">Глубина, мм</th>
+        <th style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">Суммарная длина на 1 м ребра, мм</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Наружная и внутренняя</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">15</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">Наружная и внутренняя</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">15</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">-</td>
       </tr>
       <tr style="background: #f8fafc;">
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Стыковая в трубах (ТБ, ТБП, ТС и ТСП)</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">4</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">3</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">1</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">Стыковая в трубах (ТБ, ТБП, ТС и ТСП)</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">4</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">3</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">1</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">-</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Торцевая</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">15</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">50</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">Торцевая</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">15</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">50</td>
       </tr>
     </tbody>
   </table>
 </div>
 
-<div style="background: #f0f8ff; border: 2px solid #1e40af; border-radius: 8px; padding: 15px; margin: 15px 0;">
+<div style="background: #f8fafc; border: 2px solid #374151; border-radius: 8px; padding: 15px; margin: 15px 0;">
   <strong>Примечание:</strong> Знак "—" означает, что данное требование не распространяется на указанный вид поверхности.
 </div><br/><br/>
 
@@ -852,191 +826,191 @@ export const sections: Section[] = [
 <strong>Таблица 1 — Предельные отклонения от номинальных размеров труб</strong><br/><br/>
 
 <div style="overflow-x: auto; margin: 20px 0;">
-  <table style="width: 100%; border-collapse: collapse; font-size: 0.9em; background: white; border: 2px solid #1e40af;">
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.9em; background: white; border: 2px solid #374151;">
     <thead>
-      <tr style="background: #1e40af; color: white;">
-        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Диаметр условного прохода трубы, мм</th>
-        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Внутренний диаметр, мм</th>
-        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Толщина стенки, мм</th>
-        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Полезная длина, мм</th>
-        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Глубина раструба, мм</th>
-        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Диаметр конусной части фальцев, мм</th>
-        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Глубина фальцев, мм</th>
-        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Наружный диаметр втулочного конца, внутренний диаметр раструба (типов Т, ТП), мм</th>
-        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Наружный диаметр втулочного конца и буртика, внутренний диаметр раструба (типов ТБ, ТБП, ТС и ТСП), мм</th>
+      <tr style="background: #374151; color: white;">
+        <th style="border: 1px solid #374151; padding: 8px; text-align: center; font-weight: bold;">Диаметр условного прохода трубы, мм</th>
+        <th style="border: 1px solid #374151; padding: 8px; text-align: center; font-weight: bold;">Внутренний диаметр, мм</th>
+        <th style="border: 1px solid #374151; padding: 8px; text-align: center; font-weight: bold;">Толщина стенки, мм</th>
+        <th style="border: 1px solid #374151; padding: 8px; text-align: center; font-weight: bold;">Полезная длина, мм</th>
+        <th style="border: 1px solid #374151; padding: 8px; text-align: center; font-weight: bold;">Глубина раструба, мм</th>
+        <th style="border: 1px solid #374151; padding: 8px; text-align: center; font-weight: bold;">Диаметр конусной части фальцев, мм</th>
+        <th style="border: 1px solid #374151; padding: 8px; text-align: center; font-weight: bold;">Глубина фальцев, мм</th>
+        <th style="border: 1px solid #374151; padding: 8px; text-align: center; font-weight: bold;">Наружный диаметр втулочного конца, внутренний диаметр раструба (типов Т, ТП), мм</th>
+        <th style="border: 1px solid #374151; padding: 8px; text-align: center; font-weight: bold;">Наружный диаметр втулочного конца и буртика, внутренний диаметр раструба (типов ТБ, ТБП, ТС и ТСП), мм</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">300</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+10/-5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">300</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">+10/-5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">-</td>
       </tr>
       <tr style="background: #f8fafc;">
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">400</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+10/-5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">400</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">+10/-5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">-</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">500</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+10/-5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">500</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">+10/-5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">-</td>
       </tr>
       <tr style="background: #f8fafc;">
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">600</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+10/-5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">600</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">+10/-5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">-</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">-</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">800</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+10/-5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±2</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">800</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±6</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±6</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">+10/-5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±2</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±6</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±6</td>
       </tr>
       <tr style="background: #f8fafc;">
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">1000</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+10/-5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±2</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">1000</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±6</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±6</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">+10/-5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±2</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±6</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±6</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">1200</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+10/-5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">1200</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">+10/-5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±8</td>
       </tr>
       <tr style="background: #f8fafc;">
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">1400</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+10/-5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">1400</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">+10/-5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±8</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">1500</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+10/-5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">1500</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">+10/-5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±8</td>
       </tr>
       <tr style="background: #f8fafc;">
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">1600</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+10/-5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">1600</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">+10/-5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±8</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">1800</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+10/-5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±3</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">1800</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">+10/-5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±3</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±8</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±8</td>
       </tr>
       <tr style="background: #f8fafc;">
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">2000</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+12/-6</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">2000</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">+12/-6</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±6</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±10</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">2200</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+12/-6</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">2200</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">+12/-6</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±6</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±10</td>
       </tr>
       <tr style="background: #f8fafc;">
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">2400</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+12/-6</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">2400</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">+12/-6</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±6</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±10</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">3000</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">+12/-6</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±6</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±5</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±4</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">3000</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">+12/-6</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±6</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±4</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±10</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">±10</td>
       </tr>
     </tbody>
   </table>
 </div>
 
-<div style="background: #f0f8ff; border: 2px solid #1e40af; border-radius: 8px; padding: 15px; margin: 15px 0;">
+<div style="background: #f8fafc; border: 2px solid #374151; border-radius: 8px; padding: 15px; margin: 15px 0;">
   <strong>Примечание:</strong> Знак "—" означает, что данное требование не распространяется на трубы указанного диаметра.
 </div><br/><br/>
 
@@ -1048,7 +1022,7 @@ export const sections: Section[] = [
 
 <div id="quality-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
-    <h4 style="color: #1e40af; margin-top: 0;">Точность изготовления и качество поверхностей (простыми словами):</h4>
+    <h4 style="color: #374151; margin-top: 0;">Точность изготовления и качество поверхностей (простыми словами):</h4>
     <p>ГОСТ строго регламентирует точность изготовления железобетонных труб. Все размеры должны соответствовать заданным допускам, которые зависят от диаметра трубы.</p>
     
     <p><strong>Отклонения от перпендикулярности:</strong> торцы труб должны быть ровными, с допустимыми отклонениями от 3 до 12 мм в зависимости от диаметра.</p>
@@ -1190,7 +1164,7 @@ export const sections: Section[] = [
 
 <div id="acceptance-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
-    <h4 style="color: #1e40af; margin-top: 0;">Правила приёмки труб (простыми словами):</h4>
+    <h4 style="color: #374151; margin-top: 0;">Правила приёмки труб (простыми словами):</h4>
     <p>Железобетонные трубы принимают партиями. В одной партии должны быть трубы одного типа и качества, изготовленные за месяц. Количество труб в партии зависит от диаметра: от 1000 штук для мелких (300 мм) до 50 штук для самых больших (3000 мм).</p>
     
     <p>Качество каждой партии проверяют с помощью испытаний:</p>
@@ -1232,39 +1206,39 @@ export const sections: Section[] = [
 <strong>Таблица 3 — Размеры деревянного бруса для испытания труб</strong><br/><br/>
 
 <div style="overflow-x: auto; margin: 20px 0;">
-  <table style="width: 100%; border-collapse: collapse; font-size: 0.9em; background: white; border: 2px solid #1e40af;">
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.9em; background: white; border: 2px solid #374151;">
     <thead>
-      <tr style="background: #1e40af; color: white;">
-        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Диаметр условного прохода трубы, мм</th>
-        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Ширина и высота бруса, мм</th>
+      <tr style="background: #374151; color: white;">
+        <th style="border: 1px solid #374151; padding: 8px; text-align: center; font-weight: bold;">Диаметр условного прохода трубы, мм</th>
+        <th style="border: 1px solid #374151; padding: 8px; text-align: center; font-weight: bold;">Ширина и высота бруса, мм</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">300</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">25</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">300</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">25</td>
       </tr>
       <tr style="background: #f8fafc;">
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">300-500</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">50</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">300-500</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">50</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">600-1000</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">80</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">600-1000</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">80</td>
       </tr>
       <tr style="background: #f8fafc;">
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">1200-1600</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">100</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">1200-1600</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">100</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">2000-3000</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">120</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">2000-3000</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">120</td>
       </tr>
     </tbody>
   </table>
 </div>
 
-<div style="background: #f0f8ff; border: 2px solid #1e40af; border-radius: 8px; padding: 15px; margin: 15px 0;">
+<div style="background: #f8fafc; border: 2px solid #374151; border-radius: 8px; padding: 15px; margin: 15px 0;">
   <strong>Примечание:</strong> В миллиметрах.
 </div><br/><br/>
 
@@ -1329,60 +1303,60 @@ export const sections: Section[] = [
 <strong>Таблица 4 — Показатели для испытания на водонепроницаемость</strong><br/><br/>
 
 <div style="overflow-x: auto; margin: 20px 0;">
-  <table style="width: 100%; border-collapse: collapse; font-size: 0.85em; background: white; border: 2px solid #1e40af;">
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.85em; background: white; border: 2px solid #374151;">
     <thead>
-      <tr style="background: #1e40af; color: white;">
-        <th rowspan="2" style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold; vertical-align: middle;">Уровень стенок трубы</th>
-        <th colspan="3" style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Испытательное гидравлическое давление, кПа (кгс/см²), для труб длиной:</th>
+      <tr style="background: #374151; color: white;">
+        <th rowspan="2" style="border: 1px solid #374151; padding: 8px; text-align: center; font-weight: bold; vertical-align: middle;">Уровень стенок трубы</th>
+        <th colspan="3" style="border: 1px solid #374151; padding: 8px; text-align: center; font-weight: bold;">Испытательное гидравлическое давление, кПа (кгс/см²), для труб длиной:</th>
       </tr>
-      <tr style="background: #1e40af; color: white;">
-        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Верх трубы</th>
-        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Середина трубы</th>
-        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Низ трубы</th>
+      <tr style="background: #374151; color: white;">
+        <th style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">Верх трубы</th>
+        <th style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">Середина трубы</th>
+        <th style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">Низ трубы</th>
       </tr>
       <tr style="background: #e2e8f0;">
-        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;"></th>
-        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">кПа (кгс/см²)</th>
-        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">кПа (кгс/см²)</th>
-        <th style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">кПа (кгс/см²)</th>
+        <th style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;"></th>
+        <th style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">кПа (кгс/см²)</th>
+        <th style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">кПа (кгс/см²)</th>
+        <th style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">кПа (кгс/см²)</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">2,0 м</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">1,0 (0,01)</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">10,0 (0,10)</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">20,0 (0,20)</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">2,0 м</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">1,0 (0,01)</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">10,0 (0,10)</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">20,0 (0,20)</td>
       </tr>
       <tr style="background: #f8fafc;">
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">2,5 м</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">1,0 (0,01)</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">12,5 (0,125)</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">25,0 (0,25)</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">2,5 м</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">1,0 (0,01)</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">12,5 (0,125)</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">25,0 (0,25)</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">3,0 м</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">1,0 (0,01)</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">15,0 (0,15)</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">30,0 (0,30)</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">3,0 м</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">1,0 (0,01)</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">15,0 (0,15)</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">30,0 (0,30)</td>
       </tr>
       <tr style="background: #f8fafc;">
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">3,5 м</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">1,0 (0,01)</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">17,5 (0,175)</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">35,0 (0,35)</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">3,5 м</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">1,0 (0,01)</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">17,5 (0,175)</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">35,0 (0,35)</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">Время выдержки, ч</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">48</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">36</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">24</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">Время выдержки, ч</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">48</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">36</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">24</td>
       </tr>
     </tbody>
   </table>
 </div>
 
-<div style="background: #f0f8ff; border: 2px solid #1e40af; border-radius: 8px; padding: 15px; margin: 15px 0;">
+<div style="background: #f8fafc; border: 2px solid #374151; border-radius: 8px; padding: 15px; margin: 15px 0;">
   <strong>Примечание:</strong> Давление указано в кПа и кгс/см², время выдержки в часах.
 </div><br/><br/>
 
@@ -1442,7 +1416,7 @@ export const sections: Section[] = [
 
 <div id="testing-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
-    <h4 style="color: #1e40af; margin-top: 0;">Методы испытаний и контроля (простыми словами):</h4>
+    <h4 style="color: #374151; margin-top: 0;">Методы испытаний и контроля (простыми словами):</h4>
     <p>Чтобы убедиться в качестве железобетонных труб, они проходят несколько обязательных проверок.</p>
     
     <p><strong>Проверка прочности и трещиностойкости</strong></p>
@@ -1512,39 +1486,39 @@ export const sections: Section[] = [
 <strong>Таблица 5 — Число рядов труб в штабеле</strong><br/><br/>
 
 <div style="overflow-x: auto; margin: 20px 0;">
-  <table style="width: 100%; border-collapse: collapse; font-size: 0.9em; background: white; border: 2px solid #1e40af;">
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.9em; background: white; border: 2px solid #374151;">
     <thead>
-      <tr style="background: #1e40af; color: white;">
-        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Диаметр условного прохода трубы, мм</th>
-        <th style="border: 1px solid #1e40af; padding: 8px; text-align: center; font-weight: bold;">Число рядов труб в штабеле, шт.</th>
+      <tr style="background: #374151; color: white;">
+        <th style="border: 1px solid #374151; padding: 8px; text-align: center; font-weight: bold;">Диаметр условного прохода трубы, мм</th>
+        <th style="border: 1px solid #374151; padding: 8px; text-align: center; font-weight: bold;">Число рядов труб в штабеле, шт.</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">300, 400</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">5</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">300, 400</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">5</td>
       </tr>
       <tr style="background: #f8fafc;">
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">500, 600</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">4</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">500, 600</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">4</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">800-1200</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">3</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">800-1200</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">3</td>
       </tr>
       <tr style="background: #f8fafc;">
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">1400-2400</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">2</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">1400-2400</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">2</td>
       </tr>
       <tr>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center; font-weight: bold;">3000</td>
-        <td style="border: 1px solid #1e40af; padding: 6px; text-align: center;">1</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center; font-weight: bold;">3000</td>
+        <td style="border: 1px solid #374151; padding: 6px; text-align: center;">1</td>
       </tr>
     </tbody>
   </table>
 </div>
 
-<div style="background: #f0f8ff; border: 2px solid #1e40af; border-radius: 8px; padding: 15px; margin: 15px 0;">
+<div style="background: #f8fafc; border: 2px solid #374151; border-radius: 8px; padding: 15px; margin: 15px 0;">
   <strong>Примечание:</strong> Количество рядов зависит от диаметра трубы для обеспечения безопасного хранения.
 </div><br/><br/>
 
@@ -1582,7 +1556,7 @@ export const sections: Section[] = [
 
 <div id="transport-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
-    <h4 style="color: #1e40af; margin-top: 0;">Транспортирование, хранение и гарантии изготовителя (простыми словами):</h4>
+    <h4 style="color: #374151; margin-top: 0;">Транспортирование, хранение и гарантии изготовителя (простыми словами):</h4>
     <p>Железобетонные трубы перевозят и хранят в строгом соответствии с ГОСТ 13015.</p>
     
     <p><strong>Положение при перевозке и хранении</strong></p>
@@ -1669,7 +1643,7 @@ Email: <span data-mark-key="email" tabindex="0" role="button" aria-label="zakaz@
 
 <div id="purchase-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
-    <h4 style="color: #1e40af; margin-top: 0;">Где приобрести трубы (производители):</h4>
+    <h4 style="color: #374151; margin-top: 0;">Где приобрести трубы (производители):</h4>
     <p>ООО «Завод железобетонных труб ОДИНЕЦ» — современное предприятие, выпускающее железобетонные трубы по ГОСТ 6482-2011.</p>
     
     <p><strong>Производственные мощности</strong></p>
@@ -1796,7 +1770,7 @@ Email: <span data-mark-key="email" tabindex="0" role="button" aria-label="zakaz@
 
 <div id="references-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
-    <h4 style="color: #1e40af; margin-top: 0;">Нормативные ссылки:</h4>
+    <h4 style="color: #374151; margin-top: 0;">Нормативные ссылки:</h4>
     <p>ГОСТ 6482-2011 не живёт сам по себе — он связан с кучей других документов. Тут и правила безопасности труда, и нормы для цемента, песка, щебня, воды, арматуры, методы испытаний, даже санитарные нормы воздуха и шум на рабочих местах.</p>
     
     <p>Проще говоря, если собрать все эти ГОСТы в одну стопку, то получится кирпич знаний потолще, чем сами трубы 🙂</p>
@@ -1898,7 +1872,7 @@ Email: <span data-mark-key="email" tabindex="0" role="button" aria-label="zakaz@
 
 <div id="safety-explanation" class="explanation-content" style="display: none;">
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
-    <h4 style="color: #1e40af; margin-top: 0;">Требования безопасности и охраны окружающей среды:</h4>
+    <h4 style="color: #374151; margin-top: 0;">Требования безопасности и охраны окружающей среды:</h4>
     <p>Железобетонные трубы по ГОСТ 6482-2011 относятся к безопасным строительным изделиям: они не горят, не взрывоопасны и считаются малоопасными по классу воздействия на человека и окружающую среду.</p>
     
     <p><strong>Рабочие условия</strong></p>

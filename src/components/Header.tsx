@@ -37,7 +37,7 @@ export default function Header({ onNavigate }: HeaderProps) {
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <button aria-label="Открыть меню" className="p-2 rounded-md hover:bg-muted transition-colors">
-                <Menu className="h-7.5 w-7.5 text-orange-500" />
+                <Menu className="h-9 w-9 text-orange-500" strokeWidth={3} />
               </button>
             </SheetTrigger>
             <SheetContent side="left" className="w-72 sm:w-80 py-4">

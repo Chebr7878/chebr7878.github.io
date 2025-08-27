@@ -129,6 +129,38 @@ All colors MUST be HSL.
     transform-origin: bottom left;
   }
   
+  /* Выравнивание текста по ширине для всех текстовых блоков, кроме заголовков */
+  p {
+    text-align: justify;
+  }
+  
+  /* Выравнивание по ширине для div с контентом в SectionCard */
+  .text-sm.sm\\:text-base.leading-relaxed {
+    text-align: justify;
+  }
+  
+  /* Выравнивание по ширине для параграфов внутри контента */
+  .text-sm.sm\\:text-base.leading-relaxed p {
+    text-align: justify;
+  }
+  
+  /* Выравнивание по ширине для описания на главной странице */
+  .text-muted-foreground.text-sm.sm\\:text-base {
+    text-align: justify;
+  }
+  
+  /* Выравнивание по ширине для всех div элементов с текстом */
+  div:not([class*="heading"]):not([class*="title"]) {
+    text-align: justify;
+  }
+  
+  /* Исключение для заголовков - оставляем их выравнивание по левому краю */
+  h1, h2, h3, h4, h5, h6,
+  [class*="heading"],
+  [class*="title"] {
+    text-align: left;
+  }
+  
   /* Стилизованные заголовки с темно-серым цветом */
   .heading-primary {
     color: hsl(220 13% 18%);
@@ -156,11 +188,11 @@ All colors MUST be HSL.
   }
   
   [data-mark-key]:hover {
-    background-color: hsl(210 40% 96%);
+    background-color: hsl(210 100% 90%);
   }
   
   [data-mark-key].hover-highlight {
-    background-color: hsl(210 40% 96%);
+    background-color: hsl(210 100% 90%);
     color: hsl(220 13% 18%);
   }
   
@@ -176,7 +208,7 @@ All colors MUST be HSL.
   }
   
   [data-mark-key^="group-"].hover-highlight {
-    background-color: hsl(210 60% 90%);
+    background-color: hsl(210 100% 85%);
     color: hsl(220 13% 18%);
   }
   
@@ -188,11 +220,11 @@ All colors MUST be HSL.
   
   /* Темная тема для интерактивных элементов */
   .dark [data-mark-key]:hover {
-    background-color: hsl(220 9% 25%);
+    background-color: hsl(210 100% 25%);
   }
   
   .dark [data-mark-key].hover-highlight {
-    background-color: hsl(220 9% 25%);
+    background-color: hsl(210 100% 25%);
     color: hsl(220 9% 85%);
   }
   
@@ -203,7 +235,7 @@ All colors MUST be HSL.
   
   /* Темная тема для групповых элементов */
   .dark [data-mark-key^="group-"].hover-highlight {
-    background-color: hsl(210 40% 30%);
+    background-color: hsl(210 100% 30%);
     color: hsl(220 9% 85%);
   }
   
@@ -255,6 +287,7 @@ All colors MUST be HSL.
   
   .explanation-content {
     animation: slideDown 0.3s ease-out;
+    text-align: justify;
   }
   
   @keyframes slideDown {
@@ -325,5 +358,215 @@ All colors MUST be HSL.
   
   .dark .explanation-btn-gray:hover {
     background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+  }
+  
+  /* Дополнительные стили для выравнивания текста по ширине */
+  .explanation-content p {
+    text-align: justify;
+  }
+  
+  /* Выравнивание по ширине для всех текстовых элементов, кроме заголовков */
+  .explanation-content div:not([class*="heading"]):not([class*="title"]) {
+    text-align: justify;
+  }
+  
+  /* Стили для кнопки чертежа */
+  .drawing-btn {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 0 8px;
+  }
+  
+  .drawing-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  }
+  
+  .drawing-btn:active {
+    transform: translateY(0);
+  }
+  
+  /* Стили для модального окна с чертежом */
+  .drawing-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+  }
+  
+  .drawing-modal-content {
+    position: relative;
+    background-color: white;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 850px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    animation: modalSlideIn 0.3s ease-out;
+  }
+  
+  .drawing-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #6b7280;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .drawing-modal-close:hover {
+    color: #374151;
+  }
+  
+  .drawing-modal img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  @keyframes modalSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  /* Темная тема для модального окна */
+  .dark .drawing-modal-content {
+    background-color: hsl(222.2 84% 4.9%);
+    color: hsl(220 9% 85%);
+  }
+  
+  .dark .drawing-modal-close {
+    color: hsl(220 9% 75%);
+  }
+  
+  .dark .drawing-modal-close:hover {
+    color: hsl(220 9% 85%);
+  }
+  
+  /* Стили для контентных блоков - белые с легким размытием */
+  .content-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dark .content-card {
+    background: rgba(17, 24, 39, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Стили для фона страницы в стиле бетонной стены */
+  .concrete-background {
+    background-image: url('/бетонная%20поверхность%20d8eb492aa1c6c8bcd103eef98f5510b8.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+  }
+  
+  .concrete-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Темная тема */
+@media (prefers-color-scheme: dark) {
+  .concrete-background::before {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+  
+  .concrete-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      /* Следы шпателя и неровности */
+      linear-gradient(45deg, transparent 30%, rgba(0, 0, 0, 0.015) 40%, rgba(0, 0, 0, 0.025) 50%, rgba(0, 0, 0, 0.015) 60%, transparent 70%),
+      linear-gradient(-45deg, transparent 20%, rgba(0, 0, 0, 0.01) 30%, rgba(0, 0, 0, 0.02) 40%, rgba(0, 0, 0, 0.01) 50%, transparent 60%),
+      linear-gradient(90deg, transparent 40%, rgba(0, 0, 0, 0.01) 45%, rgba(0, 0, 0, 0.015) 50%, rgba(0, 0, 0, 0.01) 55%, transparent 60%),
+      linear-gradient(0deg, transparent 50%, rgba(0, 0, 0, 0.01) 55%, rgba(0, 0, 0, 0.015) 60%, rgba(0, 0, 0, 0.01) 65%, transparent 70%),
+      /* Дополнительные мелкие штрихи */
+      linear-gradient(30deg, transparent 60%, rgba(0, 0, 0, 0.005) 65%, transparent 70%),
+      linear-gradient(-30deg, transparent 10%, rgba(0, 0, 0, 0.01) 15%, transparent 20%),
+      linear-gradient(60deg, transparent 80%, rgba(0, 0, 0, 0.005) 85%, transparent 90%),
+      linear-gradient(-60deg, transparent 30%, rgba(0, 0, 0, 0.01) 35%, transparent 40%);
+    background-size: 150px 150px, 120px 120px, 200px 200px, 180px 180px, 100px 100px, 80px 80px, 90px 90px, 70px 70px;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .dark .concrete-background {
+    background: linear-gradient(135deg, 
+      rgba(55, 65, 81, 0.9) 0%, 
+      rgba(31, 41, 55, 0.85) 50%, 
+      rgba(17, 24, 39, 0.9) 100%);
+  }
+  
+  .dark .concrete-background::before {
+    background-image: 
+      /* Мелкие поры и раковины для темной темы */
+      radial-gradient(circle at 15% 25%, rgba(255, 255, 255, 0.04) 0.5px, transparent 0.5px),
+      radial-gradient(circle at 85% 75%, rgba(255, 255, 255, 0.03) 0.3px, transparent 0.3px),
+      radial-gradient(circle at 45% 85%, rgba(255, 255, 255, 0.035) 0.4px, transparent 0.4px),
+      radial-gradient(circle at 95% 15%, rgba(255, 255, 255, 0.025) 0.2px, transparent 0.2px),
+      radial-gradient(circle at 25% 65%, rgba(255, 255, 255, 0.03) 0.3px, transparent 0.3px),
+      radial-gradient(circle at 75% 35%, rgba(255, 255, 255, 0.035) 0.4px, transparent 0.4px),
+      radial-gradient(circle at 55% 45%, rgba(255, 255, 255, 0.025) 0.2px, transparent 0.2px),
+      radial-gradient(circle at 35% 15%, rgba(255, 255, 255, 0.03) 0.3px, transparent 0.3px),
+      radial-gradient(circle at 65% 95%, rgba(255, 255, 255, 0.04) 0.5px, transparent 0.5px),
+      radial-gradient(circle at 5% 55%, rgba(255, 255, 255, 0.025) 0.2px, transparent 0.2px);
+  }
+  
+  .dark .concrete-background::after {
+    background-image: 
+      /* Следы шпателя и неровности для темной темы */
+      linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.015) 40%, rgba(255, 255, 255, 0.025) 50%, rgba(255, 255, 255, 0.015) 60%, transparent 70%),
+      linear-gradient(-45deg, transparent 20%, rgba(255, 255, 255, 0.01) 30%, rgba(255, 255, 255, 0.02) 40%, rgba(255, 255, 255, 0.01) 50%, transparent 60%),
+      linear-gradient(90deg, transparent 40%, rgba(255, 255, 255, 0.01) 45%, rgba(255, 255, 255, 0.015) 50%, rgba(255, 255, 255, 0.01) 55%, transparent 60%),
+      linear-gradient(0deg, transparent 50%, rgba(255, 255, 255, 0.01) 55%, rgba(255, 255, 255, 0.015) 60%, rgba(255, 255, 255, 0.01) 65%, transparent 70%),
+      /* Дополнительные мелкие штрихи */
+      linear-gradient(30deg, transparent 60%, rgba(255, 255, 255, 0.005) 65%, transparent 70%),
+      linear-gradient(-30deg, transparent 10%, rgba(255, 255, 255, 0.01) 15%, transparent 20%),
+      linear-gradient(60deg, transparent 80%, rgba(255, 255, 255, 0.005) 85%, transparent 90%),
+      linear-gradient(-60deg, transparent 30%, rgba(255, 255, 255, 0.01) 35%, transparent 40%);
   }
 }
