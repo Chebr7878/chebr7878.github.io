@@ -30,6 +30,89 @@ export const sections: Section[] = [
 
 Требования настоящего стандарта не распространяются на водопропускные трубы, укладываемые под насыпями автомобильных и железных дорог, а также трубы для микротоннелирования.<br/><br/>
 
+<div style="text-align: center; margin: 20px 0;">
+  <button id="road-clarification-btn" class="explanation-btn-gray" onclick="toggleRoadClarification()">
+    <span style="font-weight: bold; color: white;">УТОЧНЕНИЕ</span>
+  </button>
+</div>
+
+<div id="road-clarification" class="explanation-content" style="display: none;">
+  <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
+    <h4 style="color: #374151; margin-top: 0;">Применение железобетонных труб по ГОСТ 6482-2011 в дорожном строительстве</h4>
+    
+    <p>В сфере дорожного строительства часто возникает вопрос: можно ли использовать железобетонные безнапорные трубы, произведенные по ГОСТ 6482-2011, в качестве водопропускных сооружений под насыпями автомобильных дорог? Несмотря на прямую оговорку в стандарте, ответ является положительным для дорог определенных категорий. Давайте разберемся, в каких случаях это допустимо и чем регламентируется.</p>
+    
+    <h5 style="color: #374151;">Что означает оговорка в ГОСТ 6482-2011?</h5>
+    
+    <p>В самом ГОСТ 6482-2011 указано: «Требования настоящего стандарта не распространяются на водопропускные трубы, укладываемые под насыпями автомобильных и железных дорог».</p>
+    
+    <p>Важно понимать: это утверждение не запрещает применение таких труб в дорожном строительстве. Оно означает, что данный ГОСТ регулирует в первую очередь производство и параметры самих труб, но не является исчерпывающим нормативным документом для их проектирования и расчета в составе дорожной насыпи. Для этого существуют другие, более специализированные своды правил (СП).</p>
+    
+    <h5 style="color: #374151;">Область применения труб на дорогах IV и V категорий</h5>
+    
+    <p>Железобетонные безнапорные трубы по ГОСТ 6482-2011 успешно применяются в качестве водопропускных сооружений на автомобильных дорогах IV и V категорий.</p>
+    
+    <p>Это применение обосновано и регламентировано следующими документами:</p>
+    <ul>
+      <li>ГОСТ 6482-2011 — определяет требования к самим трубам.</li>
+      <li>СП 35.13330.2011 "Мосты и трубы" — устанавливает расчетные нагрузки для искусственных сооружений.</li>
+      <li>СП 34.13330.2010 "Автомобильные дороги" — определяет категории дорог и нагрузки на них.</li>
+      <li>ТПР 503.7.015.90 Трубы водопропускные круглые из длинномерных звеньев отверстием 1,00, 1,20, 1,40, 1,60 метров под автомобильные дороги — специализированные технические правила проектирования, прямо разрешающие использование круглых водопропускных труб из длинномерных звеньев под автомобильные дороги.</li>
+    </ul>
+    
+    <h5 style="color: #374151;">Ключевой параметр: расчетная нагрузка НК-100</h5>
+    
+    <p>Возможность использования труб по ГОСТ 6482-2011 обусловлена тем, что они проектируются и изготавливаются с учетом эксплуатации под временной нагрузкой на поверхности земли класса НК-100.</p>
+    
+    <p><strong>Что такое НК-100?</strong></p>
+    <ul>
+      <li>НК-100 — это нормативная нагрузка на колесо, используемая при расчёте малых искусственных сооружений (в том числе водопропускных труб) на автомобильных дорогах.</li>
+      <li>НК — нормативная нагрузка от колесной машины (одиночного транспортного средства).</li>
+      <li>100 — нагрузка в 100 килоньютон (кН), что соответствует примерно 10 тоннам силы.</li>
+      <li>Согласно СП 35.13330.2011 (п. 6.4) и СП 34.13330.2010, нагрузка НК-100 является расчетной для автомобильных дорог IV и V категорий.</li>
+    </ul>
+    
+    <h5 style="color: #374151;">Категории дорог и примеры их использования</h5>
+    
+    <p>Категории дорог определяются СП 34.13330.2010 (актуализированная редакция СНиП 2.05.02-85) на основе их значения, интенсивности движения и состава транспорта.</p>
+    
+    <p><strong>Дороги IV категории:</strong></p>
+    <ul>
+      <li>Назначение: подъездные пути к населенным пунктам, промышленным и сельскохозяйственным объектам, курортам, зонам отдыха.</li>
+      <li>Интенсивность движения: от 200 до 2000 автомобилей в сутки.</li>
+      <li>Примеры: подъезд к деревне от федеральной трассы, дорога к ферме или складу, улицы в небольших городах с низкой проходимостью, дороги внутри промышленных зон.</li>
+    </ul>
+    
+    <p><strong>Дороги V категории:</strong></p>
+    <ul>
+      <li>Назначение: внутрихозяйственные, полевые, лесные, временные дороги.</li>
+      <li>Интенсивность движения: менее 200 автомобилей в сутки.</li>
+      <li>Примеры: полевые и лесовозные дороги, технологические проезды на стройплощадках, внутрипоселковые улицы в деревнях.</li>
+    </ul>
+    
+    <p>Таким образом, утверждение о том, что требования ГОСТ 6482-2011 не распространяются на трубы под дорожными насыпями, лишь указывает на необходимость руководствоваться при проектировании другими нормативными документами.</p>
+    
+    <p>Железобетонные безнапорные трубы по ГОСТ 6482-2011 разрешено и технически обоснованно применять на дорогах IV и V категорий, потому что:</p>
+    <ol>
+      <li>Они рассчитаны на нагрузку НК-100, которая является стандартной для этих категорий дорог.</li>
+      <li>Специализированные правила ТПР 503.7.015.90 прямо разрешают их использование.</li>
+      <li>Их параметры полностью соответствуют требованиям СП 35.13330.2011 "Мосты и трубы" и СП 34.13330.2010 "Автомобильные дороги" для данных условий эксплуатации.</li>
+    </ol>
+    
+    <p>Следовательно, для проектов дорог низких категорий трубы по ГОСТ 6482-2011 являются экономичным, надежным и полностью соответствующим нормативам решением.</p>
+    
+    <div style="text-align: center; margin: 30px 0; display: flex; justify-content: center; align-items: center;">
+      <img src="/Трубопереезд из раструбных труб.png" alt="Трубопереезд из раструбных труб" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); max-height: 400px; display: block; margin: 0 auto;" />
+    </div>
+    
+    <div style="text-align: center; margin: 20px 0;">
+      <button onclick="toggleRoadClarification()" style="background: #6b7280; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 500; transition: background-color 0.2s;">
+        Закрыть примечание
+      </button>
+    </div>
+  </div>
+</div>
+
 <strong>Термины и определения</strong><br/><br/>
 
 <strong>вибропрессование</strong> — прогрессивный высокопроизводительный способ изготовления труб из жёстких бетонных смесей с использованием немедленной распалубки, характеризующийся пониженной энергоёмкостью и металлоёмкостью и обеспечивающий получение изделий с высокими физико-механическими характеристиками.<br/><br/>
@@ -78,6 +161,12 @@ export const sections: Section[] = [
       <li><strong>Трубы с подошвой</strong> — с плоским основанием для устойчивости.</li>
       <li><strong>Безнапорные трубы</strong> — для самотёчного движения жидкости.</li>
     </ul>
+    
+    <div style="text-align: center; margin: 20px 0;">
+      <button onclick="toggleExplanation()" style="background: #6b7280; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 500; transition: background-color 0.2s;">
+        Закрыть примечание
+      </button>
+    </div>
   </div>
 </div>`,
   },
@@ -113,6 +202,12 @@ export const sections: Section[] = [
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
     <h4 style="color: #374151; margin-top: 0;">Классификация труб:</h4>
     <p>ГОСТ выделяет несколько видов железобетонных труб. Одни соединяются с помощью герметика, другие — с резиновыми кольцами. Некоторые трубы делают с плоским основанием, чтобы они лучше стояли и не перекатывались. Есть также фальцевые трубы с замковым соединением. А в особых случаях допускаются трубы не только круглые, но и овальные или эллиптические — по отдельным чертежам.</p>
+    
+    <div style="text-align: center; margin: 20px 0;">
+      <button onclick="toggleClassificationExplanation()" style="background: #6b7280; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 500; transition: background-color 0.2s;">
+        Закрыть примечание
+      </button>
+    </div>
   </div>
 </div>
 
@@ -146,6 +241,12 @@ export const sections: Section[] = [
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
     <h4 style="color: #374151; margin-top: 0;">Группы по несущей способности:</h4>
     <p>Железобетонные трубы бывают разных «классов прочности». Одни можно укладывать неглубоко — под 2 метра грунта, другие выдерживают до 10 метров засыпки сверху. Поэтому при проектировании важно правильно выбрать группу: чем глубже закладывается труба, тем более прочной она должна быть.</p>
+    
+    <div style="text-align: center; margin: 20px 0;">
+      <button onclick="toggleStrengthExplanation()" style="background: #6b7280; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 500; transition: background-color 0.2s;">
+        Закрыть примечание
+      </button>
+    </div>
   </div>
 </div>`,
   },
@@ -319,6 +420,12 @@ export const sections: Section[] = [
   <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
     <h4 style="color: #374151; margin-top: 0;">Размеры и геометрия:</h4>
     <p>ГОСТ задаёт стандартный ряд диаметров железобетонных труб — от 300 мм до 3 метров. Длина подбирается в зависимости от диаметра: чем больше диаметр, тем длиннее должна быть труба. При особых условиях допускаются нестандартные размеры, но они требуют согласования с производителем.</p>
+    
+    <div style="text-align: center; margin: 20px 0;">
+      <button onclick="toggleDimensionsExplanation()" style="background: #6b7280; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 500; transition: background-color 0.2s;">
+        Закрыть примечание
+      </button>
+    </div>
   </div>
 </div>`,
   },
@@ -398,6 +505,12 @@ export const sections: Section[] = [
     <p><strong>Маркировка:</strong> наносится чёрной водостойкой краской на наружную поверхность раструба или торца трубы. При необходимости добавляются установочные риски для обозначения положения шелыги и лотка.</p>
     
     <p><strong>👉 Главная мысль:</strong> марка трубы — это её паспорт, который содержит всю важную информацию о размерах, прочности и специальных свойствах. По марке можно точно определить, подходит ли труба для конкретных условий эксплуатации.</p>
+    
+    <div style="text-align: center; margin: 20px 0;">
+      <button onclick="toggleMarkingExplanation()" style="background: #6b7280; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 500; transition: background-color 0.2s;">
+        Закрыть примечание
+      </button>
+    </div>
   </div>
 </div>`,
   },
@@ -431,6 +544,12 @@ export const sections: Section[] = [
     <p>Также возможен выпуск труб методом вибрирования или центрифугирования, но только при наличии обоснования и согласования с заказчиком.</p>
     
     <p><strong>👉 Суть в одном предложении:</strong> трубы изготавливаются по ГОСТу и проекту, чаще всего методом вибропрессования или радиального прессования, что обеспечивает их точность и высокое качество.</p>
+    
+    <div style="text-align: center; margin: 20px 0;">
+      <button onclick="toggleTechnologyExplanation()" style="background: #6b7280; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 500; transition: background-color 0.2s;">
+        Закрыть примечание
+      </button>
+    </div>
   </div>
 </div>`,
   },
@@ -507,6 +626,12 @@ export const sections: Section[] = [
     <p><strong>Срок службы:</strong> правильно изготовленные и уложенные трубы служат не менее 50 лет.</p>
     
     <p><strong>👉 Суть в одном предложении:</strong> железобетонные трубы можно использовать почти везде, кроме вечной мерзлоты и сильной сейсмики, они должны выдерживать нагрузку грунта и транспорта, а при правильном монтаже служат больше 50 лет.</p>
+    
+    <div style="text-align: center; margin: 20px 0;">
+      <button onclick="toggleConditionsExplanation()" style="background: #6b7280; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 500; transition: background-color 0.2s;">
+        Закрыть примечание
+      </button>
+    </div>
   </div>
 </div>`,
   },
@@ -618,6 +743,151 @@ export const sections: Section[] = [
     content: `Конструкция стыкового соединения должна обеспечивать его герметичность и неразъёмность в процессе эксплуатации.<br/><br/>
 
 Для герметизации стыковых соединений труб применяют уплотнительные кольца из эластомерных материалов (например, резины круглого или трапециевидного сечения), а также герметики и другие материалы, соответствующие требованиям действующих нормативных документов.<br/><br/>
+
+<div style="text-align: center; margin: 20px 0;">
+  <button id="seal-sizes-btn" class="explanation-btn-gray" onclick="toggleSealSizes()">
+    <span style="font-weight: bold; color: white;">РАЗМЕРЫ УПЛОТНИТЕЛЬНЫХ КОЛЕЦ</span>
+  </button>
+</div>
+
+<div id="seal-sizes" class="explanation-content" style="display: none;">
+  <div style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 15px 0;">
+    <h4 style="color: #374151; margin-top: 0;">Ориентировочные размеры уплотнительных колец (манжет), клиновидный профиль, манжеты имеют сварной (клеевой) шов</h4>
+    
+    <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center; align-items: center;">
+      <img src="/Профиль манжет.png" alt="Профиль манжет" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); max-height: 400px; display: block; margin: 0 auto;" />
+    </div>
+    
+    <div style="overflow-x: auto; margin: 20px 0;">
+      <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+        <thead>
+          <tr style="background: #374151; color: white;">
+            <th style="padding: 12px; text-align: center; border: 1px solid #e5e7eb; font-weight: 600;">Диаметр трубы, мм</th>
+            <th style="padding: 12px; text-align: center; border: 1px solid #e5e7eb; font-weight: 600;">Марка труб</th>
+            <th style="padding: 12px; text-align: center; border: 1px solid #e5e7eb; font-weight: 600;">Длина Lp, мм</th>
+            <th style="padding: 12px; text-align: center; border: 1px solid #e5e7eb; font-weight: 600;">Высота h, мм</th>
+            <th style="padding: 12px; text-align: center; border: 1px solid #e5e7eb; font-weight: 600;">а, мм</th>
+            <th style="padding: 12px; text-align: center; border: 1px solid #e5e7eb; font-weight: 600;">Вес, кг</th>
+          </tr>
+        </thead>
+        <tbody>
+                     <tr style="background: #f9fafb;">
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">d=300 мм</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">ТС 30.25-2(3,4,5)</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">1120+/-10</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">18</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">6</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">0,6*</td>
+           </tr>
+           <tr style="background: white;">
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">d=400 мм</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">ТС 40.25-2(3,4,5)</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">1470+/-10</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">18</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">6</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">0,7*</td>
+           </tr>
+           <tr style="background: #f9fafb;">
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">d=500 мм</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">ТС 50.25-2(3,4,5)</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">1840+/-10</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">18</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">6</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">0,8*</td>
+           </tr>
+           <tr style="background: white;">
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">d=600 мм</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">ТС 60.25-2(3,4,5)</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">2140+/-10</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">18</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">6</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">0,9*</td>
+           </tr>
+           <tr style="background: #f9fafb;">
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">d=800 мм</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">ТС 80.25-2(3,4,5)</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">2800+/-15</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">23</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">7</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">1,5*</td>
+           </tr>
+           <tr style="background: white;">
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">d=800 мм</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">ТС 80.30-2(3,4,5)</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">2800+/-15</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">23</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">7</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">1,5*</td>
+           </tr>
+           <tr style="background: #f9fafb;">
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">d=1000 мм</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">ТС 100.25-2(3,4,5)</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">3510+/-15</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">23</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">8</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">1,8*</td>
+           </tr>
+           <tr style="background: white;">
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">d=1000 мм</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">ТС 100.30-2(3,4,5)</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">3510+/-15</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">23</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">8</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">1,8*</td>
+           </tr>
+           <tr style="background: #f9fafb;">
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">d=1200 мм</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">ТС 120.30-2(3,4,5)</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">4130+/-15</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">23</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">8</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">2,1*</td>
+           </tr>
+           <tr style="background: white;">
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">d=1400 мм</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">ТС 140.30-2(3,4,5)</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">4800+/-15</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">23</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">8</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">2,9*</td>
+           </tr>
+           <tr style="background: #f9fafb;">
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">d=1500 мм</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">ТС 150.30-2(3,4)</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">4870+/-15</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">23</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">8</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">3,0*</td>
+           </tr>
+           <tr style="background: white;">
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">d=1600 мм</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">ТС 160.30-2(3,4,5)</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">5320+/-15</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">23</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">8</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">3,2*</td>
+           </tr>
+           <tr style="background: #f9fafb;">
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">d=2000 мм</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">ТС 200.30-2(3,4,5)</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">6400+/-15</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">23</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">8</td>
+             <td style="padding: 10px; text-align: center; border: 1px solid #e5e7eb;">4,0*</td>
+           </tr>
+        </tbody>
+      </table>
+    </div>
+    
+            <p><strong>Примечание:</strong> *- указан ориентировочный вес манжет, фактические показатели могут отличаться от указанных</p>
+    
+    <div style="text-align: center; margin: 20px 0;">
+      <button onclick="toggleSealSizes()" style="background: #6b7280; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 500; transition: background-color 0.2s;">
+        Закрыть примечание
+      </button>
+    </div>
+  </div>
+</div>
 
 <strong>Минимальный номинальный размер зазора между стыковыми поверхностями труб:</strong><br/><br/>
 
