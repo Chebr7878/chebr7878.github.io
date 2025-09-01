@@ -2,6 +2,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SectionCard from "@/components/SectionCard";
 import DrawingModal from "@/components/DrawingModal";
+import CentrifugationModal from "@/components/CentrifugationModal";
+import VibropressingModal from "@/components/VibropressingModal";
+import RadialPressingModal from "@/components/RadialPressingModal";
 import CloudBackground from "@/components/CloudBackground";
 import sections from "@/data/sections";
 import { useState } from "react";
@@ -9,6 +12,12 @@ import { useState } from "react";
 const Index = () => {
   const [isDrawingModalOpen, setIsDrawingModalOpen] = useState(false);
   const [currentDrawingType, setCurrentDrawingType] = useState<string | null>(null);
+  const [isCentrifugationModalOpen, setIsCentrifugationModalOpen] = useState(false);
+  const [currentCentrifugationImageType, setCurrentCentrifugationImageType] = useState<string | null>(null);
+  const [isVibropressingModalOpen, setIsVibropressingModalOpen] = useState(false);
+  const [currentVibropressingImageType, setCurrentVibropressingImageType] = useState<string | null>(null);
+  const [isRadialPressingModalOpen, setIsRadialPressingModalOpen] = useState(false);
+  const [currentRadialPressingImageType, setCurrentRadialPressingImageType] = useState<string | null>(null);
   const onNavigate = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
@@ -30,6 +39,39 @@ const Index = () => {
   const closeDrawingModal = () => {
     setIsDrawingModalOpen(false);
     setCurrentDrawingType(null);
+  };
+
+  const openCentrifugationModal = (imageType: string) => {
+    console.log('Index: openCentrifugationModal called with:', imageType);
+    setCurrentCentrifugationImageType(imageType);
+    setIsCentrifugationModalOpen(true);
+  };
+
+  const closeCentrifugationModal = () => {
+    setIsCentrifugationModalOpen(false);
+    setCurrentCentrifugationImageType(null);
+  };
+
+  const openVibropressingModal = (imageType: string) => {
+    console.log('Index: openVibropressingModal called with:', imageType);
+    setCurrentVibropressingImageType(imageType);
+    setIsVibropressingModalOpen(true);
+  };
+
+  const closeVibropressingModal = () => {
+    setIsVibropressingModalOpen(false);
+    setCurrentVibropressingImageType(null);
+  };
+
+  const openRadialPressingModal = (imageType: string) => {
+    console.log('Index: openRadialPressingModal called with:', imageType);
+    setCurrentRadialPressingImageType(imageType);
+    setIsRadialPressingModalOpen(true);
+  };
+
+  const closeRadialPressingModal = () => {
+    setIsRadialPressingModalOpen(false);
+    setCurrentRadialPressingImageType(null);
   };
 
   const structuredData = {
@@ -64,7 +106,14 @@ const Index = () => {
 
           <div className="grid grid-cols-1 gap-4 sm:gap-5">
             {sections.map((s) => (
-              <SectionCard key={s.id} {...s} onOpenDrawing={openDrawingModal} />
+              <SectionCard 
+                key={s.id} 
+                {...s} 
+                onOpenDrawing={openDrawingModal}
+                onOpenCentrifugationImage={openCentrifugationModal}
+                onOpenVibropressingImage={openVibropressingModal}
+                onOpenRadialPressingImage={openRadialPressingModal}
+              />
             ))}
           </div>
         </section>
@@ -74,6 +123,21 @@ const Index = () => {
         isOpen={isDrawingModalOpen}
         drawingType={currentDrawingType}
         onClose={closeDrawingModal}
+      />
+      <CentrifugationModal 
+        isOpen={isCentrifugationModalOpen}
+        imageType={currentCentrifugationImageType}
+        onClose={closeCentrifugationModal}
+      />
+      <VibropressingModal 
+        isOpen={isVibropressingModalOpen}
+        imageType={currentVibropressingImageType}
+        onClose={closeVibropressingModal}
+      />
+      <RadialPressingModal 
+        isOpen={isRadialPressingModalOpen}
+        imageType={currentRadialPressingImageType}
+        onClose={closeRadialPressingModal}
       />
       <Footer />
       <script

@@ -9,16 +9,180 @@ export default function SectionCard({
   title,
   content,
   onOpenDrawing,
+  onOpenCentrifugationImage,
+  onOpenVibropressingImage,
+  onOpenRadialPressingImage,
 }: {
   id: string;
   number: number;
   title: string;
   content: string;
   onOpenDrawing?: (drawingType: string) => void;
+  onOpenCentrifugationImage?: (imageType: string) => void;
+  onOpenVibropressingImage?: (imageType: string) => void;
+  onOpenRadialPressingImage?: (imageType: string) => void;
 }) {
   const containerRef = useMarkHighlight();
 
   useEffect(() => {
+    console.log('SectionCard: useEffect triggered for id:', id);
+    console.log('SectionCard: onOpenCentrifugationImage:', !!onOpenCentrifugationImage);
+    console.log('SectionCard: onOpenVibropressingImage:', !!onOpenVibropressingImage);
+    console.log('SectionCard: onOpenRadialPressingImage:', !!onOpenRadialPressingImage);
+    
+    // Функция для вставки кнопок
+    const injectButtons = () => {
+      // Вставляем кнопки центрифугирования в placeholder
+      if (id === 'tehnologiya-izgotovleniya' && onOpenCentrifugationImage) {
+        console.log('SectionCard: Attempting to inject centrifugation buttons');
+        const placeholder = document.getElementById('centrifugation-buttons-placeholder');
+        if (placeholder) {
+          console.log('SectionCard: Found centrifugation placeholder, injecting buttons');
+          // Создаем контейнер для кнопок
+          const buttonsContainer = document.createElement('div');
+          console.log('SectionCard: Created buttonsContainer for centrifugation');
+          buttonsContainer.className = 'centrifugation-buttons-container';
+          
+          // Создаем кнопки
+          const centrifugationImages = [
+            { type: 'centrifuge-1', name: 'Центрифуга 1' },
+            { type: 'centrifuge-2', name: 'Центрифуга 2' },
+            { type: 'centrifuge-3', name: 'Центрифуга 3' },
+          ];
+
+          const buttonsHTML = `
+            <div class="mt-6 p-4 bg-gray-50 rounded-lg">
+              <h4 class="text-md font-semibold mb-3 text-center text-gray-800">
+                Изображения центрифугирования
+              </h4>
+              <div class="flex justify-center items-center gap-3">
+                ${centrifugationImages.map((image) => `
+                  <button
+                    onclick="window.openCentrifugationImage && window.openCentrifugationImage('${image.type}')"
+                    class="px-3 py-2 rounded-lg border-2 border-gray-300 bg-white hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium text-gray-700 hover:text-gray-900 shadow-sm hover:shadow-md"
+                    style="min-width: 100px;"
+                  >
+                    ${image.name}
+                  </button>
+                `).join('')}
+              </div>
+            </div>
+          `;
+          
+          buttonsContainer.innerHTML = buttonsHTML;
+          placeholder.replaceWith(buttonsContainer);
+        }
+      }
+
+      // Вставляем кнопки вибропрессования в placeholder
+      if (id === 'tehnologiya-izgotovleniya' && onOpenVibropressingImage) {
+        console.log('SectionCard: Attempting to inject vibropressing buttons');
+        const placeholder = document.getElementById('vibropressing-buttons-placeholder');
+        if (placeholder) {
+          console.log('SectionCard: Found vibropressing placeholder, injecting buttons');
+          // Создаем контейнер для кнопок
+          const buttonsContainer = document.createElement('div');
+          buttonsContainer.className = 'vibropressing-buttons-container';
+          
+          // Создаем кнопки
+          const vibropressingImages = [
+            { type: 'vibropress-1', name: 'Вибропресс 1' },
+            { type: 'vibropress-2', name: 'Вибропресс 2' },
+            { type: 'vibropress-3', name: 'Вибропресс 3' },
+          ];
+
+          const buttonsHTML = `
+            <div class="mt-6 p-4 bg-gray-50 rounded-lg">
+              <h4 class="text-md font-semibold mb-3 text-center text-gray-800">
+                Изображения вибропрессования
+              </h4>
+              <div class="flex justify-center items-center gap-3">
+                ${vibropressingImages.map((image) => `
+                  <button
+                    onclick="window.openVibropressingImage && window.openVibropressingImage('${image.type}')"
+                    class="px-3 py-2 rounded-lg border-2 border-gray-300 bg-white hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium text-gray-700 hover:text-gray-900 shadow-sm hover:shadow-md"
+                    style="min-width: 100px;"
+                  >
+                    ${image.name}
+                  </button>
+                `).join('')}
+              </div>
+            </div>
+          `;
+          
+          buttonsContainer.innerHTML = buttonsHTML;
+          placeholder.replaceWith(buttonsContainer);
+        }
+      }
+
+      // Вставляем кнопки радиального прессования в placeholder
+      if (id === 'tehnologiya-izgotovleniya' && onOpenRadialPressingImage) {
+        console.log('SectionCard: Attempting to inject radial pressing buttons');
+        const placeholder = document.getElementById('radialpressing-buttons-placeholder');
+        if (placeholder) {
+          console.log('SectionCard: Found radial pressing placeholder, injecting buttons');
+          // Создаем контейнер для кнопок
+          const buttonsContainer = document.createElement('div');
+          buttonsContainer.className = 'radialpressing-buttons-container';
+          
+          // Создаем кнопки
+          const radialPressingImages = [
+            { type: 'radialpress-1', name: 'Радиальное прессование 1' },
+            { type: 'radialpress-2', name: 'Радиальное прессование 2' },
+            { type: 'radialpress-3', name: 'Радиальное прессование 3' },
+          ];
+
+          const buttonsHTML = `
+            <div class="mt-6 p-4 bg-gray-50 rounded-lg">
+              <h4 class="text-md font-semibold mb-3 text-center text-gray-800">
+                Изображения радиального прессования
+              </h4>
+              <div class="flex justify-center items-center gap-3">
+                ${radialPressingImages.map((image) => `
+                  <button
+                    onclick="window.openRadialPressingImage && window.openRadialPressingImage('${image.type}')"
+                    class="px-3 py-2 rounded-lg border-2 border-gray-300 bg-white hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 font-medium text-gray-700 hover:text-gray-900 shadow-sm hover:shadow-md"
+                    style="min-width: 100px;"
+                  >
+                    ${image.name}
+                  </button>
+                `).join('')}
+              </div>
+            </div>
+          `;
+          
+          buttonsContainer.innerHTML = buttonsHTML;
+          placeholder.replaceWith(buttonsContainer);
+        }
+      }
+    };
+    
+    // Вызываем функцию вставки кнопок
+    injectButtons();
+    
+    // Создаем MutationObserver для отслеживания изменений в DOM
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.type === 'childList') {
+          // Проверяем, появились ли плейсхолдеры
+          const centrifugationPlaceholder = document.getElementById('centrifugation-buttons-placeholder');
+          const vibropressingPlaceholder = document.getElementById('vibropressing-buttons-placeholder');
+          const radialPressingPlaceholder = document.getElementById('radialpressing-buttons-placeholder');
+          
+          if (centrifugationPlaceholder && !centrifugationPlaceholder.querySelector('.centrifugation-buttons-container')) {
+            console.log('SectionCard: Found centrifugation placeholder via observer, injecting buttons');
+            injectButtons();
+          }
+        }
+      });
+    });
+    
+    // Начинаем наблюдение за изменениями в DOM
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+
     // Функция для переключения уточнения о дорожных трубах
     const toggleRoadClarification = () => {
       const clarification = document.getElementById('road-clarification');
@@ -53,12 +217,26 @@ export default function SectionCard({
 
     // Добавляем функции в глобальную область видимости
     (window as any).toggleRoadClarification = toggleRoadClarification;
+    (window as any).openCentrifugationImage = (imageType: string) => {
+      console.log('Global: openCentrifugationImage called with:', imageType);
+      onOpenCentrifugationImage?.(imageType);
+    };
+    (window as any).openVibropressingImage = (imageType: string) => {
+      console.log('Global: openVibropressingImage called with:', imageType);
+      onOpenVibropressingImage?.(imageType);
+    };
+    (window as any).openRadialPressingImage = (imageType: string) => {
+      console.log('Global: openRadialPressingImage called with:', imageType);
+      onOpenRadialPressingImage?.(imageType);
+    };
+    
     (window as any).toggleExplanation = () => toggleExplanation('simple-explanation');
     (window as any).toggleClassificationExplanation = () => toggleExplanation('classification-explanation');
     (window as any).toggleStrengthExplanation = () => toggleExplanation('strength-explanation');
     (window as any).toggleDimensionsExplanation = () => toggleExplanation('dimensions-explanation');
     (window as any).toggleMarkingExplanation = () => toggleExplanation('marking-explanation');
     (window as any).toggleTechnologyExplanation = () => toggleExplanation('technology-explanation');
+    (window as any).toggleProductionTechnologies = () => toggleExplanation('production-technologies');
     (window as any).toggleConditionsExplanation = () => toggleExplanation('conditions-explanation');
     (window as any).toggleMaterialsExplanation = () => toggleExplanation('materials-explanation');
     (window as any).toggleJointExplanation = () => toggleExplanation('joint-explanation');
@@ -74,13 +252,18 @@ export default function SectionCard({
 
     // Очистка при размонтировании
     return () => {
+      observer.disconnect();
       delete (window as any).toggleRoadClarification;
+      delete (window as any).openCentrifugationImage;
+      delete (window as any).openVibropressingImage;
+      delete (window as any).openRadialPressingImage;
       delete (window as any).toggleExplanation;
       delete (window as any).toggleClassificationExplanation;
       delete (window as any).toggleStrengthExplanation;
       delete (window as any).toggleDimensionsExplanation;
       delete (window as any).toggleMarkingExplanation;
       delete (window as any).toggleTechnologyExplanation;
+      delete (window as any).toggleProductionTechnologies;
       delete (window as any).toggleConditionsExplanation;
       delete (window as any).toggleMaterialsExplanation;
       delete (window as any).toggleJointExplanation;
@@ -95,8 +278,6 @@ export default function SectionCard({
       delete (window as any).toggleSealSizes;
     };
   }, []);
-
-
 
   return (
     <article id={id} className="scroll-mt-24" aria-labelledby={`${id}-title`}>

@@ -40,3 +40,26 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Стили для интерактивных изображений в статье */
+.article-image {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center center;
+  display: block;
+  margin: 0 auto;
+}
+
+.article-image:hover {
+  transform: scale(2.0);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.article-image:active {
+  transform: scale(2.5);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
