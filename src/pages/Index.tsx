@@ -88,13 +88,13 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background relative concrete-background">
+    <div className="min-h-screen bg-background relative">
       <CloudBackground />
       <Header onNavigate={onNavigate} />
       <main className="pt-16 pb-10 relative z-10">
         <section className="mx-auto max-w-6xl px-3 sm:px-4">
           <div className="py-6 sm:py-8">
-            <div className="p-5 sm:p-6 content-card rounded-lg">
+            <div className="p-5 sm:p-6 content-card">
               <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight mb-2 heading-primary">
                 ГОСТ 6482-2011 — Трубы железобетонные безнапорные
               </h1>

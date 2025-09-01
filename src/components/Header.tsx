@@ -17,16 +17,37 @@ export default function Header({ onNavigate }: HeaderProps) {
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
     if (q.length < 2) return [];
-    return sections.filter((s) =>
-      s.title.toLowerCase().includes(q) ||
-      s.keywords.some((k) => k.toLowerCase().includes(q))
-    );
+    
+    return sections.filter((s) => {
+      // Поиск по заголовку
+      if (s.title.toLowerCase().includes(q)) return true;
+      
+      // Поиск по ключевым словам
+      if (s.keywords.some((k) => k.toLowerCase().includes(q))) return true;
+      
+      // Поиск по краткому описанию
+      if (s.summary.toLowerCase().includes(q)) return true;
+      
+      // Поиск по содержимому (только первые 200 символов для производительности)
+      const contentPreview = s.content.replace(/<[^>]*>/g, '').toLowerCase().substring(0, 200);
+      if (contentPreview.includes(q)) return true;
+      
+      return false;
+    }).slice(0, 10); // Ограничиваем результаты до 10 элементов
   }, [query]);
 
   const navigateTo = (id: string) => {
     setShowSuggest(false);
     setQuery("");
     onNavigate(id);
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'Escape') {
+      setShowSuggest(false);
+      setQuery("");
+      inputRef.current?.blur();
+    }
   };
 
   return (
@@ -78,24 +99,41 @@ export default function Header({ onNavigate }: HeaderProps) {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 onFocus={() => setShowSuggest(true)}
-                onBlur={() => setTimeout(() => setShowSuggest(false), 150)}
+                onBlur={() => {
+                  // Небольшая задержка, чтобы пользователь мог кликнуть на результат
+                  setTimeout(() => setShowSuggest(false), 200);
+                }}
+                onKeyDown={handleKeyDown}
                 aria-label="Поиск по разделам"
               />
-              {showSuggest && results.length > 0 && (
+              {showSuggest && (
                 <div className="absolute mt-1 w-full rounded-md border bg-popover text-popover-foreground shadow animate-fade-in z-50">
-                  <ul className="py-1 max-h-72 overflow-auto">
-                    {results.map((s) => (
-                      <li key={s.id}>
-                        <button
-                          className="w-full px-3 py-2 text-left hover:bg-muted transition-colors"
-                          onMouseDown={(e) => e.preventDefault()}
-                          onClick={() => navigateTo(s.id)}
-                        >
-                          {s.title}
-                        </button>
-                      </li>
-                    ))}
-                  </ul>
+                  {results.length > 0 ? (
+                    <ul className="py-1 max-h-72 overflow-auto">
+                      {results.map((s) => (
+                        <li key={s.id}>
+                          <button
+                            className="w-full px-3 py-2 text-left hover:bg-muted transition-colors text-sm"
+                            onMouseDown={(e) => {
+                              e.preventDefault();
+                              navigateTo(s.id);
+                            }}
+                          >
+                            <div className="font-medium">{s.title}</div>
+                            {s.summary && (
+                              <div className="text-xs text-muted-foreground mt-1 truncate">
+                                {s.summary.substring(0, 60)}...
+                              </div>
+                            )}
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : query.trim().length >= 2 ? (
+                    <div className="px-3 py-4 text-center text-sm text-muted-foreground">
+                      Ничего не найдено
+                    </div>
+                  ) : null}
                 </div>
               )}
             </div>
