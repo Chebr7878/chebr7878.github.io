@@ -84,9 +84,9 @@ export default function Header({ onNavigate }: HeaderProps) {
 
           {/* Center: Title */}
           <div className="flex-1 flex items-center justify-center">
-            <div className="truncate text-center font-semibold tracking-tight">
-              ГОСТ 6482-2011 — Трубы железобетонные безнапорные
-            </div>
+                    <div className="truncate text-center font-semibold tracking-tight text-orange-500">
+          ГОСТ 6482-2011 — Трубы железобетонные безнапорные
+        </div>
           </div>
 
           {/* Right: Search */}

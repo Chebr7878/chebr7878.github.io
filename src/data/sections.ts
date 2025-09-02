@@ -18,7 +18,13 @@ export const sections: Section[] = [
 ТРУБЫ ЖЕЛЕЗОБЕТОННЫЕ БЕЗНАПОРНЫЕ<br/><br/>
 Введен в действие в качестве национального стандарта Российской Федерации<br/>
 с 1 января 2013 г.<br/><br/>
-Взамен ГОСТ 6482-88`,
+Взамен ГОСТ 6482-88<br/><br/>
+
+        <div style="text-align: center; margin: 30px 0;">
+          <button id="gost-download-btn" class="explanation-btn-gray" onclick="downloadGOST()" style="background: rgba(251, 146, 60, 0.7); color: #92400e; border: 2px solid rgba(251, 146, 60, 0.8); padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 16px; transition: all 0.2s; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); backdrop-filter: blur(4px);">
+            <span style="font-weight: bold; color: #92400e;">📄 ГОСТ 6482-2011 PDF СКАЧАТЬ</span>
+          </button>
+        </div>`,
   },
   {
     id: 'oblast-primeneniya',
@@ -807,6 +813,17 @@ export const sections: Section[] = [
   <button id="conditions-explanation-btn" class="explanation-btn-gray" onclick="toggleConditionsExplanation()">
     <span style="font-weight: bold; color: white;">СВОИМИ СЛОВАМИ</span>
   </button>
+</div>
+
+<div style="text-align: center; margin: 30px 0;">
+  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+    <button onclick="openPipeMaterialArticle()" style="background: rgba(59, 130, 246, 0.8); color: white; border: 2px solid rgba(59, 130, 246, 0.9); padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 16px; transition: all 0.2s; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); backdrop-filter: blur(4px);">
+      <span style="font-weight: bold;">📄 Выбор материала труб</span>
+    </button>
+    <button onclick="openDesignMaterials()" style="background: rgba(34, 197, 94, 0.8); color: white; border: 2px solid rgba(34, 197, 94, 0.9); padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 16px; transition: all 0.2s; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); backdrop-filter: blur(4px);">
+      <span style="font-weight: bold;">📄 Материалы для проектирования</span>
+    </button>
+  </div>
 </div>
 
 <div id="conditions-explanation" class="explanation-content" style="display: none;">

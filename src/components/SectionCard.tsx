@@ -230,6 +230,40 @@ export default function SectionCard({
       onOpenRadialPressingImage?.(imageType);
     };
     
+    // Функция для скачивания ГОСТ 6482-2011
+    (window as any).downloadGOST = () => {
+      const filename = 'ГОСТ 6482-2011 Трубы железобетонные безнапорные  .pdf';
+      const url = `/${filename}`;
+      console.log('Скачиваю ГОСТ:', url);
+      
+      // Создаем ссылку для скачивания
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = filename;
+      link.target = '_blank';
+      
+      // Добавляем ссылку в DOM, кликаем по ней и удаляем
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    };
+    
+    // Функция для открытия статьи о выборе материала труб
+    (window as any).openPipeMaterialArticle = () => {
+      const filename = 'Статья о выборе материала труб Шепелевич Н.И. .pdf';
+      const url = `/${filename}`;
+      console.log('Открываю статью о выборе материала труб:', url);
+      window.open(url, '_blank');
+    };
+    
+    // Функция для открытия материалов для проектирования
+    (window as any).openDesignMaterials = () => {
+      const filename = 'МАТЕРИАЛЫ для проектирования ГОСТ 6482-2011 .pdf';
+      const url = `/${filename}`;
+      console.log('Открываю материалы для проектирования:', url);
+      window.open(url, '_blank');
+    };
+    
     (window as any).toggleExplanation = () => toggleExplanation('simple-explanation');
     (window as any).toggleClassificationExplanation = () => toggleExplanation('classification-explanation');
     (window as any).toggleStrengthExplanation = () => toggleExplanation('strength-explanation');
@@ -257,6 +291,9 @@ export default function SectionCard({
       delete (window as any).openCentrifugationImage;
       delete (window as any).openVibropressingImage;
       delete (window as any).openRadialPressingImage;
+      delete (window as any).downloadGOST;
+      delete (window as any).openPipeMaterialArticle;
+      delete (window as any).openDesignMaterials;
       delete (window as any).toggleExplanation;
       delete (window as any).toggleClassificationExplanation;
       delete (window as any).toggleStrengthExplanation;

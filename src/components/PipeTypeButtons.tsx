@@ -12,6 +12,11 @@ export default function PipeTypeButtons({ onOpenDrawing }: PipeTypeButtonsProps)
     { type: 'tfp', name: 'Тип ТФП' },
   ];
 
+  const openPDF = (filename: string) => {
+    const url = `/${filename}`;
+    window.open(url, '_blank');
+  };
+
   return (
     <div className="mt-8 p-6 bg-gray-50 rounded-lg">
       <h3 className="text-lg font-semibold mb-4 text-center text-gray-800">
@@ -31,6 +36,29 @@ export default function PipeTypeButtons({ onOpenDrawing }: PipeTypeButtonsProps)
             {pipeType.name}
           </button>
         ))}
+      </div>
+      
+      {/* Новые кнопки для PDF файлов */}
+      <div className="mt-6 pt-6 border-t border-gray-200">
+        <h4 className="text-md font-semibold mb-3 text-center text-gray-700">
+          Дополнительные материалы
+        </h4>
+        <div className="flex justify-center items-center gap-4">
+          <button
+            onClick={() => openPDF('Трубы железобетонные Т ТБ ТС - отличия - взаимозаменяемость .pdf')}
+            className="px-4 py-2 rounded-lg border-2 border-blue-300 bg-blue-50 hover:bg-blue-100 hover:border-blue-400 transition-all duration-200 font-medium text-blue-700 hover:text-blue-900 shadow-sm hover:shadow-md"
+            style={{ minWidth: '200px' }}
+          >
+            Трубы Т, ТС, ТБ взаимозаменяемость
+          </button>
+          <button
+            onClick={() => openPDF('Письмо трубы Т ТБ ТС взаимозаменяемые Институт БелНИИС .pdf')}
+            className="px-4 py-2 rounded-lg border-2 border-green-300 bg-green-50 hover:bg-green-100 hover:border-green-400 transition-all duration-200 font-medium text-green-700 hover:text-green-900 shadow-sm hover:shadow-md"
+            style={{ minWidth: '200px' }}
+          >
+            Трубы Т, ТС, ТБ письмо БЕЛНИИС
+          </button>
+        </div>
       </div>
     </div>
   );
