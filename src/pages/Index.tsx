@@ -92,19 +92,34 @@ const Index = () => {
       <CloudBackground />
       <Header onNavigate={onNavigate} />
       <main className="pt-16 pb-10 relative z-10">
-        <section className="mx-auto max-w-6xl px-3 sm:px-4">
-          <div className="py-6 sm:py-8">
-            <div className="p-5 sm:p-6 content-card">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight mb-2 heading-primary">
+        <section className="mx-auto max-w-6xl px-3 sm:px-4 lg:px-6">
+          <div className="py-4 sm:py-6 lg:py-8">
+            <div className="p-4 sm:p-5 lg:p-6 content-card">
+              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight mb-3 sm:mb-4 heading-primary">
                 ГОСТ 6482-2011 — Трубы железобетонные безнапорные
               </h1>
-              <p className="text-muted-foreground text-sm sm:text-base">
-                Этот сайт посвящён ГОСТ 6482-2011 и содержит всю основную информацию о железобетонных трубах: их виды, назначение, размеры, маркировку, правила изготовления, испытаний, транспортировки и хранения. Здесь вы также найдёте сведения о производителях и о том, где можно купить трубы железобетонные. Для удобства представлен простой обзор стандарта с 18 разделами — от классификации и размеров до испытаний, транспортировки и требований безопасности. Используйте меню или поиск, чтобы быстро перейти к нужному разделу.
+              <p className="text-muted-foreground text-xs sm:text-sm lg:text-base leading-relaxed">
+                Этот сайт посвящён ГОСТ 6482-2011 и содержит всю основную информацию о железобетонных трубах: их виды, назначение, размеры, маркировку, правила изготовления, испытаний, транспортировки и хранения. Здесь вы также найдёте{' '}
+                <span 
+                  className="producer-link"
+                  onClick={() => onNavigate('gde-priobresti')}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      onNavigate('gde-priobresti');
+                    }
+                  }}
+                >
+                  сведения о производителях и о том, где можно купить трубы железобетонные
+                </span>
+                . Для удобства представлен простой обзор стандарта с 18 разделами — от классификации и размеров до испытаний, транспортировки и требований безопасности. Используйте меню или поиск, чтобы быстро перейти к нужному разделу.
               </p>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-4 sm:gap-5">
+          <div className="grid grid-cols-1 gap-3 sm:gap-4 lg:gap-5">
             {sections.map((s) => (
               <SectionCard 
                 key={s.id} 

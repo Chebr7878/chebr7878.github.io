@@ -1,6 +1,7 @@
 import * as React from "react"
 
-const MOBILE_BREAKPOINT = 768
+const MOBILE_BREAKPOINT = 640
+const TABLET_BREAKPOINT = 1024
 
 export function useIsMobile() {
   const [isMobile, setIsMobile] = React.useState<boolean | undefined>(undefined)
@@ -16,4 +17,44 @@ export function useIsMobile() {
   }, [])
 
   return !!isMobile
+}
+
+export function useDeviceType() {
+  const [deviceType, setDeviceType] = React.useState<'mobile' | 'tablet' | 'desktop'>('desktop')
+
+  React.useEffect(() => {
+    const updateDeviceType = () => {
+      const width = window.innerWidth
+      if (width < MOBILE_BREAKPOINT) {
+        setDeviceType('mobile')
+      } else if (width < TABLET_BREAKPOINT) {
+        setDeviceType('tablet')
+      } else {
+        setDeviceType('desktop')
+      }
+    }
+
+    updateDeviceType()
+    window.addEventListener('resize', updateDeviceType)
+    return () => window.removeEventListener('resize', updateDeviceType)
+  }, [])
+
+  return deviceType
+}
+
+export function useIsTablet() {
+  const [isTablet, setIsTablet] = React.useState<boolean>(false)
+
+  React.useEffect(() => {
+    const updateIsTablet = () => {
+      const width = window.innerWidth
+      setIsTablet(width >= MOBILE_BREAKPOINT && width < TABLET_BREAKPOINT)
+    }
+
+    updateIsTablet()
+    window.addEventListener('resize', updateIsTablet)
+    return () => window.removeEventListener('resize', updateIsTablet)
+  }, [])
+
+  return isTablet
 }

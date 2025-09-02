@@ -577,4 +577,305 @@ All colors MUST be HSL.
       transform: translateY(0);
     }
   }
+
+  /* Адаптивные стили для мобильных устройств */
+  @media (max-width: 640px) {
+    /* Уменьшаем размеры кнопок на мобильных */
+    .explanation-btn,
+    .explanation-btn-gray {
+      padding: 8px 16px;
+      font-size: 12px;
+      border-radius: 20px;
+    }
+    
+    /* Адаптируем кнопки чертежей */
+    .drawing-btn {
+      padding: 4px 10px;
+      font-size: 10px;
+      border-radius: 15px;
+      margin: 0 4px;
+    }
+    
+    /* Улучшаем модальные окна для мобильных */
+    .drawing-modal-content {
+      margin: 10% auto;
+      padding: 16px;
+      width: 95%;
+      max-width: none;
+    }
+    
+    /* Адаптируем изображения в статьях */
+    .article-image {
+      max-width: 100%;
+      margin: 10px auto;
+    }
+    
+    .article-image:hover {
+      transform: scale(1.5);
+    }
+    
+    .article-image:active {
+      transform: scale(2.0);
+    }
+  }
+
+  /* Стили для планшетов */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .explanation-btn,
+    .explanation-btn-gray {
+      padding: 10px 18px;
+      font-size: 13px;
+    }
+    
+    .drawing-btn {
+      padding: 5px 12px;
+      font-size: 11px;
+    }
+    
+    .article-image:hover {
+      transform: scale(1.8);
+    }
+    
+    .article-image:active {
+      transform: scale(2.2);
+    }
+  }
+
+  /* Улучшенные стили для кнопок на всех устройствах */
+  .explanation-btn,
+  .explanation-btn-gray {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .drawing-btn {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Улучшенные стили для модальных окон */
+  .drawing-modal {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .drawing-modal-content {
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+  }
+  
+  /* Адаптивные отступы для контента */
+  @media (max-width: 640px) {
+    .content-card {
+      margin: 0 8px;
+      border-radius: 12px;
+    }
+  }
+  
+  /* Улучшенная читаемость на мобильных */
+  @media (max-width: 640px) {
+    p, div {
+      line-height: 1.6;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      line-height: 1.3;
+    }
+  }
+
+  /* Дополнительные адаптивные стили */
+  @media (max-width: 480px) {
+    /* Очень маленькие экраны */
+    .content-card {
+      margin: 0 4px;
+      border-radius: 8px;
+      padding: 12px;
+    }
+    
+    .explanation-btn,
+    .explanation-btn-gray {
+      padding: 6px 12px;
+      font-size: 11px;
+      border-radius: 18px;
+    }
+    
+    .drawing-btn {
+      padding: 3px 8px;
+      font-size: 9px;
+      border-radius: 12px;
+      margin: 0 2px;
+    }
+  }
+
+  /* Landscape ориентация на мобильных */
+  @media (max-width: 640px) and (orientation: landscape) {
+    .content-card {
+      margin: 0 8px;
+    }
+    
+    .drawing-modal-content {
+      margin: 5% auto;
+      max-height: 80vh;
+    }
+  }
+
+  /* Улучшенные стили для touch устройств */
+  @media (hover: none) and (pointer: coarse) {
+    .explanation-btn,
+    .explanation-btn-gray,
+    .drawing-btn {
+      min-height: 44px;
+      min-width: 44px;
+    }
+    
+    .explanation-btn:active,
+    .explanation-btn-gray:active,
+    .drawing-btn:active {
+      transform: scale(0.95);
+    }
+    
+    .article-image:hover {
+      transform: none;
+    }
+    
+    .article-image:active {
+      transform: scale(1.2);
+    }
+  }
+
+  /* Улучшенные стили для высоких DPI экранов */
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .content-card {
+      border-width: 0.5px;
+    }
+    
+    .explanation-btn,
+    .explanation-btn-gray,
+    .drawing-btn {
+      border-width: 1px;
+    }
+  }
+
+  /* Стили для устройств с поддержкой hover */
+  @media (hover: hover) and (pointer: fine) {
+    .explanation-btn:hover,
+    .explanation-btn-gray:hover,
+    .drawing-btn:hover {
+      transform: translateY(-2px);
+    }
+    
+    .article-image:hover {
+      transform: scale(2.0);
+    }
+  }
+
+  /* Улучшенные стили для модальных окон на разных устройствах */
+  @media (max-width: 640px) {
+    .drawing-modal {
+      padding: 8px;
+    }
+    
+    .drawing-modal-content {
+      padding: 16px;
+      border-radius: 8px;
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .drawing-modal-content {
+      padding: 24px;
+      border-radius: 10px;
+    }
+  }
+
+  /* Улучшенные стили для кнопок навигации */
+  @media (max-width: 640px) {
+    .story-link {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+  }
+
+  /* Стили для улучшения доступности */
+  @media (prefers-reduced-motion: reduce) {
+    .explanation-btn,
+    .explanation-btn-gray,
+    .drawing-btn,
+    .article-image {
+      transition: none;
+    }
+    
+    .explanation-btn:hover,
+    .explanation-btn-gray:hover,
+    .drawing-btn:hover {
+      transform: none;
+    }
+  }
+
+  /* Стили для интерактивной ссылки на производителей */
+  .producer-link {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 4px;
+    padding: 2px 4px;
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    background: transparent;
+  }
+  
+  .producer-link:hover {
+    background-color: rgba(251, 146, 60, 0.2);
+    color: #92400e;
+    text-decoration: underline;
+    text-decoration-color: rgba(251, 146, 60, 0.6);
+    text-underline-offset: 2px;
+  }
+  
+  .producer-link:active {
+    background-color: rgba(251, 146, 60, 0.3);
+    transform: scale(0.98);
+  }
+  
+  .producer-link:focus {
+    outline: 2px solid rgba(251, 146, 60, 0.5);
+    outline-offset: 2px;
+  }
+  
+  /* Темная тема для ссылки на производителей */
+  .dark .producer-link:hover {
+    background-color: rgba(251, 146, 60, 0.3);
+    color: #fbbf24;
+  }
+  
+  .dark .producer-link:active {
+    background-color: rgba(251, 146, 60, 0.4);
+  }
+  
+  /* Адаптивные стили для ссылки на производителей */
+  @media (max-width: 640px) {
+    .producer-link {
+      padding: 3px 6px;
+      border-radius: 6px;
+    }
+    
+    .producer-link:hover {
+      background-color: rgba(251, 146, 60, 0.25);
+    }
+  }
+  
+  /* Улучшенные стили для touch устройств */
+  @media (hover: none) and (pointer: coarse) {
+    .producer-link {
+      min-height: 44px;
+      min-width: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .producer-link:active {
+      background-color: rgba(251, 146, 60, 0.4);
+      transform: scale(0.95);
+    }
+  }
 }

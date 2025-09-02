@@ -317,17 +317,17 @@ export default function SectionCard({
   }, []);
 
   return (
-    <article id={id} className="scroll-mt-24" aria-labelledby={`${id}-title`}>
+    <article id={id} className="scroll-mt-20 sm:scroll-mt-24" aria-labelledby={`${id}-title`}>
       <Card className="border bg-card content-card">
-        <CardContent className="p-5 sm:p-6">
+        <CardContent className="p-4 sm:p-5 lg:p-6">
           <header>
-            <h2 id={`${id}-title`} className="text-xl sm:text-2xl font-semibold tracking-tight mb-4 heading-primary">
+            <h2 id={`${id}-title`} className="text-lg sm:text-xl lg:text-2xl font-semibold tracking-tight mb-3 sm:mb-4 heading-primary">
               {title}
             </h2>
           </header>
           <div 
             ref={containerRef}
-            className="text-sm sm:text-base leading-relaxed"
+            className="text-xs sm:text-sm lg:text-base leading-relaxed"
             dangerouslySetInnerHTML={{ __html: content }}
           />
           
