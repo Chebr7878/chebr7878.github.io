@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { useMarkHighlight } from "@/hooks/use-mark-highlight";
 import PipeTypeButtons from "./PipeTypeButtons";
+import AnchorSheetImages from "./AnchorSheetImages";
 import { useEffect } from "react";
 
 export default function SectionCard({
@@ -334,6 +335,11 @@ export default function SectionCard({
           {/* Рендерим кнопки типов труб только для раздела "Классификация" */}
           {id === 'klassifikaciya' && onOpenDrawing && (
             <PipeTypeButtons onOpenDrawing={onOpenDrawing} />
+          )}
+          
+          {/* Рендерим фотографии анкерных листов для раздела "Агрессивные среды и внутренние покрытия" */}
+          {id === 'agressivnye-sredy' && (
+            <AnchorSheetImages />
           )}
         </CardContent>
       </Card>

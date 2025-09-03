@@ -4,11 +4,67 @@ interface DrawingModalProps {
   isOpen: boolean;
   drawingType: string | null;
   onClose: () => void;
+  onNavigateToDrawing?: (drawingType: string) => void;
 }
 
-export default function DrawingModal({ isOpen, drawingType, onClose }: DrawingModalProps) {
+export default function DrawingModal({ isOpen, drawingType, onClose, onNavigateToDrawing }: DrawingModalProps) {
   const [modalContent, setModalContent] = useState<string>('');
   const [isZoomed, setIsZoomed] = useState(false);
+
+  // Массив типов труб для навигации
+  const pipeTypes = ['t', 'ts', 'tb', 'tbp-tsp', 'tf', 'tfp'];
+
+  // Функция для перехода к следующему типу трубы
+  const navigateToNextDrawing = () => {
+    if (!drawingType || !onNavigateToDrawing) return;
+    
+    const currentIndex = pipeTypes.indexOf(drawingType);
+    if (currentIndex === -1) return;
+    
+    const nextIndex = (currentIndex + 1) % pipeTypes.length;
+    onNavigateToDrawing(pipeTypes[nextIndex]);
+  };
+
+  // Функция для перехода к предыдущему типу трубы
+  const navigateToPrevDrawing = () => {
+    if (!drawingType || !onNavigateToDrawing) return;
+    
+    const currentIndex = pipeTypes.indexOf(drawingType);
+    if (currentIndex === -1) return;
+    
+    const prevIndex = currentIndex === 0 ? pipeTypes.length - 1 : currentIndex - 1;
+    onNavigateToDrawing(pipeTypes[prevIndex]);
+  };
+
+  // Обработчик клавиш для навигации
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (!isOpen || !onNavigateToDrawing) return;
+      
+      switch (event.key) {
+        case 'ArrowLeft':
+          event.preventDefault();
+          navigateToPrevDrawing();
+          break;
+        case 'ArrowRight':
+          event.preventDefault();
+          navigateToNextDrawing();
+          break;
+        case 'Escape':
+          event.preventDefault();
+          onClose();
+          break;
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener('keydown', handleKeyDown);
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isOpen, drawingType, onNavigateToDrawing, onClose]);
 
   useEffect(() => {
     console.log('DrawingModal useEffect:', { isOpen, drawingType });
@@ -102,6 +158,7 @@ export default function DrawingModal({ isOpen, drawingType, onClose }: DrawingMo
           boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)'
         }}
       >
+        {/* Кнопка закрытия */}
         <span 
           className="drawing-modal-close" 
           onClick={onClose} 
@@ -133,6 +190,98 @@ export default function DrawingModal({ isOpen, drawingType, onClose }: DrawingMo
         >
           &times;
         </span>
+
+        {/* Кнопки навигации */}
+        {onNavigateToDrawing && (
+          <>
+            <button
+              onClick={navigateToPrevDrawing}
+              style={{
+                position: 'absolute',
+                left: '10px',
+                top: '50%',
+                transform: 'translateY(-50%)',
+                width: '40px',
+                height: '40px',
+                border: 'none',
+                borderRadius: '50%',
+                backgroundColor: 'rgba(37, 99, 235, 0.8)',
+                color: 'white',
+                fontSize: '18px',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                transition: 'all 0.2s ease',
+                zIndex: 1001
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = 'rgba(37, 99, 235, 1)';
+                e.currentTarget.style.transform = 'translateY(-50%) scale(1.1)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = 'rgba(37, 99, 235, 0.8)';
+                e.currentTarget.style.transform = 'translateY(-50%) scale(1)';
+              }}
+              title="Предыдущий чертеж (←)"
+            >
+              ‹
+            </button>
+            
+            <button
+              onClick={navigateToNextDrawing}
+              style={{
+                position: 'absolute',
+                right: '10px',
+                top: '50%',
+                transform: 'translateY(-50%)',
+                width: '40px',
+                height: '40px',
+                border: 'none',
+                borderRadius: '50%',
+                backgroundColor: 'rgba(37, 99, 235, 0.8)',
+                color: 'white',
+                fontSize: '18px',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                transition: 'all 0.2s ease',
+                zIndex: 1001
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = 'rgba(37, 99, 235, 1)';
+                e.currentTarget.style.transform = 'translateY(-50%) scale(1.1)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = 'rgba(37, 99, 235, 0.8)';
+                e.currentTarget.style.transform = 'translateY(-50%) scale(1)';
+              }}
+              title="Следующий чертеж (→)"
+            >
+              ›
+            </button>
+          </>
+        )}
+
+        {/* Подсказка по управлению */}
+        {onNavigateToDrawing && (
+          <div style={{
+            position: 'absolute',
+            bottom: '10px',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            fontSize: '12px',
+            color: '#666',
+            backgroundColor: 'rgba(255, 255, 255, 0.9)',
+            padding: '4px 8px',
+            borderRadius: '4px',
+            zIndex: 1001
+          }}>
+            Используйте стрелки ← → для навигации между чертежами
+          </div>
+        )}
+
         <div dangerouslySetInnerHTML={{ __html: modalContent }} />
       </div>
     </div>

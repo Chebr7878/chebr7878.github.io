@@ -36,6 +36,11 @@ const Index = () => {
     console.log('Index: New state will be:', { isDrawingModalOpen: true, currentDrawingType: drawingType });
   };
 
+  // Функция для навигации между чертежами в модальном окне
+  const navigateToDrawing = (drawingType: string) => {
+    setCurrentDrawingType(drawingType);
+  };
+
   const closeDrawingModal = () => {
     setIsDrawingModalOpen(false);
     setCurrentDrawingType(null);
@@ -138,6 +143,7 @@ const Index = () => {
         isOpen={isDrawingModalOpen}
         drawingType={currentDrawingType}
         onClose={closeDrawingModal}
+        onNavigateToDrawing={navigateToDrawing}
       />
       <CentrifugationModal 
         isOpen={isCentrifugationModalOpen}

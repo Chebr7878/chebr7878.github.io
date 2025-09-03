@@ -1,0 +1,9 @@
+@echo off
+echo Добавляем файлы в git...
+git add .
+echo Создаем коммит...
+git commit -m "Изменение цвета подсветки маркировки с желтого на оранжевый"
+echo Отправляем на GitHub...
+git push origin main
+echo Готово!
+pause
