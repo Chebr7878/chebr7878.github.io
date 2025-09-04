@@ -61,14 +61,25 @@ export default function RadialPressingModal({ isOpen, imageType, onClose }: Radi
   };
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-      <div className="bg-white rounded-lg max-w-4xl max-h-[90vh] overflow-auto relative">
+    <div 
+      className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+      onClick={onClose}
+    >
+      <div 
+        className="bg-white rounded-lg max-w-4xl max-h-[90vh] overflow-auto relative"
+        onClick={(e) => e.stopPropagation()}
+      >
         <button
           onClick={onClose}
           className="absolute top-4 right-4 z-10 p-2 bg-white rounded-full shadow-lg hover:bg-gray-100 transition-colors"
         >
           <X className="w-5 h-5" />
         </button>
+        
+        {/* Подсказка по управлению */}
+        <div className="absolute top-4 left-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded text-xs">
+          Кликните вне изображения для закрытия
+        </div>
 
         <button
           onClick={goToPrevious}
@@ -103,6 +114,11 @@ export default function RadialPressingModal({ isOpen, imageType, onClose }: Radi
             </div>
             <div className="mt-4 text-sm text-gray-600">
               {currentImageIndex + 1} из {images.length}
+            </div>
+            
+            {/* Подсказка по управлению */}
+            <div className="mt-2 text-xs text-gray-500">
+              Кликните вне изображения или нажмите ESC для закрытия
             </div>
           </div>
         </div>

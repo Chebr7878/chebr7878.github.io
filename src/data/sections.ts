@@ -20,6 +20,8 @@ export const sections: Section[] = [
 с 1 января 2013 г.<br/><br/>
 Взамен ГОСТ 6482-88<br/><br/>
 
+
+
         <div style="text-align: center; margin: 30px 0;">
           <button id="gost-download-btn" class="explanation-btn-gray" onclick="downloadGOST()" style="background: rgba(251, 146, 60, 0.7); color: #92400e; border: 2px solid rgba(251, 146, 60, 0.8); padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 16px; transition: all 0.2s; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); backdrop-filter: blur(4px);">
             <span style="font-weight: bold; color: #92400e;">📄 ГОСТ 6482-2011 PDF СКАЧАТЬ</span>
@@ -210,6 +212,12 @@ export const sections: Section[] = [
       </button>
     </div>
   </div>
+</div>
+
+<div style="background: #f0f9ff; border: 1px solid #0ea5e9; border-radius: 8px; padding: 15px; margin: 20px 0;">
+  <p style="margin: 0; color: #0369a1; font-weight: 500;">
+    <strong>🔧 Выбор труб:</strong> Для правильного выбора труб по области применения см. раздел <a href="#klassifikaciya" style="color: #0ea5e9; text-decoration: underline; font-weight: 600;">«Классификация»</a> и <a href="#gruppy-nesushchey" style="color: #0ea5e9; text-decoration: underline; font-weight: 600;">«Группы по несущей способности»</a>.
+  </p>
 </div>`,
   },
   {
@@ -272,6 +280,8 @@ export const sections: Section[] = [
 <strong>4 группа</strong> — применяются при расчётной высоте засыпки грунтом до верха основной цилиндрической части трубы не более 8 м;<br/><br/>
 
 <strong>5 группа</strong> — применяются при расчётной высоте засыпки грунтом до верха основной цилиндрической части трубы не более 10 м.<br/><br/>
+
+
 
 <div style="text-align: center; margin: 30px 0;">
   <button id="strength-explanation-btn" class="explanation-btn-gray" onclick="toggleStrengthExplanation()">
@@ -507,6 +517,8 @@ export const sections: Section[] = [
 <strong>ТС 80.25-3-П ГОСТ 6482-2011</strong> — труба железобетонная цилиндрическая раструбная со ступенчатой поверхностью втулочного конца и стыковым соединением, уплотняемым резиновым кольцом или другим эластомерным материалом, диаметром <span data-mark-key="diameter-800mm" tabindex="0" role="button" aria-label="800 мм">800 мм</span>, полезной длиной <span data-mark-key="length-2-5m" tabindex="0" role="button" aria-label="2,5 м">2,5 м</span>, <span data-mark-key="group-3rd" tabindex="0" role="button" aria-label="третьей группы">третьей группы</span> по несущей способности, изготовленная из бетона <span data-mark-key="permeability-w6" tabindex="0" role="button" aria-label="пониженной проницаемости W6">пониженной проницаемости (W6)</span>.
 </div>
 
+
+
 <strong>Нанесение маркировки</strong><br/><br/>
 
 Маркировка осуществляется в соответствии с требованиями <span data-mark-key="gost-13015" tabindex="0" role="button" aria-label="ГОСТ 13015">ГОСТ 13015</span>.<br/><br/>
@@ -559,6 +571,8 @@ export const sections: Section[] = [
     content: `Трубы следует изготавливать в соответствии с требованиями настоящего стандарта, по технологической документации и рабочим чертежам, утверждённым в установленном порядке.<br/><br/>
 
 Геометрические размеры труб (геометрические параметры), форма и размеры стыкового соединения, показатели расхода бетона и стали должны соответствовать данным, указанным в рабочих чертежах.<br/><br/>
+
+
 
 Трубы рекомендуется изготавливать высокопроизводительными способами вибропрессования и радиального прессования.<br/><br/>
 

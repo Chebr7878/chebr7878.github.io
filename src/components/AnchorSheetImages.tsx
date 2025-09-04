@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import OptimizedImage from './OptimizedImage';
 
 interface AnchorSheetImagesProps {
   onOpenImage?: (imageType: string) => void;
@@ -135,7 +136,7 @@ export default function AnchorSheetImages({ onOpenImage }: AnchorSheetImagesProp
 
             {/* Изображение */}
             <div className="relative">
-              <img
+              <OptimizedImage
                 src={images[currentImageIndex].src}
                 alt={images[currentImageIndex].alt}
                 className="w-full h-auto max-h-[80vh] object-contain"
