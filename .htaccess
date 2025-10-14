@@ -82,7 +82,7 @@
 
     # Новый корневой каталог
     RewriteCond %{REQUEST_URI} !^/dist/
-	RewriteRule ^(.*)$ /dist/$1 [L]
+	RewriteRule ^(.*)$ /dist/$1
     
     # Если файл или директория не существует, перенаправляем на index.html
     RewriteCond %{REQUEST_FILENAME} !-f
