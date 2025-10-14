@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Главная страница -->
+  <url>
+    <loc>https://gost6482-2011.ru/</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Раздел 1: Введение -->
+  <url>
+    <loc>https://gost6482-2011.ru/#vvedenie</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Раздел 2: Область применения -->
+  <url>
+    <loc>https://gost6482-2011.ru/#oblast-primeneniya</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Раздел 3: Нормативные ссылки -->
+  <url>
+    <loc>https://gost6482-2011.ru/#normativnye-ssylki</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Раздел 4: Термины и определения -->
+  <url>
+    <loc>https://gost6482-2011.ru/#terminy-i-opredeleniya</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Раздел 5: Классификация -->
+  <url>
+    <loc>https://gost6482-2011.ru/#klassifikatsiya</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Раздел 6: Основные параметры и размеры -->
+  <url>
+    <loc>https://gost6482-2011.ru/#osnovnye-parametry-i-razmery</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Раздел 7: Технические требования -->
+  <url>
+    <loc>https://gost6482-2011.ru/#tekhnicheskie-trebovaniya</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Раздел 8: Требования к материалам -->
+  <url>
+    <loc>https://gost6482-2011.ru/#trebovaniya-k-materialam</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Раздел 9: Конструкция -->
+  <url>
+    <loc>https://gost6482-2011.ru/#konstruktsiya</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Раздел 10: Маркировка -->
+  <url>
+    <loc>https://gost6482-2011.ru/#markirovka</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Раздел 11: Упаковка -->
+  <url>
+    <loc>https://gost6482-2011.ru/#upakovka</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Раздел 12: Транспортирование -->
+  <url>
+    <loc>https://gost6482-2011.ru/#transportirovanie</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Раздел 13: Хранение -->
+  <url>
+    <loc>https://gost6482-2011.ru/#khranenie</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Раздел 14: Правила приемки -->
+  <url>
+    <loc>https://gost6482-2011.ru/#pravila-priemki</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Раздел 15: Методы контроля -->
+  <url>
+    <loc>https://gost6482-2011.ru/#metody-kontrolya</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Раздел 16: Требования безопасности -->
+  <url>
+    <loc>https://gost6482-2011.ru/#trebovaniya-bezopasnosti</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Раздел 17: Требования охраны окружающей среды -->
+  <url>
+    <loc>https://gost6482-2011.ru/#trebovaniya-okhrany-okruzhayushchey-sredy</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Раздел 18: Гарантии изготовителя -->
+  <url>
+    <loc>https://gost6482-2011.ru/#garantii-izgotovitelya</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Страница покупки труб -->
+  <url>
+    <loc>https://gost6482-2011.ru/#gde-priobresti</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>
+
+
