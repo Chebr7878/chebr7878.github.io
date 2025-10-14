@@ -80,10 +80,6 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
-    # Новый корневой каталог
-    RewriteCond %{REQUEST_URI} !^/dist/
-	RewriteRule ^(.*)$ /dist/$1 [L]
-    
     # Если файл или директория не существует, перенаправляем на index.html
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
